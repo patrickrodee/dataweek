@@ -11,3 +11,19 @@ angular.module('MyApp')
 			}
 		}
 	});
+
+/*
+angular.module('MyApp')
+	.directive('modify', [function () {
+		return {
+			restrict: 'A',
+			scope: {
+				options: "=newData",
+				target: "=targetChart"
+			},
+			link: function ($scope, $elem, attrs) {
+				zingchart.exec( $scope.target, 'modify', $scope.options );
+			}
+		}
+	}]);
+*/

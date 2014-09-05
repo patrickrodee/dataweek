@@ -4,7 +4,7 @@ angular.module('MyApp')
 		//////////////////////////////////
 		// Chart Objects /////////////////
 		//////////////////////////////////
-		
+
 		$scope.interact_data = {
 			"data": {
 				        "type":"line",
@@ -159,8 +159,7 @@ angular.module('MyApp')
 		};
 
 		$scope.evaluate_data_marker_rules = {
-			"graphset":[
-			    {
+			"data": {
 			        "type":"line",
 			        "title":{
 			            "text":"Marker Rules"
@@ -185,12 +184,10 @@ angular.module('MyApp')
 			            }
 			        ]
 			    }
-			]
 		};
 
 		$scope.annotate_data = {
-		    "graphset":[
-		        {
+		    "data": {
 		            "type":"line",
 		            "title":{
 		                "text":"Callout Demo"
@@ -245,7 +242,53 @@ angular.module('MyApp')
 		                }
 		            ]
 		        }
-		    ]
 		};
+
+		// ACTIONS /////////////////
+		
+		$scope.modify = function(target, payload) {
+			zingchart.exec(target, 'modify', payload);
+		}
+
+		$scope.timeToRun = function(target, number_of_points) {
+			var newVals0 = generateRandomNumbers(number_of_points/5);
+	    	var newVals1 = generateRandomNumbers(number_of_points/5);
+	    	var newVals2 = generateRandomNumbers(number_of_points/5);
+	    	var newVals3 = generateRandomNumbers(number_of_points/5);
+	    	var newVals4 = generateRandomNumbers(number_of_points/5);
+	    	var time_before = new Date().getTime();
+	    	$scope.modify(target, {
+	    		"data" : {
+	    			"series": [
+		    			{
+		    				"values" : newVals0
+		    			},
+		    			{
+		    				"value" : newVals1
+		    			},
+		    			{
+		    				"values" : newVals2
+		    			},
+		    			{
+		    				"values" : newVals3
+		    			},
+		    			{
+		    				"values" : newVals4
+		    			}
+	    			]
+	    		}
+	    	});
+	    	var time_after = new Date().getTime();
+	    	var time_to_render = (time_after-time_before)/1000;
+	    	number_of_points = number_of_points.toString();
+	    	if (number_of_points.length <= 5) {
+	    		number_of_points = number_of_points.substr(0,2) + "," + number_of_points.substr(2);
+	    	}
+	    	else {
+	    		number_of_points = number_of_points.substr(0,3) + "," + number_of_points.substr(3);
+	    	}
+	    	number_of_points += " points rendered in " + time_to_render.toString() + "s";
+	    	$scope.render_time = number_of_points;
+		}
 
 	}])
