@@ -1,0 +1,296 @@
+{
+	"palette" : {
+		"mixed" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"vbar" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"vbar3d" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"pie" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"pie3d" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"nestedpie" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"area" : [
+			["#00baf0", "#00baf0", "#00baf0", "#00baf0"],
+			["#7ca82b", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#cc3300", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#b2b2b2", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"area3d" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"gauge" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"line" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"line3d" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"piano" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"vbullet" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"vfunnel" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"scatter" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"radar" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"venn" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"chord" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"treemap" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"stock" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"bubble" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		],
+		"diagram" : [
+			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
+			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
+			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
+			["#ffffff", "#006180", "#006180", "#006180"],
+			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
+		]
+	},
+
+
+	"graph" : {
+		"flat":"true",
+		"background-color" : "#fff",
+		"border-color":"#999999",
+		"border-width":"1px",
+		"border-style":"solid",
+		"borderRadius":"5",
+
+		"title" : {
+			"background-color" : "#999999",
+			"border-color":"#999999",
+			"border-width":"1px",
+			"border-style":"solid",
+			"height":"30px",
+			"align":"center",
+			"fontColor" : "#fff",
+			"font-family":"Arial",
+			"font-size":"18px",
+			"borderRadiusTopLeft":"5",
+			"borderRadiusTopRight":"5"
+		},
+		"legend" : {
+			"y":"10%",
+			"layout":"h",
+			"background-color":"#00baf0",
+			"header" : {
+				"background-color" : "#dddddd"
+			},
+			"item" : {
+				"markerStyle" : "star5",
+				"fontColor" : "#dddddd",
+				"borderColor" : "#dddddd",
+				"lineColor" : "#dddddd"
+			}	
+		},
+
+		"scale-x" : {
+				"line-color" : "#b2b2b2",
+				"line-width":"1px",
+				"line-style":"solid",
+				"fontColor" : "#b2b2b2",
+				"tick" : {
+					"lineColor" : "#b2b2b2",
+					"line-width":"1px"
+				},
+				"guide":{
+                    "line-width":"1px",
+                    "line-color":"#b2b2b2",
+                    "line-style":"solid"
+				},
+				"item" : {
+					"fontColor" : "#b2b2b2"
+				}
+			},
+		"scale-y" : {
+				"line-color" : "#b2b2b2",
+				"line-width":"1px",
+				"line-style":"solid",
+				"fontColor" : "#b2b2b2",
+                "label":{
+                	"fontColor":"#b2b2b2"
+                },
+				"guide":{
+                    "line-width":"1px",
+                    "line-color":"#b2b2b2",
+                    "line-style":"solid"
+				},
+				"tick" : {
+					"lineColor" : "#b2b2b2",
+					"line-width":"1px"
+				},
+				"item" : {
+					"fontColor" : "#b2b2b2"
+				}
+		},
+        "source":{
+        	"fontColor":"#b2b2b2"
+        }
+	},
+
+	"line" : {
+		"plot" : {
+			"lineWidth" : 3,
+			"marker":{
+					"visible":true
+				},
+			"animate": true,
+            "effect": 4,
+            "speed":100,
+            "tooltip-text" : "%v"
+		},
+		"scale-x" : {
+			"markers" : {
+				"backgroundColor" : "#1bc9f2",
+				"lineColor" : "#947850"
+			}
+		}
+	},
+
+	"area" : {
+		"plot" : {
+			"animate": true,
+            "effect": 1,
+            "speed":"100",
+	        "lineWidth" : 1,
+	        "tooltip-text" : "%v"
+		}
+	},
+
+	"gauge" : {
+		"scale-r" : {
+			"tick" : {
+				"lineColor" : "#dddddd"
+				},
+			"item" : {
+				"fontColor" : "#dddddd"
+			}
+		}
+	},
+
+	"pie" : {
+		"plot" : {
+			"ref-angle":270,
+			"value-box" : {
+				"type" : "all",
+				"placement" : "out",
+				"backgroundTransparent" : true,
+				"text" : "%t\n"
+			}
+		}
+	},
+
+	"diagram":{
+		"background-color":"#000"
+	}
+}
+

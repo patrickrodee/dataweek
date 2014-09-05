@@ -1,0 +1,88 @@
+<div class="content-panel">
+	<!--
+	<script src="/javascripts/destroy_on_load.js"></script>
+	<script src="/javascripts/big-data.js"></script>
+	-->
+	<div class="title">
+		<h2>BIG DATA <span class="thin">meet</span> BIG VIZ</h2>
+	</div>
+	<div class="content">
+		<div class="row row_1_of_2">
+			<div class="col_1_of_2">
+				<div class="big-data-demo">
+					<h2 class="subtitle">See &amp; interact with it</h2>
+					<div class="chart-demo" zingchart id="interact-demo" zc-data="interact_data"></div>
+					<ul>
+						<li>
+							<select id="points_to_render" style="-webkit-appearance: menulist-button; border-color: rgb(153, 153, 153);">
+								<option value="10000">10,000 data points</option>
+								<option value="25000">25,000 data points</option>
+								<option value="50000">50,000 data points</option>
+								<option value="100000">100,000 data points</option>
+							</select>
+						</li>
+						<li>
+							<button type="button" id="run-speed-test">Run Test</button>
+						</li>
+						<li class="results">
+							<span id="speed-test-results">Test results go here</span>
+						</li>
+						<li>
+							<button type="button" id="z9">Need more?</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col_1_of_2">
+				<div class="big-data-demo">
+					<h2 class="subtitle">Evaluate it</h2>
+					<div class="chart-demo" zingchart id="evaluate-demo" zc-data="evaluate_data_plot_rules"></div>
+					<ul>
+						<li>
+							<button type="button" id="plot-rules">Plot Rules</button>
+						</li>
+						<li>
+							<button type="button" id="marker-rules">Marker Rules</button>
+						</li>
+						<li>
+							<button>Drilldown</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row row_1_of_2">
+			<div class="col_1_of_2">
+				<div class="big-data-demo">
+					<h2 class="subtitle">Annotate it</h2>
+					<div class="chart-demo" id="annotate-demo"></div>
+					<ul>
+						<li>
+							<button type="button" id="draw-trend-lines">Draw Trend Lines</button>
+						</li>
+						<li>
+							<button type="button" id="annotate-anomalies">Annotate Anomalies</button>
+						</li>
+						<li>
+							<button type="button" id="callouts">Callouts</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col_1_of_2">
+				<div class="big-data-demo">
+					<h2 class="subtitle">Share it</h2>
+					<div class="chart-demo border"></div>
+					<ul>
+						<li>
+							<button>Export</button>
+						</li>
+						<li>
+							<button>Unique Context Menu</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
