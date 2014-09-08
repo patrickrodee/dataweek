@@ -4,7 +4,7 @@
 	<script src="/javascripts/big-data.js"></script>
 	-->
 	<div class="title">
-		<h2>BIG DATA <span class="thin">meet</span> BIG VIZ</h2>
+		<h2>Big Data, meet Big Viz</h2>
 	</div>
 	<div class="content">
 		<div class="row row_1_of_2">
@@ -13,22 +13,30 @@
 					<h2 class="subtitle">See &amp; interact with it</h2>
 					<div class="chart-demo" zingchart id="interact-demo" zc-data="interact_data"></div>
 					<ul>
-						<li>
-							<select id="points_to_render" style="-webkit-appearance: menulist-button; border-color: rgb(153, 153, 153);">
-								<option value="10000" ng-selected="timeToRun('interact-dem0',10000)">10,000 data points</option>
-								<option value="25000" ng-selected="timeToRun('interact-dem0',25000)">25,000 data points</option>
-								<option value="50000" ng-selected="timeToRun('interact-dem0',50000)">50,000 data points</option>
-								<option value="100000" ng-selected="timeToRun('interact-dem0',100000)">100,000 data points</option>
-							</select>
+						<li class="width-50">
+							<ul>
+								<li>
+									<select id="points_to_render" style="-webkit-appearance: menulist-button; border-color: rgb(153, 153, 153);">
+										<option value="10000" ng-selected="timeToRun('interact-dem0',10000)">10,000 data points</option>
+										<option value="25000" ng-selected="timeToRun('interact-dem0',25000)">25,000 data points</option>
+										<option value="50000" ng-selected="timeToRun('interact-dem0',50000)">50,000 data points</option>
+										<option value="100000" ng-selected="timeToRun('interact-dem0',100000)">100,000 data points</option>
+									</select>
+								</li>
+								<li>
+									<button type="button" id="run-speed-test">Run Test</button>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<button type="button" id="run-speed-test">Run Test</button>
-						</li>
-						<li class="results">
-							<span>{{render_time}}</span>
-						</li>
-						<li>
-							<button type="button" id="z9">Need more?</button>
+						<li class="width-50">
+							<ul id="float-right">
+								<li>
+									<button type="button" id="z9">Need more?</button>
+								</li>
+								<li>
+									<p id="time-to-render">10,0000 points rendered in 0.123s</p>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>

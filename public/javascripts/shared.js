@@ -1,3 +1,5 @@
+/*
+
 $(document).ready(function() {
 	resizeElements();
 });
@@ -16,6 +18,8 @@ function resizeElements() {
 	$('.navigation').css('height', totalHeight-82);
 	$('.navigation').css('overflow','scroll');
 }
+
+*/
 
 function generateRandomNumbers(nodes) {
     	var values, m1, m2, s;
