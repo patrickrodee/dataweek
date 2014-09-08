@@ -81,8 +81,9 @@ button {
 	font-size: 0;
 	display: block;
 	width: 291px;
-	height: 98px;
-	background:url(./images/bg-sprite-24@2x.png) no-repeat 0 -746px;
+	height: 97px;
+	background:url(../images/zingchart-logo-white.png) no-repeat 0 0;
+	margin-top: 2px;
 }
 #bigviz-bigdata {
 	padding-left: 100px;
