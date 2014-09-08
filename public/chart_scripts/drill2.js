@@ -1,0 +1,91 @@
+var DRILLDOWN2JSON={
+"graphset":[
+    {
+        "id":"years",
+        "x":"0%",
+        "y":"0%",
+        "width":"100%",
+        "height":"40%",
+        "type":"bar",
+        "title":{
+            "text":"Parent Child Drilldown",
+        },
+        "plotarea":{
+            "margin":"50 30 40 50"
+        },
+        "scale-x":{
+            "values":"1994:2014",
+            "max-items":99,
+            "guide":{
+                "visible":false
+            }
+        },
+        "plot":{
+            "bars-overlap":"100%",
+            "rules":[]
+        },
+        "scale-y":{
+            "values":"0:150:25",
+            "min-value":0,
+            "guide":{
+                "visible":false
+            }
+        },
+        "series":[
+            {
+                "values":[81,106,110,114,133,108,101,120,116,113,123,130,132,124,128,122,115,104,123,146,113],
+                "url":"kitchen/chart_scripts/data-months.php?year=%scale-key-value&filepath=kitchen/chart_scripts",
+                "target":"graph=months",
+                "z-index":1,
+            },
+            {
+                "values":[150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150],
+                "background-color":"#E8E7E8",
+                "maxTrackers":0,
+                "z-index":0
+            }
+        ]
+    },
+    {
+        "id":"months",
+        "x":"0%",
+        "y":"40%",
+        "width":"100%",
+        "height":"30%",
+        "type":"null",
+        "labels":[
+            {
+                "text":"Click on a YEAR above to view monthly stats",
+                "width":400,
+                "height":40,
+                "margin":"auto auto",
+                "border-width":1,
+                "border-radius":2,
+                "padding":20,
+                "background-color":"#f9f9f9"
+            }
+        ]
+    },
+    {
+        "id":"days",
+        "x":"0%",
+        "y":"70%",
+        "width":"100%",
+        "height":"30%",
+        "type":"null",
+        "labels":[
+            {
+                "text":"Click on a MONTH above to view daily stats",
+                "width":400,
+                "height":40,
+                "height":40,
+                "margin":"auto auto",
+                "border-width":1,
+                "border-radius":2,
+                "padding":20,
+                "background-color":"#f9f9f9"
+            }
+        ]
+    }
+]
+};

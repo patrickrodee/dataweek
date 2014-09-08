@@ -69,10 +69,12 @@ a {
 button {
 	font-size: 18px;
 	background-color: #003849;
+	color: #FFF;
 	border-style: none;
 	margin: 0;
 	padding: 8px 12px;
 	font-weight: normal;
+	cursor: pointer;
 }
 #zingchart-title {
 	width: 500px;
@@ -137,22 +139,40 @@ h2.thin {
 }
 .content-panel {
 	margin-top: 75px;
-}
-.content-panel * {
 	color: #FFF;
 }
 .title {
 	margin-bottom: 38px;
 	width: 100%;
+	float: left;
 }
 .title h2 {
+	float: left;
 	line-height: 36px;
+	color: #FFF;
+}
+.title .buttons {
+	float: right;
+}
+.fixed {
+	height: 75px;
+	position: fixed;
+}
+.overflow {
+	position: absolute;
+	top: 280px;
+	height: 1126px;
+	overflow: scroll;
 }
 .subtitle {
 	font-size: 25px;
 	line-height: 25px;
 	margin-bottom: 10px;
+	font-weight: normal;
 	color: #E5E5E5;
+}
+.content {
+	float: left;
 }
 .row {
 	width: 100%;
@@ -165,13 +185,21 @@ h2.thin {
 	height: 50%;
 	margin-bottom: 50px;
 }
+.lotsa_rows {
+	margin-bottom: 50px;
+}
+.col:not(:last-child) {
+	margin-right: 100px;
+}
 .col_1_of_2 {
 	width: 880px;
 	height: 100%;
 	float: left;
 }
-.col_1_of_2:not(:last-child) {
-	margin-right: 100px;
+.col_1_of_3 {
+	width: 553px;
+	height: 100%;
+	float: left;
 }
 .results {
 	margin-top: 2px;
@@ -206,13 +234,29 @@ ul#float-right > li {
 	width: 100%;
 	border: 1px solid;
 }
+.kitchen-sink-demo {
+	width: 1860px;
+	height: 1126px;
+}
 .right {
 	float: right;
 }
 .mobile-demo {
 
 }
+#laptop-cutout {
+	width: 1835px;
+	height: 1108px;
+	z-index: -1;
+}
+#laptop-screen {
+	position: absolute;
+	top: 346px;
+	left: 870px;
+	z-index: 1;
+}
 #time-to-render {
 	margin-top: 9.5px;
 	margin-bottom: 9.5px;
+	color: #E5E5E5;
 }

@@ -1,0 +1,41 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "type":"bar",
+            "title":{
+                "text":"Meat",
+            },
+            "plotarea": {
+                "margin":"80px"
+            },
+            "series":[
+                {
+                    "values":[15,5,35,20,25],
+                    "background-color":"#4492a8"
+                }
+            ],
+            "scale-x":{
+                "values":["Pork","Beef","Goat","Chicken","Lamb"],
+                "label":{
+                    "text":"Type",
+                }
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity",
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+   var TREEMAPJSON={
+    "graphset":[{
+            "type":"treemap",
+            "plotarea":{
+                "margin":"35 5 5 7"
+            },
+            "title": {
+              "text": "Treemap"
+            },
+            "options":{
+                "color-type":"palette",
+                "palette":["#40beeb","#305f74","#4492a8","#8e8e8e","#dddddd","#83deff","#086893","#85bdcd"]
+            },
+            "series":[
+                {
+                    "text":"North America",
+                    "background-color":"#40beeb",
+                    "children":[
+                        {
+                            "text":"United States",
+                            "children":[
+                                {
+                                    "text":"Texas",
+                                    "value":21
+                                },
+                                {
+                                    "text":"California",
+                                    "value":53
+                                }
+                            ]
+                        },
+                        {
+                            "text":"Canada",
+                            "value":113
+                        },
+                        {
+                            "text":"Mexico",
+                            "value":78
+                        }
+                    ]
+                },
+                {
+                    "text":"Europe",
+                    "background-color":"#305f74",
+                    "children":[
+                        {
+                            "text":"France",
+                            "value":42
+                        },
+                        {
+                            "text":"Spain",
+                            "value":28
+                        }
+                    ]
+                },
+                {
+                    "text":"Africa",
+                    "children":[
+                        {
+                            "text":"Egypt",
+                            "value":22
+                        },
+                        {
+                            "text":"Congo",
+                            "value":38
+                        }
+                    ]
+                },
+                {
+                    "text":"Asia",
+                    "children":[
+                        {
+                            "text":"India",
+                            "value":92
+                        },
+                        {
+                            "text":"China",
+                            "value":68
+                        }
+                    ]
+                },
+                {
+                    "text":"South America",
+                    "children":[
+                        {
+                            "text":"Brazil",
+                            "value":42
+                        },
+                        {
+                            "text":"Argentina",
+                            "value":28
+                        }
+                    ]
+                },
+                {
+                    "text":"Australia (continent)",
+                    "children":[
+                        {
+                            "text":"Australia (country)",
+                            "value":121
+                        },
+                        {
+                            "text":"New Zealand",
+                            "value":24
+                        }
+                    ]
+                }
+            ]
+        }]};

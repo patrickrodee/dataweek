@@ -1,0 +1,23 @@
+<div class="content-panel">
+	<div class="title">
+		<h2>DIY Dataviz</h2>
+		<div class="buttons">
+			<ul>
+				<li>
+					<button ng-click="new_screen('autodesk')">Autodesk</button>
+				</li>
+				<li>
+					<button ng-click="new_screen('tesla')">Tesla</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="row row_1_of_1">
+			<div class="laptop-demo">
+				<img id="laptop-cutout" src="../images/laptop.png">
+				<img id="laptop-screen" ng-src="{{screen_image}}">
+			</div>
+		</div>
+	</div>
+</div>

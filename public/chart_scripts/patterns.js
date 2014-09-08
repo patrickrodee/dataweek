@@ -1,0 +1,30 @@
+var PATTERNSJSON={
+    "type":"bar",
+    "title":{
+        "text":"Patterns"
+    },
+    "crosshair-x":{
+        "visible":0
+    },
+    "plot":{
+        
+    },
+    "series":[
+        {
+            "values":[5,10],
+            "background-image":"PATTERN_WIDE_UPWARD_DIAGONAL"
+        },
+        {
+            "values":[2,5],
+            "background-image":"PATTERN_SHADE_25"
+        },
+        {
+            "values":[12,6],
+            "background-image":"PATTERN_LIGHT_VERTICAL"
+        },
+        {
+            "values":[1,5],
+            "background-image":"PATTERN_SHINGLE"
+        }
+    ]
+};

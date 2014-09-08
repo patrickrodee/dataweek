@@ -8,25 +8,13 @@
 	</div>
 	<div class="content">
 		<div class="row row_1_of_2">
-			<div class="col_1_of_2">
-				<div class="big-data-demo">
+			<div class="col col_1_of_2">
+				<div>
 					<h2 class="subtitle">See &amp; interact with it</h2>
 					<div class="chart-demo" zingchart id="interact-demo" zc-data="interact_data"></div>
 					<ul>
 						<li class="width-50">
-							<ul>
-								<li>
-									<select id="points_to_render" style="-webkit-appearance: menulist-button; border-color: rgb(153, 153, 153);">
-										<option value="10000" ng-selected="timeToRun('interact-dem0',10000)">10,000 data points</option>
-										<option value="25000" ng-selected="timeToRun('interact-dem0',25000)">25,000 data points</option>
-										<option value="50000" ng-selected="timeToRun('interact-dem0',50000)">50,000 data points</option>
-										<option value="100000" ng-selected="timeToRun('interact-dem0',100000)">100,000 data points</option>
-									</select>
-								</li>
-								<li>
-									<button type="button" id="run-speed-test">Run Test</button>
-								</li>
-							</ul>
+							<select ng-model="points_to_render" ng-options="point.name for point in point_options" ng-change="timeToRun(points_to_render.value)"></select>
 						</li>
 						<li class="width-50">
 							<ul id="float-right">
@@ -34,15 +22,15 @@
 									<button type="button" id="z9">Need more?</button>
 								</li>
 								<li>
-									<p id="time-to-render">10,0000 points rendered in 0.123s</p>
+									<p ng-model="time_to_render" id="time-to-render">{{points_to_render.name}} points rendered in {{time_to_render}}</p>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="col_1_of_2">
-				<div class="big-data-demo">
+			<div class="col col_1_of_2">
+				<div>
 					<h2 class="subtitle">Evaluate it</h2>
 					<div class="chart-demo" zingchart id="evaluate-demo" zc-data="evaluate_data_plot_rules"></div>
 					<ul>
@@ -60,8 +48,8 @@
 			</div>
 		</div>
 		<div class="row row_1_of_2">
-			<div class="col_1_of_2">
-				<div class="big-data-demo">
+			<div class="col col_1_of_2">
+				<div>
 					<h2 class="subtitle">Annotate it</h2>
 					<div class="chart-demo" zingchart id="annotate-demo" zc-data="annotate_data"></div>
 					<ul>
@@ -77,8 +65,8 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col_1_of_2">
-				<div class="big-data-demo">
+			<div class="col col_1_of_2">
+				<div>
 					<h2 class="subtitle">Share it</h2>
 					<div class="chart-demo border"></div>
 					<ul>

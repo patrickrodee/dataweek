@@ -8,6 +8,7 @@
 	<title>ZingChart Demo</title>
 	<link rel="icon" type="image/png" href="favicon.png"/>
 	<link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -39,8 +40,8 @@
 	        				<div class="nav-arrow"></div>
         				</a>
     				</li>
-    				<li id="big-and-complex" data-match-route="/big-and-complex">
-    					<a href="/big-and-complex">
+    				<li id="kitchen-sink" data-match-route="/kitchen-sink">
+    					<a href="/kitchen-sink">
         					<h3 class="thin">My data is big and complex.</h3>
         					<h2>What if standard charts aren't enough?</h2>
         				</a>
@@ -88,17 +89,26 @@
 	<section ng-view id="details-section"></section>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- ZingChart Library -->
 	<script src="/javascripts/lib/zingchart-html5-min.js"></script>
     <script>zingchart.MODULESDIR = '/javascripts/lib/modules/';</script>
     <script src="/javascripts/shared.js"></script>
+    <!-- Charts -->
+    <script src="/charts/BigDataCharts.js"></script>
+    <script src="/charts/KitchenSinkCharts.js"></script>
+    <!-- Vendor -->
 	<script src="/vendor/angular.js"></script>
 	<script src="/vendor/angular-strap.js"></script>
 	<script src="/vendor/angular-strap.tpl.js"></script>
 	<script src="/vendor/angular-resource.min.js"></script>
 	<script src="/vendor/angular-route.js"></script>
+    <!-- App -->
 	<script src="/app.js"></script>
+    <!-- Controllers -->
 	<script src="/controllers/BigDataCtrl.js"></script>
+    <script src="/controllers/KitchenSinkCtrl.js"></script>
+    <script src="/controllers/DatavizLikeOursCtrl.js"></script>
+    <!-- Directives -->
 	<script src="/directives/ZingChartDirective.js"></script>
-	<script>this.path_to_theme = "/themes/dataweek.txt";</script>
 </body>
 </html>

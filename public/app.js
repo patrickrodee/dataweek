@@ -13,8 +13,9 @@ angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap'])
     	.when('/complicated-viz', {
     		templateUrl: 'views/complicated-viz.html'
     	})
-    	.when('/big-and-complex', {
-    		templateUrl: 'views/big-and-complex.html'
+    	.when('/kitchen-sink', {
+    		templateUrl: 'views/kitchen-sink.html',
+            controller: 'KitchenSinkCtrl'
     	})
     	.when('/users-move', {
     		templateUrl: 'views/users-move.html'
@@ -26,7 +27,8 @@ angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap'])
     		templateUrl: 'views/data-is-changing.html'
     	})
     	.when('/dataviz-like-ours', {
-    		templateUrl: 'views/dataviz-like-ours.html'
+    		templateUrl: 'views/dataviz-like-ours.html',
+            controller: 'DatavizLikeOursCtrl'
     	})
     	.when('/dont-know-zc', {
     		templateUrl: 'views/dont-know-zc.html'
