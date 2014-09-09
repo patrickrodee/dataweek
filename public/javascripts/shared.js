@@ -1,5 +1,10 @@
 this.path_to_theme = "/themes/dataweek.txt";
 
+
+// zingchart.MODULESDIR = './lib/modules/';
+zingchart.loadModules('maps,maps-usa');
+
+
 function generateRandomNumbers(nodes) {
     	var values, m1, m2, s;
         values = [];

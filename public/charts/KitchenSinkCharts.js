@@ -534,3 +534,926 @@ var mixed_data_chart = {
         ]
     }
 };
+
+var grid_data_chart = {
+    "data": {
+        "type":"grid",
+        "title":{
+            "text":"Grid"
+        },
+        "plotarea":{
+            "margin":"50 40 40 40"
+        },
+        "options":{
+            "header-row":true,
+            "col-widths":["26%","26%","26%","22%"],
+            "col-labels":["First","Last","DOB","Country"],
+            "style":{
+                ".th":{
+                    "background-color":"#40beeb",
+                    "align":"center",
+                    "font-color":"#fff",
+                    "font-size":"10px",
+                    "font-family":"arial",
+                    "border":"1px solid #999"
+                },
+                ".tr":{
+                    "border":"1px solid #999",
+                    "font-color":"#000000",
+                    "font-size":"10px",
+                    "font-family":"arial",
+                    "padding":"6px"
+                },
+                ".tr_odd":{
+                    "background-color":"#fbfbfb"
+                },
+                ".tr_even":{
+                    "background-color":"#fff"
+                },
+                ".td":{
+                    "align":"center",
+                    "border":"1px solid #999"
+                },
+                ".td_0":{
+                    "font-weight":"bold"
+                }
+            }
+        },
+        "series":[
+            {
+                "values":["Jon","Anderson","1/9/57","UK"]
+            },
+            {
+                "values":["Steve","Hogarth","1/25/50","UK"]
+            },
+            {
+                "values":["Jim","Carrey","6/12/72","US"]
+            },
+            {
+                "values":["Paul","Hogan","10/22/56","AU"]
+            },
+            {
+                "values":["Brenden","Morrow","1/16/79","CA"]
+            },
+            {
+                "values":["Kate","Moss","1/16/74","UK"]
+            },
+            {
+                "values":["David","Chokachi","1/16/68","US"]
+            }
+        ]
+    }
+};
+
+var map_data_chart = {
+    "data": {
+    "title": {
+          "text": "Map"
+        },
+        "shapes":[
+            {
+                "type":"zingchart.maps",
+                "options":{
+                    "id":"map",
+                    "name":"usa",
+                    "scale":true,
+                    "x":0,
+                    "y":"20px",
+                    "width":"100%",
+                    "height":"100%",
+                    "style":{
+                        "label":{
+                            "visible":0
+                        },
+                        "tooltip":{
+                            "visible":false   
+                        }
+                    }
+                }
+            }
+        ]
+    }
+};
+
+var chord_data_chart = {
+    "data": {
+    "graphset":[{
+    "type":"chord",
+    "title": {
+          "text": "Chord Chart"
+        },
+    "plotarea":{
+        "margin":"50 20 20 20"
+    },
+    "options":{
+        "style":{
+            "item":{
+                "color":"black"
+            },
+            "label":{
+                "color":"black"
+            },
+            "tick":{
+                "color":"black"
+            }
+        }
+    },
+    "series":[
+        {
+            "values":[6637,5700,4789,2771],
+            "text":"A",
+            "background-color":"#40beeb"
+        },
+        {
+            "values":[7737,2691,2202,7006],
+            "text":"B",
+             "background-color":"#305f74"
+        },
+        {
+            "values":[8574,9898,4084,1765],
+            "text":"C",
+             "background-color":"#4492a8"
+        },
+        {
+            "values":[5309,1602,8395,2908],
+            "text":"D",
+             "background-color":"#8e8e8e"
+        }
+    ]
+}]}
+};
+
+var rankflow_data_chart = {
+    "data": {
+    "graphset":[{
+        "type":"rankflow",
+        "plotarea":{
+            "margin":"40 20 20 20"
+        },
+        "title":{
+            "text":"Rankflow Chart"
+        },
+        "scale-x":{
+            "labels":["ON-TIME","CANCELED<br>FLIGHTS"],
+            "values":["ON-TIME","CANCELED FLIGHTS"],
+            "item":{
+                "color":"black"
+            }
+        },
+        "options":{
+            "color-type":"palette",
+            "palette":["#40beeb","#305f74","#4492a8","#8e8e8e","#dddddd","#83deff","#086893","#85bdcd"]
+        },
+        "series":[
+            {
+                "text":"Air West",
+                "ranks":[3,4],
+                "rank":1,
+                "background-color":"#40beeb"
+            },
+            {
+                "text":"Braniff",
+                "ranks":[1,1],
+                "rank":2,
+                "background-color":"#305f74"
+            },
+            {
+                "text":"Capital",
+                "ranks":[6,2],
+                "rank":3,
+                "background-color":"#4492a8"
+            },
+            {
+                "text":"Eastern",
+                "ranks":[8,7],
+                "rank":4,
+                "background-color":"#8e8e8e"
+            },
+            {
+                "text":"Galaxy",
+                "ranks":[4,5],
+                "rank":5,
+                "background-color":"#dddddd"
+            },
+            {
+                "text":"PSA",
+                "ranks":[5,3],
+                "rank":6,
+                "background-color":"#83deff"
+            },
+            {
+                "text":"Pan Am",
+                "ranks":[2,6],
+                "rank":7,
+                "background-color":"#086893"
+            },
+            {
+                "text":"Sunbird",
+                "ranks":[7,8],
+                "rank":8,
+                "background-color":"#85bdcd"
+            }
+        ]
+    }]}
+};
+
+var treemap_data_chart = {
+    "data": {
+    "graphset":[{
+            "type":"treemap",
+            "plotarea":{
+                "margin":"35 5 5 7"
+            },
+            "title": {
+              "text": "Treemap"
+            },
+            "options":{
+                "color-type":"palette",
+                "palette":["#40beeb","#305f74","#4492a8","#8e8e8e","#dddddd","#83deff","#086893","#85bdcd"]
+            },
+            "series":[
+                {
+                    "text":"North America",
+                    "background-color":"#40beeb",
+                    "children":[
+                        {
+                            "text":"United States",
+                            "children":[
+                                {
+                                    "text":"Texas",
+                                    "value":21
+                                },
+                                {
+                                    "text":"California",
+                                    "value":53
+                                }
+                            ]
+                        },
+                        {
+                            "text":"Canada",
+                            "value":113
+                        },
+                        {
+                            "text":"Mexico",
+                            "value":78
+                        }
+                    ]
+                },
+                {
+                    "text":"Europe",
+                    "background-color":"#305f74",
+                    "children":[
+                        {
+                            "text":"France",
+                            "value":42
+                        },
+                        {
+                            "text":"Spain",
+                            "value":28
+                        }
+                    ]
+                },
+                {
+                    "text":"Africa",
+                    "children":[
+                        {
+                            "text":"Egypt",
+                            "value":22
+                        },
+                        {
+                            "text":"Congo",
+                            "value":38
+                        }
+                    ]
+                },
+                {
+                    "text":"Asia",
+                    "children":[
+                        {
+                            "text":"India",
+                            "value":92
+                        },
+                        {
+                            "text":"China",
+                            "value":68
+                        }
+                    ]
+                },
+                {
+                    "text":"South America",
+                    "children":[
+                        {
+                            "text":"Brazil",
+                            "value":42
+                        },
+                        {
+                            "text":"Argentina",
+                            "value":28
+                        }
+                    ]
+                },
+                {
+                    "text":"Australia (continent)",
+                    "children":[
+                        {
+                            "text":"Australia (country)",
+                            "value":121
+                        },
+                        {
+                            "text":"New Zealand",
+                            "value":24
+                        }
+                    ]
+                }
+            ]
+        }]}
+};
+
+var wordcloud_data_chart = {
+    "data": {
+    "graphset":[{
+            "type":"wordcloud",
+            "title": {
+              "text": "Wordcloud"
+            },
+            "plotarea":{
+                "margin":"30 5"
+            },
+            "options":{
+                "text":"Data Data Data Data Data Data Data Data Data Data Visualization Visualization Visualization Visualization Visualization Visualization Visualization Visualization Visualization HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript Charts Charts Charts Charts Charts Charts Piano Piano Piano Piano  Bar Bar Bar Bar Bar Bar  Line Line Line Line Line Line Area Area Area Area Area  ZingChart ZingChart ZingChart ZingChart ZingChart  Diagrams Diagrams Diagrams Diagrams Funnel Funnel Funnel Funnel Labels Labels Labels Labels Markers Markers Markers Pareto Pareto Pareto Pareto  ",
+                
+                "color-type":"palette",
+                "palette":["#40beeb","#305f74","#4492a8","#8e8e8e","#83deff","#086893","#85bdcd"]
+
+            }
+       }]}
+};
+
+var network_data_chart = {
+    "data": {
+        "graphset":[
+            {
+                    "title": {
+                        "text": "Network Diagram"
+                    },
+                "layers":{
+                    "graphset":false,
+                    "graph":false,
+                    "objects-bottom":false,
+                    "static":false,
+                    "guide":false,
+                    "plotarea":false
+                },
+                "type":"diagram",
+                "-plotarea":{
+                    "margin":"0"
+                },
+                "tooltip":{
+                    
+                },
+                "options":{
+                    "type":"",
+                    "layout":"tree-right",
+                    "style":{
+                        "link":{
+                            "line-width":1,
+                            "label":{
+                                "font-size":9
+                            }
+                        },
+                        "item":{
+                            "size":15,
+                            "border-width":1,
+                            "hover-state":{
+                                "background-color":"#f90"
+                            }
+                        }
+                    },
+                    "items":[
+                        {
+                            "id":"s5",
+                            "type":"circle",
+                            "text":"5",
+                            "style":{
+                                "tooltip":{
+                                    "text":"Stage 5 - Start"
+                                }
+                            }
+                        },
+                        {
+                            "id":"s12",
+                            "type":"circle",
+                            "text":"12",
+                            "parent":"s5",
+                            "parentlink":{
+                                "text":"0,5<br>(1.0)",
+                                "arrows":"00"
+                            }
+                        },
+                        {
+                            "id":"s1",
+                            "type":"circle",
+                            "text":"1",
+                            "parent":"s12",
+                            "parentlink":{
+                                "text":"4,5<br>(1.0)",
+                                "arrows":"01"
+                            }
+                        },
+                        {
+                            "id":"s7",
+                            "type":"diamond",
+                            "text":"7",
+                            "parent":"s1",
+                            "parentlink":{
+                                "text":"5,2 (1.0)",
+                                "arrows":"10"
+                            }
+                        },
+                        {
+                            "id":"s10",
+                            "type":"triangle",
+                            "text":"10",
+                            "parent":"s7",
+                            "style":{
+                                "label":{
+                                    "offset-y":5
+                                }
+                            },
+                            "parentlink":{
+                                "text":"6,2<br>(1.0)",
+                                "arrows":"11"
+                            }
+                        },
+                        {
+                            "id":"s3",
+                            "type":"circle",
+                            "text":"3",
+                            "parent":"s10",
+                            "parentlink":{
+                                "text":"7,0<br>(1.0)"
+                            }
+                        },
+                        {
+                            "id":"s8",
+                            "type":"rectangle",
+                            "text":"8",
+                            "parent":"s3",
+                            "parentlink":{
+                                "text":"8,3<br>(1.0)"
+                            }
+                        },
+                        {
+                            "id":"s2",
+                            "type":"trapezoid",
+                            "text":"2",
+                            "parent":"s8",
+                            "parentlink":{
+                                "text":"9,1<br>(0.9446254)"
+                            }
+                        },
+                        {
+                            "id":"s9",
+                            "type":"circle",
+                            "text":"9",
+                            "parent":"s2",
+                            "parentlink":{
+                                "text":"10,2<br>(0.9446254)"
+                            }
+                        },
+                        {
+                            "id":"s11",
+                            "type":"circle",
+                            "text":"11",
+                            "parent":"s9",
+                            "style":{
+                                "top-state":{
+                                    "size":12
+                                },
+                                "tooltip":{
+                                    "text":"Stage 11 - End"
+                                }
+                            },
+                            "parentlink":{
+                                "text":"11,0<br>(0.9446254)"
+                            }
+                        },
+                        {
+                            "id":"s4",
+                            "type":"circle",
+                            "text":"4",
+                            "parent":"s8",
+                            "parentlink":{
+                                "text":"9,4 (0.055374593)"
+                            }
+                        },
+                        {
+                            "id":"s6",
+                            "type":"circle",
+                            "text":"6",
+                            "parent":"s4",
+                            "parentlink":{
+                                "text":"10,2<br>(0.055374593)"
+                            }
+                        },
+                        {
+                            "id":"s0",
+                            "type":"circle",
+                            "text":"0",
+                            "parent":"s6",
+                            "style":{
+                                "top-state":{
+                                    "size":12
+                                },
+                                "tooltip":{
+                                    "text":"Stage 0 - End"
+                                }
+                            },
+                            "parentlink":{
+                                "text":"11,0<br>(0.055374593)"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+};
+
+var bar_rules_data_chart = {
+    "data": {
+        "graphset":[
+            {
+                "type":"bar",
+                "title":{
+                    "text":"Bar Rules"
+                },
+                "plot":{
+                    "rules":[
+                        {
+                            "rule":"%v > 0"
+                        },
+                        {
+                            "rule":"%v < 0",
+                            "background-color":"#cc3300"
+                        }
+                    ]
+                },
+                "series":[
+                    {
+                        "values":[50,-20,68,98,-35]
+                    }
+                ]
+            }
+        ]
+    }
+};
+
+var currency_data_chart = {
+    "data": {
+        "type":"line",
+        "utc":true,
+        "timezone":-7,
+        "title":{
+            "text":"Currency - Time"
+        },
+        "subtitle":{
+            "text":"US Dollar - PDT"
+        },
+        "scale-y":{
+            "min-value":"auto",
+            "format":"$%v",
+            "decimals":2,
+            "label":{
+                "text":"Stock Price"
+            }
+        },
+        "scale-x":{
+            "step":"day",
+            "max-items":4,
+            "min-value":"1408226922000",
+            "transform":{
+                "type":"date",
+                "all":"%M %d<br>%h:%i %A",
+                "item":{
+                    "visible":false
+                }
+            },
+            "zooming":1
+        },
+        "tooltip":{
+            "text":"%k<br><br>Open: $%node-value-stock-open<br>High: $%node-value-stock-high<br>Low: $%node-value-stock-low<br>Close: $%node-value-stock-close",
+            "decimals":2,
+            "text-align":"left"
+        },
+        "plot":{
+            "-max-nodes":60,
+            "mode":"fast",
+            "exact":1
+        },
+        "plotarea":{
+            "margin":"70 50 50 90"
+        },
+        "series":[
+            {
+                "values":[[1408226922000,[213,280,128,216]],
+                [1408313322000,[233,306,158,226]],
+                [1408399722000,[233,306,158,226]],
+                [1408486122000,[226,281,157,209]],
+                [1408572522000,[209,254,136,211]],
+                [1408658922000,[211,270,167,214]],
+                [1408745322000,[214,283,159,240]],
+                [1408831722000,[214,283,159,240]],
+                [1409004522000,[240,305,170,238]],
+                [1409090922000,[238,311,198,264]],
+                [1409177322000,[264,337,215,289]],
+                [1409263722000,[289,356,245,261]],
+                [1409350122000,[261,301,213,250]],
+                [1409436522000,[261,301,213,250]]]
+            }
+        ]
+    }
+};
+
+var patterns_data_chart = {
+    "data": {
+        "type":"bar",
+        "title":{
+            "text":"Patterns"
+        },
+        "crosshair-x":{
+            "visible":0
+        },
+        "plot":{
+            
+        },
+        "series":[
+            {
+                "values":[5,10],
+                "background-image":"PATTERN_WIDE_UPWARD_DIAGONAL"
+            },
+            {
+                "values":[2,5],
+                "background-image":"PATTERN_SHADE_25"
+            },
+            {
+                "values":[12,6],
+                "background-image":"PATTERN_LIGHT_VERTICAL"
+            },
+            {
+                "values":[1,5],
+                "background-image":"PATTERN_SHINGLE"
+            }
+        ]
+    }
+};
+
+var arrows_data_chart = {
+    "data": {
+        "type": "scatter",
+            "title": {
+              "text": "Arrows"
+            },
+            "plot":{},
+            "scale-x":{
+            },
+            "series": [
+                {
+                    "values": [4,5,8,4,9,10,7,8,9]
+                }
+            ],
+            "arrows":[
+            {
+                "background-color":"#305f74",
+                "alpha":.02,
+                "border-width":"0px",
+                "from":{
+                    "hook":"node:plot=0,index=0"
+                },
+                "to":{
+                    "hook":"node:plot=0,index=8"
+                },
+                "size":"3px"
+
+            }
+        ]
+    }
+};
+
+var images_data_chart = {
+    "data": {
+        "type": "bar",
+            "title": {
+              "text": "Images"
+            },
+            "plot":{
+                "background-image":"../images/ocean-wave.jpg"
+            },
+            "scale-x":{
+            },
+            "series": [
+            {
+                "values": [4,5,8,4,9,10,7,8,9]
+            }
+        ]
+    }
+};
+
+var shapes_data_chart = {
+    "data": {
+        "type": "line",
+        "title": {
+          "text": "Shapes"
+        },
+        "plot":{
+
+        },
+        "scale-x":{
+            "offset-start":"30px",
+            "offset-end":"30px"
+        },
+        "series": [
+            {
+                "values": [5,10,15,5,10,5]
+            }
+        ],
+        "shapes":[
+            {
+                "type":"plus",
+                "line-width":10,
+                "line-color":"#8e8e8e",
+                "size":20,
+                "x":80,
+                "y":80
+            },
+            {
+                "type":"rect",
+                "background-color":"#305f74",
+                "height":40,
+                "width":40,
+                "x":120,
+                "y":130
+            },
+            {
+                "type":"star7",
+                "background-color":"#4492a8",
+                "size":18,
+                "x":210,
+                "y":80
+            },
+            {
+                "type":"triangle",
+                "background-color":"#85bdcd",
+                "size":20,
+                "x":300,
+                "y":120
+            },
+        ]
+    }
+};
+
+var stacked_data_chart = {
+    "data": {
+        "type":"bar",
+        "stacked":true,
+        "stack-type":"normal",
+        "title": {
+          "text": "Bar Stacked"
+        },
+        "series":[
+            {
+                "values":[11,16,7,14,11]
+            },
+            {
+                "values":[28,35,22,35,30]
+            },
+            {
+                "values":[14,21,29,19,31]
+            }
+        ]
+    }
+};
+
+var barstack01 = {
+    "data": [{
+            "values":[11,16,7,14,11],
+            "stack":1
+        },
+        {
+            "values":[28,35,22,35,30],
+            "stack":2
+        },
+        {
+            "values":[14,21,29,19,31],
+            "stack":2
+        }]
+};
+
+var barstack02 = {
+    "data": [{
+            "values":[11,16,7,14,11],
+            "stack":1
+        },
+        {
+            "values":[28,35,22,35,30],
+            "stack":1
+        },
+        {
+            "values":[14,21,29,19,31],
+            "stack":1
+        }]
+};
+
+var parent_data_chart = {
+    "data": {
+        "graphset":[
+            {
+                "id":"years",
+                "x":"0%",
+                "y":"0%",
+                "width":"100%",
+                "height":"40%",
+                "type":"bar",
+                "title":{
+                    "text":"Parent Child Drilldown",
+                },
+                "plotarea":{
+                    "margin":"50 30 40 50"
+                },
+                "scale-x":{
+                    "values":"1994:2014",
+                    "max-items":99,
+                    "guide":{
+                        "visible":false
+                    }
+                },
+                "plot":{
+                    "bars-overlap":"100%",
+                    "rules":[]
+                },
+                "scale-y":{
+                    "values":"0:150:25",
+                    "min-value":0,
+                    "guide":{
+                        "visible":false
+                    }
+                },
+                "series":[
+                    {
+                        "values":[81,106,110,114,133,108,101,120,116,113,123,130,132,124,128,122,115,104,123,146,113],
+                        "url":"kitchen/chart_scripts/data-months.php?year=%scale-key-value&filepath=kitchen/chart_scripts",
+                        "target":"graph=months",
+                        "z-index":1,
+                    },
+                    {
+                        "values":[150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150],
+                        "background-color":"#E8E7E8",
+                        "maxTrackers":0,
+                        "z-index":0
+                    }
+                ]
+            },
+            {
+                "id":"months",
+                "x":"0%",
+                "y":"40%",
+                "width":"100%",
+                "height":"30%",
+                "type":"null",
+                "labels":[
+                    {
+                        "text":"Click on a YEAR above to view monthly stats",
+                        "width":400,
+                        "height":40,
+                        "margin":"auto auto",
+                        "border-width":1,
+                        "border-radius":2,
+                        "padding":20,
+                        "background-color":"#f9f9f9"
+                    }
+                ]
+            },
+            {
+                "id":"days",
+                "x":"0%",
+                "y":"70%",
+                "width":"100%",
+                "height":"30%",
+                "type":"null",
+                "labels":[
+                    {
+                        "text":"Click on a MONTH above to view daily stats",
+                        "width":400,
+                        "height":40,
+                        "height":40,
+                        "margin":"auto auto",
+                        "border-width":1,
+                        "border-radius":2,
+                        "padding":20,
+                        "background-color":"#f9f9f9"
+                    }
+                ]
+            }
+        ]
+    }
+};
