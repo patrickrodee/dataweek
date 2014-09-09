@@ -191,6 +191,10 @@ h2.thin {
 .col:not(:last-child) {
 	margin-right: 100px;
 }
+.col_1_of_1 {
+	width: 1860px;
+	height: ;
+}
 .col_1_of_2 {
 	width: 880px;
 	height: 100%;
@@ -243,6 +247,9 @@ ul#float-right > li {
 }
 .mobile-demo {
 
+}
+.final_row {
+	margin-left: 327px;
 }
 #laptop-cutout {
 	width: 1835px;

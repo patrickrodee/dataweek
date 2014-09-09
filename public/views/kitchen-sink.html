@@ -24,45 +24,24 @@
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="line_chart" zc-data="line_data"></div>
 					<div class="button-row" id="lineBtns">
-			          <button type="button" class="btn btn-default btn-xs active" id="line1">Standard</button>
-			          <button type="button" class="btn btn-default btn-xs" id="line2">Spline</button>
-			          <button type="button" class="btn btn-default btn-xs" id="line3">Stepped</button>
-			          <button type="button" class="btn btn-default btn-xs" id="line4">Jumped</button>
-			          <!--<button type="button" class="btn btn-primary btn-xs" id="line5">3D</button>-->
-			          <div class="btn-group" data-toggle="buttons" id="lineDim">
-			            <label class="btn btn-primary btn-xs active"><input type="radio" name="options" id="line2d" checked="" class="active"> 2D </label>
-			            <label class="btn btn-primary btn-xs"><input type="radio" name="options" id="line3d" class=""> 3D </label>
-			          </div>
-			          <span class="glyphicon glyphicon-info-sign" id="lineInfo" data-toggle="popover" data-placement="left" title="" data-content="Line charts are cool." data-original-title="Line Chart"></span>
+			          <select ng-model="line_action" ng-options="action.name for action in line_chart_actions" ng-change="modify('line_chart',line_action.data)"></select>
+			          <button ng-model="line_dimension" ng-click="toggle_line('line_chart')">{{line_dimension}}</button>
 			        </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="bar_chart" zc-data="bar_data"></div>
 					<div class="button-row" id="barBtns">
-			          <button type="button" class="btn btn-default btn-xs active" id="bar1">Standard</button>
-			          <button type="button" class="btn btn-default btn-xs" id="bar3">Cone</button>
-			          <div class="btn-group" data-toggle="buttons" id="barDim">
-			            <label class="btn btn-primary btn-xs active"><input type="radio" name="options" id="bar2d" checked=""> 2D </label>
-			            <label class="btn btn-primary btn-xs"><input type="radio" name="options" id="bar3d"> 3D </label>
-			          </div>
-			          <button type="button" class="btn btn-default btn-xs" id="bar2">Cylinder</button>
-			          <button type="button" class="btn btn-default btn-xs" id="bar4">Pyramid</button>
-			          <span class="glyphicon glyphicon-info-sign" id="barInfo" data-toggle="popover" data-placement="left" title="" data-content="Line charts are cool." data-original-title="Bar Chart"></span>
+			          <select ng-model="bar_action" ng-options="action.name for action in bar_chart_actions" ng-change="modify('bar_chart',bar_action.data)"></select>
+			          <button ng-model="bar_dimension" ng-click="toggle_bar('bar_chart')">{{bar_dimension}}</button>
 			        </div>
 			    </div>
 
 			    <div class="col col_1_of_3">
 			    	<div class="chart-demo" zingchart id="area_chart" zc-data="area_data"></div>
 			    	<div class="button-row" id="areaBtns">
-			          <button type="button" class="btn btn-default btn-xs active" id="area1">Standard</button>
-			          <button type="button" class="btn btn-default btn-xs" id="area2">Spline</button>
-			          <button type="button" class="btn btn-default btn-xs" id="area3">Stepped</button>
-			          <div class="btn-group" data-toggle="buttons" id="areaDim">
-			            <label class="btn btn-primary btn-xs active"><input type="radio" name="options" id="area2d" checked=""> 2D </label>
-			            <label class="btn btn-primary btn-xs"><input type="radio" name="options" id="area3d"> 3D </label>
-			          </div>
-			          <span class="glyphicon glyphicon-info-sign" id="areaInfo" data-toggle="popover" data-placement="left" title="" data-content="Line charts are cool." data-original-title="Area Chart"></span>
+			          <select ng-model="area_action" ng-options="action.name for action in area_chart_actions" ng-change="modify('area_chart',area_action.data)"></select>
+			          <button ng-model="area_dimension" ng-click="toggle_area('area_chart')">{{area_dimension}}</button>
 			        </div>
 			    </div>
 
@@ -73,34 +52,25 @@
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="pie_chart" zc-data="pie_data"></div>
 					<div class="button-row" id="pieBtns">
-			          <button type="button" class="btn btn-default btn-xs active" id="pie1">Pie</button>
-			          <button type="button" class="btn btn-default btn-xs" id="pie2">Donut/Ring</button>
-			          <button type="button" class="btn btn-default btn-xs" id="pie3">Nested</button>
-			          <div class="btn-group" data-toggle="buttons" id="pieDim">
-			            <label class="btn btn-primary btn-xs active"><input type="radio" name="options" id="pie2d" checked=""> 2D </label>
-			            <label class="btn btn-primary btn-xs"><input type="radio" name="options" id="pie3d"> 3D </label>
-			          </div>
-			          <span class="glyphicon glyphicon-info-sign" id="pieInfo" data-toggle="popover" title="" data-content="Line charts are cool." data-original-title="Pie Chart"></span>
+			          <select ng-model="pie_action" ng-options="action.name for action in pie_chart_actions" ng-change="set_values_and_modify('pie_chart', pie_action.values, pie_action.data)"></select>
+			          <button ng-model="pie_dimension" ng-click="toggle_pie('pie_chart')">{{pie_dimension}}</button>
 			        </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="scatter_chart" zc-data="scatter_data"></div>
 					<div class="button-row">
-				        <button type="button" class="btn btn-default btn-xs" id="scatter1">Cycle Markers</button>
-						<a href="#/" class="glyphicon glyphicon-info-sign" id="scatterInfo" data-toggle="popover" data-placement="left" title="Scatter Chart" data-content="Scatter chart nodes can be changed to a variety of shapes.<br><a href='http://www.zingchart.com/docs/chart-types/scatter/'>More Info...</a>"></a>
-				      </div>
+						<!--
+						<select ng-model="scatter_action" ng-options="action.name for action in scatter_chart_actions" ng-change="modify('scatter_chart',scatter_action.data)"></select>
+				        <button ng-model="scatter_dimension" ng-click="toggle_scatter('scatter_chart')">{{scatter_dimension}}</button>
+					    -->
+				    </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="radar_chart" zc-data="radar_data"></div>
 					<div class="button-row" id="radarBtns">
-			          <button type="button" class="btn btn-default btn-xs active" id="radar1">Line</button>
-			          <button type="button" class="btn btn-default btn-xs" id="radar2">Area</button>
-			          <button type="button" class="btn btn-default btn-xs" id="radar3">Rose</button>
-			          <button type="button" class="btn btn-default btn-xs" id="radar4">Dots</button>
-			          <button type="button" class="btn btn-default btn-xs" id="radar5">Mixed</button>
-			          <span class="glyphicon glyphicon-info-sign" id="radarInfo" data-toggle="popover" data-placement="left" title="" data-content="Line charts are cool." data-original-title="Radar Chart"></span>
+			          <select ng-model="radar_action" ng-options="action.name for action in radar_chart_actions" ng-change="set_series_and_modify('radar_chart', radar_action.series, radar_action.data)"></select>
 			      </div>
 				</div>
 			</div>
@@ -110,33 +80,78 @@
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="stock_chart" zc-data="stock_data"></div>
 					<div class="button-row" id="stockBtns">
-			        <button type="button" class="btn btn-default btn-xs active" id="stock1">Candlestick</button>
-			          <button type="button" class="btn btn-default btn-xs" id="stock2">Whisker</button>
-			          <span class="glyphicon glyphicon-info-sign" id="stockInfo" data-toggle="popover" data-placement="left" title="" data-content="Line charts are cool." data-original-title="Stock Chart"></span>
+						<select ng-model="stock_action" ng-options="action.name for action in stock_chart_actions" ng-change="modify('stock_chart',stock_action.data)"></select>
 				    </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="bubble_chart" zc-data="bubble_data"></div>
 					<div class="button-row" id="bubbleBtns">
-				        <button type="button" class="btn btn-default btn-xs active" id="bubble3">Square Root</button>
-				          <button type="button" class="btn btn-default btn-xs" id="bubble1">Scale Radius</button>
-				          <button type="button" class="btn btn-default btn-xs" id="bubble2">Area</button>
-				          <span class="glyphicon glyphicon-info-sign" id="bubbleInfo" data-toggle="popover" data-placement="left" title="" data-content="Line charts are cool." data-original-title="Bubble Chart"></span>
+				        <select ng-model="bubble_action" ng-options="action.name for action in bubble_chart_actions" ng-change="modify('bubble_chart',bubble_action.data)"></select>
 			        </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="piano_chart" zc-data="piano_data"></div>
 					<div class="button-row" id="pianoBtns">
-				        <button type="button" class="btn btn-default btn-xs active" id="piano2">Brightness</button>
-				        <button type="button" class="btn btn-default btn-xs" id="piano1">Size</button>
-				        <button type="button" class="btn btn-default btn-xs" id="piano3">Horizontal</button>
-				        <button type="button" class="btn btn-default btn-xs" id="piano4">Vertical</button>
-				        <span class="glyphicon glyphicon-info-sign" id="pianoInfo" data-toggle="popover" data-placement="left" title="" data-content="Line charts are cool." data-original-title="Piano Chart"></span>
+				        <select ng-model="piano_action" ng-options="action.name for action in piano_chart_actions" ng-change="modify('piano_chart',piano_action.data)"></select>
 				    </div>
 				</div>
 				
+			</div>
+
+			<div class="row lotsa_rows">
+
+				<div class="col col_1_of_3">
+					<div class="chart-demo" zingchart id="bullet_chart" zc-data="bullet_data"></div>
+					<div class="button-row" id="bulletBtns">
+				        <select ng-model="bullet_action" ng-options="action.name for action in bullet_chart_actions" ng-change="modify('bullet_chart',bullet_action.data)"></select>
+				    </div>
+				</div>
+
+				<div class="col col_1_of_3">
+					<div class="chart-demo" zingchart id="gauge_chart" zc-data="gauge_data"></div>
+					<div class="button-row" id="gaugeBtns">
+				        <select ng-model="gauge_action" ng-options="action.name for action in gauge_chart_actions" ng-change="modify('gauge_chart',gauge_action.data)"></select>
+				    </div>
+				</div>
+
+				<div class="col col_1_of_3">
+					<div class="chart-demo" zingchart id="funnel_chart" zc-data="funnel_data"></div>
+					<div class="button-row" id="funnelBtns">
+				        <select ng-model="funnel_action" ng-options="action.name for action in funnel_chart_actions" ng-change="modify('funnel_chart',funnel_action.data)"></select>
+				    </div>
+				</div>
+
+			</div>
+
+			<div class="row lotsa_rows">
+
+				<div class="col col_1_of_3 final_row">
+					<div class="chart-demo" zingchart id="venn_chart" zc-data="venn_data"></div>
+					<div class="button-row" id="vennBtns">
+				        <select ng-model="venn_action" ng-options="action.name for action in venn_chart_actions" ng-change="modify('venn_chart',venn_action.data)"></select>
+				    </div>
+				</div>
+
+				<div class="col col_1_of_3">
+					<div class="chart-demo" zingchart id="pareto_chart" zc-data="pareto_data"></div>
+					<div class="button-row" id="paretoBtns">
+				        <select ng-model="pareto_action" ng-options="action.name for action in pareto_chart_actions" ng-change="modify('pareto_chart',pareto_action.data)"></select>
+				    </div>
+				</div>
+
+			</div>
+
+			<div class="row lotsa_rows">
+
+				<div class="col col_1_of_1">
+					<div class="chart-demo" zingchart id="mixed_chart" zc-data="mixed_data"></div>
+					<div class="button-row" id="mixedBtns">
+						<select ng-model="mixed_action" ng-options="action.name for action in mixed_chart_actions" ng-change="modify('mixed_chart',mixed_action.data)"></select>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

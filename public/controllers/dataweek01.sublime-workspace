@@ -1,0 +1,792 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"l",
+				"laptop-cutout"
+			],
+			[
+				"time",
+				"timeToRun"
+			],
+			[
+				"points",
+				"points_to_render"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"new",
+				"newVals4"
+			],
+			[
+				"v",
+				"values"
+			],
+			[
+				"intera",
+				"interact-demo"
+			],
+			[
+				"point",
+				"point_options"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"wid",
+				"width_to_display"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"eva",
+				"evaluate_data_marker_rules"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"p",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"backgroud",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/index.html",
+			"settings":
+			{
+				"buffer_size": 4247,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/views/big-data.html",
+			"settings":
+			{
+				"buffer_size": 2412,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/views/dataviz-like-ours.html",
+			"settings":
+			{
+				"buffer_size": 519,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "DatavizLikeOursCtrl.js",
+			"settings":
+			{
+				"buffer_size": 361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "BigDataCtrl.js",
+			"settings":
+			{
+				"buffer_size": 1761,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/views/kitchen-sink.html",
+			"settings":
+			{
+				"buffer_size": 8533,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/app.js",
+			"settings":
+			{
+				"buffer_size": 1211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/directives/ZingChartDirective.js",
+			"settings":
+			{
+				"buffer_size": 311,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/charts/BigDataCharts.js",
+			"settings":
+			{
+				"buffer_size": 164941,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/stylesheets/style.css",
+			"settings":
+			{
+				"buffer_size": 3421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/charts/KitchenSinkCharts.js",
+			"settings":
+			{
+				"buffer_size": 6387,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "KitchenSinkCtrl.js",
+			"settings":
+			{
+				"buffer_size": 559,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/presenter/Downloads/Archive/kitchen-sink.html",
+			"settings":
+			{
+				"buffer_size": 41464,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/presenter/Documents/dataweek/public/chart_scripts/piano.js",
+			"settings":
+			{
+				"buffer_size": 593,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/presenter/Documents/dataweek/public/javascripts/shared.js",
+		"/Users/presenter/Documents/dataweek/public/chart_scripts/bubble.js",
+		"/Users/presenter/Documents/dataweek/public/chart_scripts/stock.js",
+		"/Users/presenter/Documents/dataweek/public/chart_scripts/radar.js",
+		"/Users/presenter/Documents/dataweek/public/chart_scripts/scatter.js",
+		"/Users/presenter/Documents/dataweek/public/chart_scripts/pie.js",
+		"/Users/presenter/Documents/dataweek/public/stylesheets/bootstrap.css",
+		"/Users/presenter/Downloads/Archive/kitchen/chart_scripts/area.js",
+		"/Users/presenter/Downloads/Archive/kitchen/chart_scripts/bar.js",
+		"/Users/presenter/Downloads/Archive/kitchen/chart_scripts/line.js",
+		"/Users/presenter/Documents/dataweek/public/services/ZingChartFactory.js",
+		"/Users/presenter/Documents/dataweek/public/directives/ZingChartDirective.js",
+		"/Users/presenter/Documents/dataweek/public/charts/BigDataCharts.js",
+		"/Users/presenter/Documents/dataweek/public/controllers/BigDataCtrl.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"modify",
+			"ng-selected=\"timeToRun('interact-dem0',",
+			"scatter",
+			"button",
+			"\"button",
+			"<button",
+			"btn-xs",
+			"btn",
+			"Half",
+			"zingchart",
+			" zc-width=\"half\"",
+			" btn btn-default",
+			"title",
+			"class=\"big-data-demo\"",
+			"button",
+			"width",
+			"<h2 class=\"thin\"",
+			"<h2 class=\"dark-text\"",
+			"class=\"dark-background\"",
+			"dark",
+			"<h2>",
+			"h2>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/presenter/Documents/dataweek/public/index.html",
+					"settings":
+					{
+						"buffer_size": 4247,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4148,
+								4148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 346.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/presenter/Documents/dataweek/public/views/big-data.html",
+					"settings":
+					{
+						"buffer_size": 2412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								898,
+								898
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/presenter/Documents/dataweek/public/views/dataviz-like-ours.html",
+					"settings":
+					{
+						"buffer_size": 519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								481
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "DatavizLikeOursCtrl.js",
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "BigDataCtrl.js",
+					"settings":
+					{
+						"buffer_size": 1761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								725,
+								725
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/presenter/Documents/dataweek/public/views/kitchen-sink.html",
+					"settings":
+					{
+						"buffer_size": 8533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8499,
+								8499
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/presenter/Documents/dataweek/public/app.js",
+					"settings":
+					{
+						"buffer_size": 1211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								986,
+								986
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/presenter/Documents/dataweek/public/directives/ZingChartDirective.js",
+					"settings":
+					{
+						"buffer_size": 311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/presenter/Documents/dataweek/public/charts/BigDataCharts.js",
+					"settings":
+					{
+						"buffer_size": 164941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "/Users/presenter/Documents/dataweek/public/stylesheets/style.css",
+					"settings":
+					{
+						"buffer_size": 3421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2696,
+								2696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2013.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/presenter/Documents/dataweek/public/charts/KitchenSinkCharts.js",
+					"settings":
+					{
+						"buffer_size": 6387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5792,
+								5792
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2240.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "KitchenSinkCtrl.js",
+					"settings":
+					{
+						"buffer_size": 559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/presenter/Downloads/Archive/kitchen-sink.html",
+					"settings":
+					{
+						"buffer_size": 41464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18207,
+								18636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4843.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/Users/presenter/Documents/dataweek/public/chart_scripts/piano.js",
+					"settings":
+					{
+						"buffer_size": 593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.61958311722,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

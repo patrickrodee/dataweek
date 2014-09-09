@@ -24,7 +24,7 @@ angular.module('MyApp')
 
 		$scope.points_to_render = $scope.point_options[0];
 
-		$scope.time_to_render = "0.157s";
+		$scope.time_to_render = "0.357s";
 
 		$scope.modify = function(target, payload) {
 			zingchart.exec(target, 'modify', payload);

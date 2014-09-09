@@ -161,6 +161,37 @@ var radar_data_chart = {
 }
 };
 
+var radar_data_chart_series = {
+    'data' : [
+            {
+            "values": [5,10,15,5,14,5]
+        },
+        {
+            "values": [2,1,3,4,9,10]
+        },
+        {
+            "values": [6,9,3,2,6,3]
+        }
+    ]
+};
+
+var radar_data_chart_mixed = {
+            data : [
+                {
+                    "aspect":"line",
+            "values": [5,10,15,5,14,5]
+        },
+        {
+            "aspect":"dots",
+            "values": [2,1,3,4,9,10]
+        },
+        {
+            "aspect":"rose",
+            "values": [6,9,3,2,6,3]
+        }
+            ]
+        };
+
 var stock_data_chart = {
 	"data" : {
             "type": "stock",
@@ -314,4 +345,192 @@ var piano_data_chart = {
             }
             ]
         }
+};
+
+var bullet_data_chart = {
+    "data": {
+        "type": "bullet",
+        "title": {
+          "text": "Bullet Chart"
+        },
+        "plot":{
+
+        },
+        "series": [
+            {
+                "values":[98,87,12,92,93],
+                "goals":[90,75,25,80,90]
+            },
+            {
+                "values":[76,62,25,52,48],
+                "goals":[70,80,24,61,25]
+            },
+            {
+                "values":[81,54,37,40,57],
+                "goals":[62,70,29,54,41]
+            }
+        ]
+    }
+};
+
+var gauge_data_chart = {
+    "data": {
+        "type": "gauge",
+            "title": {
+              "text": "Gauge Chart"
+            },
+            "plotarea": {
+                "margin":"50 0 0 0"
+            },
+            "series": [
+               {
+                "values":[15],
+                "animation":{
+                        "method":5,
+                        "effect":2,
+                        "speed":3500
+                    }
+            },
+            {
+                "values":[62],
+                "animation":{
+                        "method":5,
+                        "effect":2,
+                        "speed":2500
+                    }
+            },
+            {
+                "values":[31],
+                "animation":{
+                        "method":5,
+                        "effect":2,
+                        "speed":2000
+                    }
+            },
+            {
+                "values":[80],
+                "animation":{
+                        "method":5,
+                        "effect":2,
+                        "speed":1500
+                    }
+            }
+            ]
+        }
+};
+
+var funnel_data_chart = {
+    "data": {
+      "type":"funnel",
+      "title": {
+        "text": "Funnel Chart"
+      },
+      "series":[
+        {
+          "values":[80]
+        },
+        {
+          "values":[62]
+        },
+        {
+          "values":[31]
+        },
+        {
+          "values":[15]
+        }
+      ]
+    }
+};
+
+var venn_data_chart = {
+    "data": {
+        "type":"venn",
+        "title": {
+              "text": "Venn Diagram"
+            },
+        "plotarea":{
+            "margin":"45 40 0 0"
+        },
+        "series":[
+            {
+                "values":[100],
+                "join":[5]
+            },
+            {
+                "values":[70],
+                "join":[5]
+            },
+            {
+                "values":[90],
+                "join":[5]
+            }
+        ]
+    }
+};
+
+var pareto_data_chart = {
+    "data": {
+        "type":"pareto",
+        "title": {
+          "text": "Pareto Chart"
+        },
+        "plotarea":{
+            "margin":"75 75 50 75"
+        },
+        "series":[
+            {
+                "type":"bar",
+                "values":[46420,43450,23500,12510],
+                "hover-state":{
+                    "visible":false
+                }
+            },
+            {
+                "type":"line",
+                "scales":"scale-x,scale-y-2"
+            }
+        ],
+        "scale-x":{
+            "values":["Platform","GUI","Runtime","Prod"]
+        },
+        "scale-y-2":{
+            "range":"0:100:20"
+        }
+    }
+};
+
+var mixed_data_chart = {
+    "data": {
+        "type":"mixed",
+        "title":{
+            "text":"Mixed - XY",
+            "height":"20px"
+        },
+        "plotarea":{
+            "margin":"80 150 60 60"
+        },
+        "scale-y":{
+            "line-color":"#7ca82b"
+        },
+        "-scale-y-2":{
+            "values":"0:100:10",
+            "line-color":"#1db0e1"
+        },
+        "-scale-x-2":{
+            "values":"1:10:2"
+        },
+        "series":[
+            {
+                "values":[8,31,12,41,24,20,16,40,9],
+                "type":"bar",
+                "hover-state":{
+                    "visible":0
+                }
+            },
+            {
+                "values":[11,26,7,44,11,28,42,26,13],
+                "type":"line"
+            }
+        ]
+    }
 };
