@@ -245,6 +245,8 @@
 
 			</div>
 
+			<!--
+
 			<div class="row lotsa_rows">
 				
 				<div class="col col_1_of_1">
@@ -258,10 +260,22 @@
 				<div class="col col_1_of_1">
 					<div class="chart-demo" zingchart id="tooltips_chart" zc-data="tooltips_data"></div>
 					<button ng-model="tooltips_current_text" ng-click="toggle_tooltips('tooltips_chart')">{{tooltips_current_text}}</button>
-					<div multi-select input-model="tooltips_actions" button-label="name" item-label="name" helper-elements="" tick-property="ticked"></div>
+					<div multi-select input-model="tooltips_actions" button-label="name" item-label="name" helper-elements="" tick-property="ticked" default-label="Select an option" on-item-click="modify_tooltips( data )"></div>
 				</div>
 
 			</div>
+
+			<div class="row lotsa_rows">
+				
+				<div class="col col_1_of_1">
+					<div class="chart-demo" zingchart id="zooming_chart" zc-data="zooming_data"></div>
+					<button ng-model="tooltips_current_text" ng-click="toggle_tooltips('tooltips_chart')">{{tooltips_current_text}}</button>
+					<div multi-select input-model="tooltips_actions" button-label="name" item-label="name" helper-elements="" tick-property="ticked" default-label="Select an option" on-item-click="modify_tooltips( data )"></div>
+				</div>
+
+			</div>
+
+			-->
 
 		</div>
 	</div>

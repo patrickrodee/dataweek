@@ -37,8 +37,10 @@ angular.module('MyApp')
 		$scope.area_stacked_data = area_stacked_data_chart;
 		$scope.drilldown_data = drilldown_data_chart;
 		$scope.parent_data = parent_data_chart;
+		/*
 		$scope.big_data = big_data_chart;
 		$scope.tooltips_data = tooltips_data_chart;
+		*/
 
 		//////////////////////////////////
 		// Actions ///////////////////////
@@ -292,31 +294,53 @@ angular.module('MyApp')
 		/************** Area Stacked Chart Specific **************/
 
 		$scope.toggle_tooltips = function(target) {
-			if ($scope.tooltips_actions.length > 2) {
+			if ($scope.tooltips_actions.length > 1) {
+				console.log($scope.tooltips_actions.length);
 				$scope.tooltips_actions = $scope.tooltips_actions_fixed;
 				$scope.tooltips_current_text = "Fixed";
+				$scope.setdata(target, tooltips_data_chart);
+				// Reapply the ticked options
+				angular.forEach( $scope.tooltips_actions, function( value, key ) {
+				    if ( value.ticked === true ) {
+				    	value.ticked = false;
+				    }
+				});
+				$scope.modify(target, tooltips_data_chart_FIXED);
 			}
 			else {
+				console.log($scope.tooltips_actions.length);
 				$scope.tooltips_actions = $scope.tooltips_actions_standard;
 				$scope.tooltips_current_text = "Standard";
+				$scope.setdata(target, tooltips_data_chart);
+				// Reapply the ticked options
+				angular.forEach( $scope.tooltips_actions, function( value, key ) {
+				    if ( value.ticked === true ) {
+				    	value.ticked = false;
+				    }
+				});
+				$scope.modify(target, tooltips_data_chart_STANDARD);
 			}
-			zingchart.exec(target, 'modify', {});
 		};
 
 		$scope.tooltips_actions_standard = [
-		{name: "Legend Item", 		data: {}, ticked: false},
-		{name: "X-Axis Item", 		data: {}, ticked: false},
-		{name: "Y-Axis Item", 		data: {}, ticked: false},
-		{name: "Sticky Tooltips", 	data: {}, ticked: false},
-		{name: "HTML Mode", 		data: {}, ticked: false}
+		{name: "Legend Item", 		data: {"object":"tooltip", "data": {"tooltip":{"text":"Student %k<br>%t Percentile: %v","text-align":"left","shadow":0,"border-radius":5,"x":null,"y":null}}}, 							ticked: false},
+		{name: "X-Axis Item", 		data: {"data": {"scaleX":{"tooltip":{"visible":1,"text":"X-Axis Tooltip","background-color":"white","border-radius":5,"border-width":1,"border-color":"#ddd","height":20}}}}, 			ticked: false},
+		{name: "Y-Axis Item", 		data: {"data": {"scaleY":{"tooltip":{"visible":1,"text":"Y-Axis Tooltip","background-color":"white","border-radius":5,"border-width":1,"border-color":"#ddd","height":20}}}}, 			ticked: false},
+		{name: "Sticky Tooltips", 	data: {"data": {"tooltip":{"text":"Student %k<br>%t Percentile: %v","text-align":"left","shadow":0,"border-radius":5,"sticky":1,"timeout":2000,"height":null}}}, 	ticked: false},
+		{name: "HTML Mode", 		data: {"object":"tooltip", "data": {"tooltip":{"html-mode":1,"height":85,"border-radius":5,"shadow":0,"x":null,"y":null,"text":"<style>th {border:1px solid #999;text-align:center;font-size:14px;padding:6px;}td{border:1px solid #999;text-align:center;font-size:14px;padding:10px;}</style><table style='border-radius:5px;'><thead><tr><th style='font-size:16px;'>%t</th></tr></thead><tbody><tr><td style='font-size:13px;'>%v%</td></tr></tbody></table>"}}}, ticked: false}
 		]
 
 		$scope.tooltips_actions_fixed = [
-		{name: "Fixed Position",	data: {}, ticked: false},
-		{name: "Sticky Tooltips",	data: {}, ticked: false}
+		{name: "Sticky Tooltips",	data: {"data": {"tooltip":{"text":"Student %k<br>%t Percentile: %v","text-align":"left","shadow":0,"border-radius":5,"sticky":1,"timeout":2000,"height":null}}}, 	ticked: false}
 		]
 
 		$scope.tooltips_actions = $scope.tooltips_actions_standard;
+		$scope.modify('tooltips_chart', tooltips_data_chart_STANDARD);
+		$scope.modify_tooltips = function( data ) {
+			//console.log(data);
+			$scope.modify('tooltips_chart', data.data);
+			console.log(data.data);
+		};
 		$scope.tooltips_current_text = "Standard";
 
 	}]);

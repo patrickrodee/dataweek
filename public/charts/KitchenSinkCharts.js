@@ -1833,7 +1833,7 @@ var tooltips_data_chart = {
     "data": {
         "type":"bar",
         "title":{
-            "text":"Tooltips"
+            "text":"Standard Tooltips"
         },
         "legend":{ 
         },
@@ -1850,7 +1850,7 @@ var tooltips_data_chart = {
                     "visible":0,
                     "text":"Stuff",
                     "background-color":"white"
-                    }
+                }
         },
         "scaleY":{
             "format":"%v%",
@@ -1883,5 +1883,40 @@ var tooltips_data_chart = {
                 "text":"Logic"
             }
         ]
+    }
+};
+
+var tooltips_data_chart_STANDARD = {
+    "data": {
+        "title": {
+            "text": "Standard Tooltips"
+        },
+        "tooltip":{
+            "text":"Student %k<br>%t Percentile: %v",
+            "text-align":"left",
+            "sticky":0,
+            "shadow":0,
+            "border-radius":5,
+            "x":null,
+            "y":null
+        }
+    }
+};
+
+var tooltips_data_chart_FIXED = {
+    "data": {
+        "title": {
+            "text": "Fixed Tooltips"
+        },
+        "tooltip":{
+            "text":"Student %k<br>%t Percentile: %v",
+            "text-align":"left",
+            "sticky":0,
+            "shadow":0,
+            "border-radius":5,
+            "x":"88%",
+            "y":"32%",
+            "height":null
+        }
     }
 };
