@@ -34,7 +34,11 @@ angular.module('MyApp')
 		$scope.images_data = images_data_chart;
 		$scope.shapes_data = shapes_data_chart;
 		$scope.stacked_data = stacked_data_chart;
+		$scope.area_stacked_data = area_stacked_data_chart;
+		$scope.drilldown_data = drilldown_data_chart;
 		$scope.parent_data = parent_data_chart;
+		$scope.big_data = big_data_chart;
+		$scope.tooltips_data = tooltips_data_chart;
 
 		//////////////////////////////////
 		// Actions ///////////////////////
@@ -264,14 +268,55 @@ angular.module('MyApp')
 
 		$scope.images_action = $scope.images_chart_actions[0];
 
-		/************** Images Chart Specific **************/
+		/************** Stacked Chart Specific **************/
 
 		$scope.stacked_chart_actions = [
-		{name: "Normal",	series: barstack01, 	data: {"data": {"stack-type": 'normal'}}},
-		{name: "100%", 		series: barstack02,		data: {}},
-		{name: "Grouped", 	series: barstack01,		data: {"data": {"stack-type": '100%'}}}
+		{name: "Normal",	series: barstack03, 	data: {"data":{"stack-type": 'normal'}}},
+		{name: "100%", 		series: barstack02,		data: {"data":{"stack-type": '100%'}}},
+		{name: "Grouped", 	series: barstack01,		data: {"data":{"stack-type": 'normal'}}}
 		]
 
 		$scope.stacked_action = $scope.stacked_chart_actions[0];
+
+		$scope.images_action = $scope.images_chart_actions[0];
+
+		/************** Area Stacked Chart Specific **************/
+
+		$scope.area_stacked_chart_actions = [
+		{name: "Normal", 	data: {"data":{"stack-type": 'normal'}}},
+		{name: "100%", 		data: {"data":{"stack-type": '100%'}}}
+		]
+
+		$scope.area_stacked_action = $scope.area_stacked_chart_actions[0];
+
+		/************** Area Stacked Chart Specific **************/
+
+		$scope.toggle_tooltips = function(target) {
+			if ($scope.tooltips_actions.length > 2) {
+				$scope.tooltips_actions = $scope.tooltips_actions_fixed;
+				$scope.tooltips_current_text = "Fixed";
+			}
+			else {
+				$scope.tooltips_actions = $scope.tooltips_actions_standard;
+				$scope.tooltips_current_text = "Standard";
+			}
+			zingchart.exec(target, 'modify', {});
+		};
+
+		$scope.tooltips_actions_standard = [
+		{name: "Legend Item", 		data: {}, ticked: false},
+		{name: "X-Axis Item", 		data: {}, ticked: false},
+		{name: "Y-Axis Item", 		data: {}, ticked: false},
+		{name: "Sticky Tooltips", 	data: {}, ticked: false},
+		{name: "HTML Mode", 		data: {}, ticked: false}
+		]
+
+		$scope.tooltips_actions_fixed = [
+		{name: "Fixed Position",	data: {}, ticked: false},
+		{name: "Sticky Tooltips",	data: {}, ticked: false}
+		]
+
+		$scope.tooltips_actions = $scope.tooltips_actions_standard;
+		$scope.tooltips_current_text = "Standard";
 
 	}]);

@@ -23,31 +23,31 @@ var DRILLDOWN1JSON = {
                 {
                     "text":"Dev Tools",
                     "values":[15],
-                    "url":"kitchen/drilldown/Dev.txt",
+                    "url":"./charts/drilldown/Dev.txt",
                     "target":"graph=d1"
                 },
                 {
                     "text":"Security Tools",
                     "values":[10],
-                    "url":"kitchen/drilldown/Security.txt",
+                    "url":"./charts/drilldown/Security.txt",
                     "target":"graph=d1"
                 },
                 {
                     "text":"Data Management",
                     "values":[25],
-                    "url":"kitchen/drilldown/Data.txt",
+                    "url":"./charts/drilldown/Data.txt",
                     "target":"graph=d1"
                 },
                 {
                     "text":"Visualization Tools",
                     "values":[20],
-                    "url":"kitchen/drilldown/Visualization.txt",
+                    "url":"./charts/drilldown/Visualization.txt",
                     "target":"graph=d1"
                 },
                 {
                     "text":"Site Performance",
                     "values":[25],
-                    "url":"kitchen/drilldown/Site.txt",
+                    "url":"./charts/drilldown/Site.txt",
                     "target":"graph=d1"
                 }
             ],

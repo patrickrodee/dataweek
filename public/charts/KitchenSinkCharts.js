@@ -1313,6 +1313,7 @@ var shapes_data_chart = {
 };
 
 var stacked_data_chart = {
+    "update": 0,
     "data": {
         "type":"bar",
         "stacked":true,
@@ -1335,21 +1336,24 @@ var stacked_data_chart = {
 };
 
 var barstack01 = {
+    "update": 0,
     "data": [{
-            "values":[11,16,7,14,11],
-            "stack":1
-        },
-        {
-            "values":[28,35,22,35,30],
-            "stack":2
-        },
-        {
-            "values":[14,21,29,19,31],
-            "stack":2
-        }]
+                "values":[11,16,7,14,11],
+                "stack":1
+            },
+            {
+                "values":[28,35,22,35,30],
+                "stack":2
+            },
+            {
+                "values":[14,21,29,19,31],
+                "stack":2
+            }
+        ]
 };
 
 var barstack02 = {
+    "update": 0,
     "data": [{
             "values":[11,16,7,14,11],
             "stack":1
@@ -1362,6 +1366,109 @@ var barstack02 = {
             "values":[14,21,29,19,31],
             "stack":1
         }]
+};
+
+var barstack03 = {
+    "update": 0,
+    "data": [
+            {
+                "values":[11,16,7,14,11],
+                "stack": 1
+            },
+            {
+                "values":[28,35,22,35,30],
+                "stack": 1
+            },
+            {
+                "values":[14,21,29,19,31],
+                "stack": 1
+            }
+        ]
+};
+
+var area_stacked_data_chart = {
+    "data": {
+        "type":"area",
+        "stacked":true,
+        "stack-type":"normal",
+        "title": {
+          "text": "Area Stacked",
+        },
+        "series":[
+            {
+                "values":[11,16,7,14,11]
+            },
+            {
+                "values":[28,35,22,35,30]
+            },
+            {
+                "values":[14,21,29,19,31]
+            }
+        ]
+    }
+};
+
+var drilldown_data_chart = {
+    "data": {
+        "history":{
+            "y":"40px"
+        },
+        "graphset":[
+            {
+                "id":"d1",
+                "type":"pie",
+                "title":{
+                    "text":"New Chart Drill Down - History"
+                },
+                "subtitle":{
+                    "y":"40px",
+                    "text":"Click a category to view tools!"
+                },
+                "plot":{
+                    "detach":false,
+                    "hover-state":{
+                        "visible":false
+                    },
+                },
+                "series":[
+                    {
+                        "text":"Dev Tools",
+                        "values":[15],
+                        "url":"/charts/drilldown/Dev.txt",
+                        "target":"graph=d1"
+                    },
+                    {
+                        "text":"Security Tools",
+                        "values":[10],
+                        "url":"/charts/drilldown/Security.txt",
+                        "target":"graph=d1"
+                    },
+                    {
+                        "text":"Data Management",
+                        "values":[25],
+                        "url":"/charts/drilldown/Data.txt",
+                        "target":"graph=d1"
+                    },
+                    {
+                        "text":"Visualization Tools",
+                        "values":[20],
+                        "url":"/charts/drilldown/Visualization.txt",
+                        "target":"graph=d1"
+                    },
+                    {
+                        "text":"Site Performance",
+                        "values":[25],
+                        "url":"/charts/drilldown/Site.txt",
+                        "target":"graph=d1"
+                    }
+                ],
+                "tooltip":{
+                    "text":"%v %",
+                    "shadow":false
+                }
+            }
+        ]
+    }
 };
 
 var parent_data_chart = {
@@ -1453,6 +1560,327 @@ var parent_data_chart = {
                         "background-color":"#f9f9f9"
                     }
                 ]
+            }
+        ]
+    }
+};
+
+var big_data_chart = {
+    "data": {
+        "graphset":[
+        {
+        "type":"mixed",
+        "title":{
+            "text":"Big Chart",
+        },
+        "subtitle":{
+            "text":"Subtitle",
+            "align":"left",
+            "background-color":"#8e8e8e",
+            "y":"28px"
+        },
+        "source":{
+                    "text":"Source: Some Website"
+        },
+        "legend":{
+            "layout":"x2",
+            "width":"200px",
+            "alpha":1,
+            "shadow":0,
+            "max-items":2,
+            "overflow":"page",
+            "draggable":true,
+            "minimize":true,
+            "header":{
+                "text":"Legend Info"
+            },
+            "footer":{
+                "text":"- Click Box Icon in Header to Minimize<br>- Click and Drag Cross Icon to Drag",
+                "font-size":"8px"
+            },
+            "icon":{
+                "line-color":"white"    
+            }
+        },
+        "plotarea":{
+            "margin":"160px 200px 130px 90px"
+        },
+        "scale-x":{
+            "values":["January","February","March","April","May","June","July","August","September","October","November","December"],
+            "zooming":true,
+            "guide":{
+                    "line-style":"solid"
+                },
+            "label":{
+                "text":"X label"
+                },
+            "markers":[
+                {
+                 "type":"area",
+                 "range":[7,8],
+                 "background-color":"#ccc",
+                 "label":{
+                        "text":"Area<br>Marker",
+                        "offset-y":-415,
+                        "offset-x":10,
+                        "angle":0,
+                        "background-color":"white",
+                        "border-radius":3,
+                        "alpha":0.8
+                    }
+                }
+                ]
+        },
+        "scale-x-2":{
+            "values":["1","2","3","4","5","6","7","8","9","10"],
+            "guide":{
+                "visible":false    
+            },
+            "label":{
+                "text":"X-2 label"
+                },
+            "zooming":true
+        },
+        "scale-y":{
+            "zooming":true,
+            "guide":{
+                    "line-style":"solid"
+                },
+            "label":{
+                "text":"Y label"
+                },
+            "minor-ticks":3,
+            "minor-tick":{
+                    "placement":"cross",
+                    "size":6
+                },
+            "minor-guide":{
+                    "line-width":"1px",
+                    "line-style":"dashed",
+                    "line-segement-size":"1px",
+                    "line-gap-size":"6px",
+                    "alpha":0.7
+                },
+            "markers":[
+                {
+                    "type":"line",
+                    "range":[25],
+                    "line-color":"blue",
+                    "alpha":1,
+                    "line-width":2,
+                    "label":{
+                        "text":"Line Marker",
+                        "offset-x":-80,
+                        "offset-y":8,
+                        "background-color":"blue",
+                        "font-color":"white",
+                        "font-size":10,
+                        "callout":true,
+                        "callout-position":"right"
+                        }
+                }
+            ]
+        },
+        "scale-y-2":{
+            "values":"0:100:10",
+            "format":"%v%",
+            "zooming":true,
+            "guide":{
+                "visible":false    
+            },
+            "label":{
+                "text":"Y-2 label"
+                }
+        },
+        "scale-y-3":{
+            "values":"0:50:10",
+            "decimals":2,
+            "zooming":true,
+            "guide":{
+                "visible":false    
+            },
+            "label":{
+                "text":"Y-3 label"
+                }
+        },
+        "scale-y-4":{
+            "values":"0:1000000:100000",
+            "format":"$%v",
+            "multiplier":true,
+            "zooming":true,
+            "guide":{
+                "visible":false    
+            },
+            "label":{
+                "text":"Y-4 label"
+                }
+        },
+        "scroll-x":{
+            "bar":{
+                "height":"8px",
+                "background-color":"black"
+            }
+        },
+        "scroll-y":{
+            "bar":{
+                "width":"8px",
+                "background-color":"black"
+            }
+        },
+        "crosshair-x":{
+                    "plot-label":{
+                        "visible":false
+
+                    }
+                },
+        "crosshair-y":{
+                    
+                },
+        "preview":{
+                "position":"50% 98%",
+                "margin":"10,50,10,50",
+                "height":50
+            },
+        "plot":{
+
+        },
+        "arrows":[
+                {
+                    "from":{
+                        "x":"80%",
+                        "y":"25%"
+                    },
+                    "to":"node:plot=3,index=8",
+                    "background-color":"#333",
+                    "border-radius":"3px",
+                    "border-width":0,
+                    "text":"Good!",
+                    "font-size":"10px",
+                    "font-color":"white",
+                    "size":"3px"
+                }
+            ],
+        "labels":[
+            {      
+                    "text":"View External<br>Report",
+                    "url":"www.google.com",
+                    "target":"_blank",
+                    "offset-y":"-35px",
+                    "hook":"node:plot=2,index=4",
+                    "font-color":"#000",
+                    "background-color":"#ccc",
+                    "padding":5,
+                    "border-radius":"3px",
+                    "callout":true,
+                    "callout-height":"10px",
+                    "callout-width":"15px",
+                    "underline":true
+            }
+        ],
+        "series":[
+            {
+                "type":"line",
+                "values":[69,68,54,80,70,74,90,70,72,68,49,69],
+                "text":"Apple"
+            },
+            {   
+                "type":"line",
+                "values":[51,53,47,60,48,52,75,52,55,47,60,48],
+                "text":"Microsoft"
+            },
+            {
+                "type":"bar",
+                "values":[42,43,30,40,31,48,55,46,48,32,38,38],
+                "text":"Oracle",
+                "tooltip":{
+                    "text":"The number being shown is the percentage of the node when compared to its plot",
+                    "width":"200px",
+                    "wrap-text":1    
+                },
+                "value-box":{
+                        "placement":"in",
+                        "offset-y":10,
+                        "font-color":"white",
+                        "text":"%pper%",
+                        "decimals":1,
+                        "font-angle":90,
+                        "offset-y":"22px"
+                    }
+            },
+            {
+                "type":"bar",
+                "values":[25,15,26,21,24,26,33,15,41,25,22,24],
+                "text":"Dell",
+                "tooltip":{
+                    "text":"The number being shown above the bar is the value of the node",
+                    "width":"200px",
+                    "wrap-text":1        
+                },
+                "value-box":{
+                        "placement":"top",
+                        "font-color":"black",
+                        "bold":true,
+                        "offset-y":4
+                    }
+            }
+        ]
+    }
+    ]
+    }
+};
+
+var tooltips_data_chart = {
+    "data": {
+        "type":"bar",
+        "title":{
+            "text":"Tooltips"
+        },
+        "legend":{ 
+        },
+        "plotarea":{
+            "margin":"70 140 70 70"
+        },
+        "scaleX":{
+            "values":["116","123","147","150","167","175","181","202","207","215"],
+            "label":{
+                "text":"Student Number"
+                },
+                "flat":false,
+                "tooltip":{
+                    "visible":0,
+                    "text":"Stuff",
+                    "background-color":"white"
+                    }
+        },
+        "scaleY":{
+            "format":"%v%",
+            "label":{
+                "text":"Percentile"
+                }
+        },
+        "plot":{
+
+        },
+        "tooltip":{
+           "text":"Student %k<br>%t Percentile: %v",
+            "text-align":"left",
+            "shadow":0,
+            "border-radius":5,
+            "sticky":0
+        },
+
+        "series":[
+            {
+                "values":[69,68,54,48,70,74,98,70,72,68],
+                "text":"Math"
+            },
+            {
+                "values":[51,53,47,60,48,52,75,52,55,47],
+                "text":"Reading"
+            },
+            {
+                "values":[42,43,30,40,31,48,55,46,48,32],
+                "text":"Logic"
             }
         ]
     }

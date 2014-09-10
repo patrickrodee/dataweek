@@ -1,0 +1,43 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d3",
+            "type":"hbar",
+            "title":{
+                "text":"New Chart Drill Down - History"
+            },
+            "subtitle":{
+                "y":"40px",
+                "text":"CLUSTER"
+            },
+            "plotarea": {
+                "margin":"80px"
+            },
+            "series":[
+                {
+                    "values":[1,4,3],
+                    "palette":2
+                },
+            ],
+            "scale-x":{
+                "values":["Linux<br>Cluster","Apache<br>Mesos","SCMS"]
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

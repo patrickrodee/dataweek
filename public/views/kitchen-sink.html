@@ -111,16 +111,10 @@
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="gauge_chart" zc-data="gauge_data"></div>
-					<div class="button-row" id="gaugeBtns">
-				        <select ng-model="gauge_action" ng-options="action.name for action in gauge_chart_actions" ng-change="modify('gauge_chart',gauge_action.data)"></select>
-				    </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="funnel_chart" zc-data="funnel_data"></div>
-					<div class="button-row" id="funnelBtns">
-				        <select ng-model="funnel_action" ng-options="action.name for action in funnel_chart_actions" ng-change="modify('funnel_chart',funnel_action.data)"></select>
-				    </div>
 				</div>
 
 			</div>
@@ -129,16 +123,10 @@
 
 				<div class="col col_1_of_3 final_row">
 					<div class="chart-demo" zingchart id="venn_chart" zc-data="venn_data"></div>
-					<div class="button-row" id="vennBtns">
-				        <select ng-model="venn_action" ng-options="action.name for action in venn_chart_actions" ng-change="modify('venn_chart',venn_action.data)"></select>
-				    </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="pareto_chart" zc-data="pareto_data"></div>
-					<div class="button-row" id="paretoBtns">
-				        <select ng-model="pareto_action" ng-options="action.name for action in pareto_chart_actions" ng-change="modify('pareto_chart',pareto_action.data)"></select>
-				    </div>
 				</div>
 
 			</div>
@@ -239,7 +227,38 @@
 				</div>
 
 				<div class="col col_1_of_2">
+					<div class="chart-demo" zingchart id="area_stacked_chart" zc-data="area_stacked_data"></div>
+					<select ng-model="area_stacked_action" ng-options="action.name for action in area_stacked_chart_actions" ng-change="modify('area_stacked_chart', area_stacked_action.data)"></select>
+				</div>
+
+			</div>
+
+			<div class="row lotsa_rows">
+				
+				<div class="col col_1_of_2">
+					<div class="chart-demo" zingchart id="drilldown_chart" zc-data="drilldown_data"></div>
+				</div>
+
+				<div class="col col_1_of_2">
 					<div class="chart-demo" zingchart id="parent_chart" zc-data="parent_data"></div>
+				</div>
+
+			</div>
+
+			<div class="row lotsa_rows">
+				
+				<div class="col col_1_of_1">
+					<div class="chart-demo" zingchart id="big_chart" zc-data="big_data"></div>
+				</div>
+
+			</div>
+
+			<div class="row lotsa_rows">
+				
+				<div class="col col_1_of_1">
+					<div class="chart-demo" zingchart id="tooltips_chart" zc-data="tooltips_data"></div>
+					<button ng-model="tooltips_current_text" ng-click="toggle_tooltips('tooltips_chart')">{{tooltips_current_text}}</button>
+					<div multi-select input-model="tooltips_actions" button-label="name" item-label="name" helper-elements="" tick-property="ticked"></div>
 				</div>
 
 			</div>

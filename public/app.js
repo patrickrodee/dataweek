@@ -1,4 +1,4 @@
-angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap'])
+angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'multi-select'])
   .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
 

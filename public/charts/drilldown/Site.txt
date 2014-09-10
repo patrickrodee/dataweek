@@ -1,0 +1,48 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d2",
+            "type":"bar",
+            "title":{
+                "text":"New Chart Drill Down - History"
+            },
+            "subtitle":{
+                "y":"40px",
+                "text":"SITE PERFORMANCE"
+            },
+            "plotarea": {
+                "margin":"80px"
+            },
+            "series":[
+                {
+                    "values":[15,5,35,20],
+                    "url":"/charts/drilldown/Site_Performance/%scale-key-value.txt",
+                    "palette":4,
+                    "target":"graph"
+                }
+            ],
+            "scale-x":{
+                "values":["Speed-test","Error-tracking","Load-testing","User-monitoring"],
+                "label":{
+                    "text":"Type"
+                }
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d2",
+            "type":"bar",
+            "title":{
+                "text":"New Chart Drill Down - History"
+            },
+            "subtitle":{
+                "y":"40px",
+                "text":"DEV TOOLS"
+            },
+            "plotarea": {
+                "margin":"80px"
+            },
+            "series":[
+                {
+                    "values":[20,8,35,20],
+                    "url":"/charts/drilldown/Dev_Tools/%scale-key-value.txt",
+                    "palette":0,
+                    "target":"graph"
+                }
+            ],
+            "scale-x":{
+                "values":["IDE","File<br>Management","Image<br>Generation","QA-testing"],
+                "label":{
+                    "text":"Type"
+                }
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d2",
+            "type":"bar",
+            "title":{
+                "text":"New Chart Drill Down - History"
+            },
+            "subtitle":{
+                "y":"40px",
+                "text":"SECURITY TOOLS"
+            },
+            "plotarea": {
+                "margin":"80px"
+            },
+            "series":[
+                {
+                    "values":[35,15,25,10],
+                    "url":"/charts/drilldown/Security_Tools/%scale-key-value.txt",
+                    "palette":1,
+                    "target":"graph"
+                }
+            ],
+            "scale-x":{
+                "values":["Firewall","Cache-control","Link-access","HTTP-Comp"],
+                "label":{
+                    "text":"Type"
+                }
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}
