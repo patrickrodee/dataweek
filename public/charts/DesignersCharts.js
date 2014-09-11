@@ -8,7 +8,7 @@ var autodesk_chart_data = {
         "title":{
             "font-family": "Istok Web",
             "text":"Production Report",
-            "background-image":"../images/autoGray.png",
+            "background-image":auto_gray,
             "background-repeat": "no-repeat",
             "background-position": "50% 0%",
             "background-alpha": 0.2,
@@ -263,6 +263,129 @@ var paypal_chart_data = {
                         "tooltip":{
                             "font-color":"#243b80"
                         }
+                    }
+                ]
+            }
+        ]
+    }
+};
+
+var nike_chart_data = {
+    "data": {
+        "graphset":[
+            {
+                "type":"bar",
+                "background-color":"#898d95 #4f4f4f",
+                "border-radius-top-left":13,
+                "border-radius-top-right":13,
+                "border-radius-bottom-right":10,
+                "border-radius-bottom-left":10,
+                "title":{
+                    "text":"PRODUCTION REPORT.",
+                    "text-align":"right",
+                    "background-color":"#f7f7f7 #e3e3e9",
+                    "font-family":"Passion One",
+                    "font-size":"24px",
+                    "font-color": "#4f4f4f",
+                    "border-radius-top-left":10,
+                    "border-radius-top-right":10
+                },
+                "plot":{
+                    "border-radius-top-left":10,
+                    "border-radius-top-right":10,
+                    "value-box":{
+                        "visible":true,
+                        "font-color":"#fff",
+                        "placement":"in",
+                        "font-angle":-90,
+                        "offset-y":"20px",
+                        "font-size":"10px",
+                        "font-weight":"normal"
+
+                    }
+                },
+                "plotarea":{
+                    "background-color":"#6c6e72",
+                    "margin":"80px 60px 60px 80px"
+                },
+                "scale-x":{
+                    "values":["2010","2011","2012","2013","2014<br>(PROJECTED)"],
+                    "item":{
+                        "font-color":"#fff"
+                    },
+                    "line-color":"#fff",
+                    "line-width":"1px",
+                    "tick":{
+                        "visible":false
+                    },
+                    "guide":{
+                        "line-width":"1px",
+                        "line-color":"#fff",
+                        "line-style":"solid",
+                        "alpha":0.2
+                    },
+                    "markers":[
+                        {
+                            "type":"area",
+                            "range":[4,5],
+                            "background-color":"fff",
+                            "alpha":0.3
+                        }
+
+                    ]
+                },
+                "scale-y":{
+                    "label":{
+                        "text":"UNITS",
+                        "font-color":"#fff",
+                        "offset-x":"-10px"
+                    },
+                    "multiplier":true,
+                    "item":{
+                        "font-color":"#fff"
+                    },
+                    "line-color":"#fff",
+                    "line-width":"1px",
+                    "tick":{
+                        "visible":false
+                    },
+                    "guide":{
+                        "line-width":"1px",
+                        "line-color":"#fff",
+                        "line-style":"solid",
+                        "alpha":0.2
+                    }
+                },
+                "legend":{
+                    "layout":"h",
+                    "background-color":"none",
+                    "border-width":0,
+                    "shadow":0,
+                    "toggle-action":"remove",
+                    "item":{
+                        "font-color":"#fff",
+                    },
+                    "marker":{
+                        "type":"circle",
+                        "size":6,
+                        "-border-width":"1px",
+                        "-border-color":"#fff"
+                    }
+                },
+                "series":[
+                    {
+                        "values":[28761,26340,19291,13856,13124],
+                        "text":"MODEL A10",
+                        "background-color":"#38353c",
+                        "background-image":black40,
+                        "background-fit":"x"
+                    },
+                    {
+                        "values":[8124,14298,24346,32282,35934],
+                        "text":"MODEL A20",
+                        "background-color":"#a50617",
+                        "background-image":red40,
+                        "background-fit":"x"
                     }
                 ]
             }

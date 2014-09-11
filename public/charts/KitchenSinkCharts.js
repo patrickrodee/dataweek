@@ -1247,7 +1247,7 @@ var images_data_chart = {
               "text": "Images"
             },
             "plot":{
-                "background-image":"../images/ocean-wave.jpg"
+                "background-image": ocean_wave
             },
             "scale-x":{
             },

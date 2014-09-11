@@ -327,9 +327,9 @@ angular.module('MyApp')
 		/************** Images Chart Specific **************/
 
 		$scope.images_chart_actions = [
-		{name: "Logo", 		data: {"data": {"images":[{"src":"../images/logo-sm.png","x":"5%","y":"90%","shadow":1,"border-radius":5,"shadow-offset":0,"shadow-distance":0,"shadow-alpha":0.7}]}}},
-		{name: "Plot", 		data: {"data": {"plot":{"background-image":"../images/ocean-wave.jpg"},"plotarea":{"background-image":null}}}},
-		{name: "Plot Area", data: {"data": {"plotarea":{"background-image":"../images/ocean-wave.jpg"},"plot":{"background-image":null}}}}
+		{name: "Logo", 		data: {"data": {"images":[{"src":logo_sm,"x":"5%","y":"90%","shadow":1,"border-radius":5,"shadow-offset":0,"shadow-distance":0,"shadow-alpha":0.7}]}}},
+		{name: "Plot", 		data: {"data": {"plot":{"background-image":ocean_wave},"plotarea":{"background-image":null}}}},
+		{name: "Plot Area", data: {"data": {"plotarea":{"background-image":ocean_wave},"plot":{"background-image":null}}}}
 		]
 
 		$scope.images_action = $scope.images_chart_actions[0];
