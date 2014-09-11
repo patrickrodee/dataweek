@@ -11,14 +11,16 @@ angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'multi-select
             controller: 'BigDataCtrl'
     	})
     	.when('/complicated-viz', {
-    		templateUrl: 'views/complicated-viz.html'
+    		templateUrl: 'views/complicated-viz.html',
+            controller: 'ComplicatedVizCtrl'
     	})
     	.when('/kitchen-sink', {
     		templateUrl: 'views/kitchen-sink.html',
             controller: 'KitchenSinkCtrl'
     	})
     	.when('/users-move', {
-    		templateUrl: 'views/users-move.html'
+    		templateUrl: 'views/users-move.html',
+            controller: 'MobileCtrl'
     	})
     	.when('/we-use', {
     		templateUrl: 'views/we-use.html'

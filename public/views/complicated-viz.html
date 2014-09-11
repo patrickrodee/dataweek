@@ -7,14 +7,14 @@
 			<div class="col_1_of_2">
 				<div class="easy-demo">
 					<h2 class="subtitle thin">JSON</h2>
-					<div class="easy json border"></div>
-					<button class="right">Render</button>
+					<textarea ng-model="editable_json" class="easy json">{{editable_json}}</textarea>
+					<!-- <button class="right">Render</button> -->
 				</div>
 			</div>
 			<div class="col_1_of_2">
 				<div class="easy-demo">
 					<h2 class="subtitle thin">Chart</h2>
-					<div class="easy chart border"></div>
+					<div class="easy chart" zingchart id="complicated_chart" zc-data="chart_json"></div>
 				</div>
 			</div>
 		</div>

@@ -230,6 +230,7 @@ ul#float-right > li {
 /* Height of .json is just for testing purposes */
 .json {
 	height: 645px;
+	width: 400px;
 	margin-bottom: 10px;
 }
 
@@ -266,11 +267,29 @@ ul#float-right > li {
 	position: absolute;
 	z-index: -1;
 }
-#iphone-screen: {
-	position: absolute;
-	z-index: 1;
-	top: 692px;
-	left: 35px;
+#iphone_chart {
+	width: 340px;
+	height: 580px;
+	position: relative;
+	top: 315px;
+	left: 34px;
+}
+#ipad_chart {
+	height: 858px;
+	width: 1179px;
+	position: relative;
+	top: -491px;
+	left: 481px;
+}
+#designers_chart {
+	z-index: 1000;
+	position: relative;
+	width: 600px;
+	height: 400px;
+	top: -650px;
+	left: 900px;
+	background-color: #FFF;
+	box-shadow: 10px 10px 5px #888;
 }
 #time-to-render {
 	margin-top: 9.5px;
