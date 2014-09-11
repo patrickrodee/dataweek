@@ -47,9 +47,9 @@ angular.module('MyApp')
 		// Themes ////////////////////////
 		//////////////////////////////////
 		
-		$scope.googlish = './themes/googlish.txt';
-		$scope.oceanic = './themes/oceanic.txt';
-		$scope.gotham = './themes/gotham.txt';
+		$scope.gotham 	= gotham_theme;
+		$scope.googlish = googlish_theme;
+		$scope.oceanic 	= oceanic_theme;
 		
 		$scope.all_charts = [
 		{id: "line_chart", 			data: line_data_chart},
@@ -88,11 +88,10 @@ angular.module('MyApp')
 		
 		$scope.renderWithTheme = function(theme) {
 			angular.forEach($scope.all_charts, function(value, key) {
-				zingchart.exec(value.id, 'destroy');
+				//zingchart.exec(value.id, 'destroy');
 				//console.log(value.id + " destroyed");
-				var target = value.id;
-				var payload = value.data;
-				zingchart.render({id: target, defaultsurl: theme, data: payload});
+				var payload = $.extend( {id: value.id, defaultsurl: theme}, value.data);
+				zingchart.render(payload);
 				//console.log(value.id + " rendered");
 			});
 		};

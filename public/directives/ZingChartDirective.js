@@ -6,7 +6,7 @@ angular.module('MyApp')
 				options: '=zcData'
 			},
 			link: function($scope, $elem, attrs) {
-				var options = $.extend( {id: attrs.id, defaultsurl: path_to_theme }, $scope.options );
+				var options = $.extend( {id: attrs.id, defaultsurl: default_theme }, $scope.options );
 				zingchart.render( options );
 			}
 		}

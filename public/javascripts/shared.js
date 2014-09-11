@@ -1,4 +1,7 @@
-this.path_to_theme = "/themes/dataweek.txt";
+this.default_theme = "../themes/dataweek.txt";
+this.googlish_theme = "../themes/googlish.txt";
+this.oceanic_theme = "../themes/oceanic.txt";
+this.gotham_theme = "../themes/gotham.txt";
 
 
 // zingchart.MODULESDIR = './lib/modules/';
