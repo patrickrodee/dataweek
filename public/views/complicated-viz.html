@@ -7,7 +7,15 @@
 			<div class="col_1_of_2">
 				<div class="easy-demo">
 					<h2 class="subtitle thin">JSON</h2>
-					<textarea ng-model="editable_json" class="easy json">{{editable_json}}</textarea>
+					<div ui-ace="{
+							useWrapMode : true,
+							showGutter: false,
+							theme:'dawn',
+							mode: 'json',
+							onLoad: aceLoaded,
+						
+							}" ng-model="editable_json"  class=" ace-editor"
+></div>
 					<!-- <button class="right">Render</button> -->
 				</div>
 			</div>
