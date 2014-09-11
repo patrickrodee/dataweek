@@ -1,6 +1,8 @@
 <div class="content-panel">
 	<div class="title fixed">
 		<h2>Beyond Bar Charts &amp; Pie Charts</h2>
+
+		<select ng-model="theme_action" ng-options="action.name for action in theme_actions" ng-change="renderWithTheme(theme_action.theme)"></select>
 		<!--
 		<div class="buttons">
 			<ul>
@@ -21,6 +23,7 @@
 		<div class="kitchen-sink-demo">
 			<h2 class="subtitle">Chart Types</h2>
 
+			<!--
 			<div class="buttons">
 				<ul>
 					<li>
@@ -34,6 +37,7 @@
 					</li>
 				</ul>
 			</div>
+			-->
 
 			<div class="row lotsa_rows">
 

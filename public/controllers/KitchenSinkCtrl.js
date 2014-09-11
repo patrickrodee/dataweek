@@ -85,6 +85,14 @@ angular.module('MyApp')
 		{id: "drilldown_chart", 	data: drilldown_data_chart},
 		{id: "parent_chart", 		data: parent_data_chart}
 		];
+
+		$scope.theme_actions = [
+		{name: "Googlish", theme: googlish_theme},
+		{name: "Gotham", theme: gotham_theme},
+		{name: "Oceanic", theme: oceanic_theme}
+		]
+
+		$scope.theme_action = $scope.theme_actions[0];
 		
 		$scope.renderWithTheme = function(theme) {
 			angular.forEach($scope.all_charts, function(value, key) {
@@ -95,6 +103,8 @@ angular.module('MyApp')
 				//console.log(value.id + " rendered");
 			});
 		};
+
+		$scope.renderWithTheme(googlish_theme);
 
 		//////////////////////////////////
 		// Actions ///////////////////////
