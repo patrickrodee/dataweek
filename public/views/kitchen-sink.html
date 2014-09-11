@@ -4,13 +4,13 @@
 		<div class="buttons">
 			<ul>
 				<li>
-					<button type="button" class="theme-change">Gotham</button>
+					<button type="button" class="theme-change" ng-click="renderWithTheme(googlish)">Gotham</button>
 				</li>
 				<li>
-					<button type="button" class="theme-change">Googlish</button>
+					<button type="button" class="theme-change" ng-click="renderWithTheme(oceanic)">Googlish</button>
 				</li>
 				<li>
-					<button type="button" class="theme-change">Oceanic</button>
+					<button type="button" class="theme-change" ng-click="renderWithTheme(gotham)">Oceanic</button>
 				</li>
 			</ul>
 		</div>
@@ -18,6 +18,20 @@
 	<div class="content overflow">
 		<div class="kitchen-sink-demo">
 			<h2 class="subtitle">Chart Types</h2>
+
+			<div class="buttons">
+				<ul>
+					<li>
+						<button type="button" class="theme-change" ng-click="renderWithTheme(googlish)">Gotham</button>
+					</li>
+					<li>
+						<button type="button" class="theme-change" ng-click="renderWithTheme(oceanic)">Googlish</button>
+					</li>
+					<li>
+						<button type="button" class="theme-change" ng-click="renderWithTheme(gotham)">Oceanic</button>
+					</li>
+				</ul>
+			</div>
 
 			<div class="row lotsa_rows">
 

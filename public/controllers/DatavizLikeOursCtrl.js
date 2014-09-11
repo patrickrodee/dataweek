@@ -9,5 +9,11 @@ angular.module('MyApp')
 			else if (type == 'tesla') {
 				$scope.screen_image = '../images/Tesla.png';
 			}
+			else if (type == 'paypal') {
+				$scope.screen_image = '../images/Paypal.png';
+			}
+			else if (type == 'nike') {
+				$scope.screen_image = '../images/Nike.png';
+			}
 		};
 	}]);

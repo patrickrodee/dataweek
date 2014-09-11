@@ -41,6 +41,61 @@ angular.module('MyApp')
 		$scope.big_data = big_data_chart;
 		$scope.tooltips_data = tooltips_data_chart;
 		*/
+	
+	
+		//////////////////////////////////
+		// Themes ////////////////////////
+		//////////////////////////////////
+		
+		$scope.googlish = './themes/googlish.txt';
+		$scope.oceanic = './themes/oceanic.txt';
+		$scope.gotham = './themes/gotham.txt';
+		
+		$scope.all_charts = [
+		{id: "line_chart", 			data: line_data_chart},
+		{id: "bar_chart", 			data: bar_data_chart},
+		{id: "area_chart", 			data: area_data_chart},
+		{id: "pie_chart", 			data: pie_data_chart},
+		{id: "scatter_chart", 		data: scatter_data_chart},
+		{id: "radar_chart", 		data: radar_data_chart},
+		{id: "stock_chart", 		data: stock_data_chart},
+		{id: "bubble_chart", 		data: bubble_data_chart},
+		{id: "piano_chart", 		data: piano_data_chart},
+		{id: "bullet_chart", 		data: scatter_data_chart},
+		{id: "gauge_chart", 		data: gauge_data_chart},
+		{id: "funnel_chart", 		data: funnel_data_chart},
+		{id: "venn_chart", 			data: venn_data_chart},
+		{id: "pareto_chart", 		data: pareto_data_chart},
+		{id: "mixed_chart", 		data: mixed_data_chart},
+		{id: "grid_chart", 			data: grid_data_chart},
+		{id: "map_chart", 			data: map_data_chart},
+		{id: "chord_chart", 		data: chord_data_chart},
+		{id: "rankflow_chart",		data: rankflow_data_chart},
+		{id: "treemap_chart", 		data: treemap_data_chart},
+		{id: "wordcloud_chart", 	data: wordcloud_data_chart},
+		{id: "network_chart", 		data: network_data_chart},
+		{id: "bar_rules_chart", 	data: bar_rules_data_chart},
+		{id: "currency_chart", 		data: currency_data_chart},
+		{id: "patterns_chart", 		data: patterns_data_chart},
+		{id: "arrows_chart", 		data: arrows_data_chart},
+		{id: "images_chart", 		data: images_data_chart},
+		{id: "shapes_chart", 		data: shapes_data_chart},
+		{id: "stacked_chart", 		data: stacked_data_chart},
+		{id: "area_stacked_chart", 	data: area_stacked_data_chart},
+		{id: "drilldown_chart", 	data: drilldown_data_chart},
+		{id: "parent_chart", 		data: parent_data_chart}
+		];
+		
+		$scope.renderWithTheme = function(theme) {
+			angular.forEach($scope.all_charts, function(value, key) {
+				zingchart.exec(value.id, 'destroy');
+				//console.log(value.id + " destroyed");
+				var target = value.id;
+				var payload = value.data;
+				zingchart.render({id: target, defaultsurl: theme, data: payload});
+				//console.log(value.id + " rendered");
+			});
+		};
 
 		//////////////////////////////////
 		// Actions ///////////////////////
