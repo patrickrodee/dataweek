@@ -1,6 +1,7 @@
 angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'multi-select', 'ui.ace'])
   .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);
+    
+    $locationProvider.html5Mode(false);
 
     $routeProvider
     	.when('/', {

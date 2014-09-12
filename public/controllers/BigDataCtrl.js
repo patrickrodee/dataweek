@@ -5,13 +5,15 @@ angular.module('MyApp')
 		// Chart Objects /////////////////
 		//////////////////////////////////
 
-		$scope.interact_data = interact_data_chart;
+		$scope.interact_data 				= interact_data_chart;
 
-	    $scope.evaluate_data_plot_rules = evaluate_data_plot_rules_chart;
+	    $scope.evaluate_data_plot_rules 	= evaluate_data_plot_rules_chart;
 
-		$scope.evaluate_data_marker_rules = evaluate_data_marker_rules_chart;
+		$scope.evaluate_data_marker_rules 	= evaluate_data_marker_rules_chart;
 
-		$scope.annotate_data = annotate_data_chart;
+		$scope.annotate_data 				= annotate_data_chart;
+
+		$scope.share_data 					= share_data_chart;
 
 		// ACTIONS /////////////////
 

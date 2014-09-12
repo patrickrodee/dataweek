@@ -1,86 +1,86 @@
 var autodesk_chart_data = {
     "data": {
-"graphset":[
-    {
-        "background-color": "#f5f5f5",  
-        "alpha": 0.3,
-        "type":"bar",
-        "title":{
-            "font-family": "Istok Web",
-            "text":"Production Report",
-            "background-image":auto_gray,
-            "background-repeat": "no-repeat",
-            "background-position": "50% 0%",
-            "background-alpha": 0.2,
-            "color": "#5E5E5E"
-        },
-        "plot":{
-            "border-radius-top-left":5,
-            "border-radius-top-right":5,
-            "bar-width": "90%",
-            "bar-space": "0%",
-            "bars-overlap":"10%"
-        },
-        "scale-x":{
-            "values":["2010","2011","2012","2013","2014<br>(Projected)"],
-            "line-color": "#5e5e5e",
-            "item":{
-                "color": "#5e5e5e",
-                "font-family": "Istok Web",
-            }
-        },
-        "scale-y":{
-            "label":{
-                "text":"Units",
-                "color": "#5e5e5e",
-                "font-family": "Istok Web",
-            },
-            "multiplier":true,
-            "line-color": "#5e5e5e",
-            "item":{
-                "color": "#5e5e5e",
-                "font-family": "Istok Web",
-            }
-        },
-        "legend":{
-            "layout": "horizontal",
-            "background-color": "none",
-            "shadow": 0,
-            "border-color": "none",
-            "item":{
-                "color": "#5E5E5E",
-                "font-family": "Istok Web",
-            },
-            "marker":{
-                "border-color": "none",
-                "border-radius-top-left": 3,
-                "border-radius-top-right": 3,
-                "border-radius-bottom-left": 3,
-                "border-radius-bottom-right": 3
-            },
-            "position": "50% 8%"
-        },
-        "series":[
+        "graphset":[
             {
-                "values":[28000,26000,19000,13000,13000],
-                "text":"Model A10",
-                "gradient-colors": "#1E8A80 #B1EAF0 #5D9796 #3FA292 #1A696B",
-                "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
-                "fill-angle": 0,
-                "alpha": 0.9
-            },
-            {
-                "values":[8000,14000,24000,32000,35000],
-                "text":"Model A20",
-                "gradient-colors": "#376A19 #9EEE8D #4A7E38 #578D43 #20470D",
-                "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
-                "fill-angle": 0,
-                "alpha": 0.9
+                "background-color": "#f5f5f5",  
+                "alpha": 0.3,
+                "type":"bar",
+                "title":{
+                    "font-family": "Istok Web",
+                    "text":"Production Report",
+                    "background-image":"autoGray.png",
+                    "background-repeat": "no-repeat",
+                    "background-position": "50% 0%",
+                    "background-alpha": 0.2,
+                    "color": "#5E5E5E"
+                },
+                "plot":{
+                    "border-radius-top-left":5,
+                    "border-radius-top-right":5,
+                    "bar-width": "90%",
+                    "bar-space": "0%",
+                    "bars-overlap":"10%"
+                },
+                "scale-x":{
+                    "values":["2010","2011","2012","2013","2014<br>(Projected)"],
+                    "line-color": "#5e5e5e",
+                    "item":{
+                        "color": "#5e5e5e",
+                        "font-family": "Istok Web",
+                    }
+                },
+                "scale-y":{
+                    "label":{
+                        "text":"Units",
+                        "color": "#5e5e5e",
+                        "font-family": "Istok Web",
+                    },
+                    "multiplier":true,
+                    "line-color": "#5e5e5e",
+                    "item":{
+                        "color": "#5e5e5e",
+                        "font-family": "Istok Web",
+                    }
+                },
+                "legend":{
+                    "layout": "horizontal",
+                    "background-color": "none",
+                    "shadow": 0,
+                    "border-color": "none",
+                    "item":{
+                        "color": "#5E5E5E",
+                        "font-family": "Istok Web",
+                    },
+                    "marker":{
+                        "border-color": "none",
+                        "border-radius-top-left": 3,
+                        "border-radius-top-right": 3,
+                        "border-radius-bottom-left": 3,
+                        "border-radius-bottom-right": 3
+                    },
+                    "position": "50% 8%"
+                },
+                "series":[
+                    {
+                        "values":[28000,26000,19000,13000,13000],
+                        "text":"Model A10",
+                        "gradient-colors": "#1E8A80 #B1EAF0 #5D9796 #3FA292 #1A696B",
+                        "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
+                        "fill-angle": 0,
+                        "alpha": 0.9
+                    },
+                    {
+                        "values":[8000,14000,24000,32000,35000],
+                        "text":"Model A20",
+                        "gradient-colors": "#376A19 #9EEE8D #4A7E38 #578D43 #20470D",
+                        "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
+                        "fill-angle": 0,
+                        "alpha": 0.9
+                    }
+                ]
             }
         ]
     }
-]
-}
 };
 
 var tesla_chart_data = {
@@ -91,9 +91,9 @@ var tesla_chart_data = {
                 "type":"bar",
                 "title":{
                     "text":"Production Report",
-                    "color":"#666666",
+                    "color":"#666",
                     "font-family": "Muli",
-                    "background-color": "none",
+                    "background-color": "red",
                     "align": "left",
                     "x": "6%",
                     "y": "1%"
@@ -272,6 +272,7 @@ var paypal_chart_data = {
 
 var nike_chart_data = {
     "data": {
+    
         "graphset":[
             {
                 "type":"bar",
@@ -377,14 +378,14 @@ var nike_chart_data = {
                         "values":[28761,26340,19291,13856,13124],
                         "text":"MODEL A10",
                         "background-color":"#38353c",
-                        "background-image":black40,
+                        "background-image":"images/black40.png",
                         "background-fit":"x"
                     },
                     {
                         "values":[8124,14298,24346,32282,35934],
                         "text":"MODEL A20",
                         "background-color":"#a50617",
-                        "background-image":red40,
+                        "background-image":"images/red40.png",
                         "background-fit":"x"
                     }
                 ]

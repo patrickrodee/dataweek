@@ -1,295 +1,310 @@
 {
-	"palette" : {
-		"mixed" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"vbar" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"vbar3d" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"pie" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"pie3d" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"nestedpie" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"area" : [
-			["#00baf0", "#00baf0", "#00baf0", "#00baf0"],
-			["#7ca82b", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#cc3300", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#b2b2b2", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"area3d" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"gauge" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"line" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"line3d" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"piano" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"vbullet" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"vfunnel" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"scatter" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"radar" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"venn" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"chord" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"treemap" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"stock" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"bubble" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		],
-		"diagram" : [
-			["#ffffff", "#00baf0", "#00baf0", "#00baf0"],
-			["#ffffff", "#7ca82b", "#7ca82b", "#7ca82b"],
-			["#ffffff", "#cc3300", "#cc3300", "#cc3300"],
-			["#ffffff", "#006180", "#006180", "#006180"],
-			["#ffffff", "#b2b2b2", "#b2b2b2", "#b2b2b2"]
-		]
-	},
-
-
-	"graph" : {
-		"flat":"true",
-		"background-color" : "#fff",
-		"border-color":"#999999",
-		"border-width":"1px",
-		"border-style":"solid",
-		"borderRadius":"5",
-
-		"title" : {
-			"background-color" : "#999999",
-			"border-color":"#999999",
-			"border-width":"1px",
-			"border-style":"solid",
-			"height":"30px",
-			"align":"center",
-			"fontColor" : "#fff",
-			"font-family":"Arial",
-			"font-size":"18px",
-			"borderRadiusTopLeft":"5",
-			"borderRadiusTopRight":"5"
-		},
-		"legend" : {
-			"y":"10%",
-			"layout":"h",
-			"background-color":"#00baf0",
-			"header" : {
-				"background-color" : "#dddddd"
-			},
-			"item" : {
-				"markerStyle" : "star5",
-				"fontColor" : "#dddddd",
-				"borderColor" : "#dddddd",
-				"lineColor" : "#dddddd"
-			}	
-		},
-
-		"scale-x" : {
-				"line-color" : "#b2b2b2",
-				"line-width":"1px",
-				"line-style":"solid",
-				"fontColor" : "#b2b2b2",
-				"tick" : {
-					"lineColor" : "#b2b2b2",
-					"line-width":"1px"
+	"root":{
+		"gui":{
+            "context-menu":{
+                "button":{"visible":false},
+                "gear":{"visible":false}
+            },
+			"behaviors":[
+				{
+					"id" : "SaveAsImage",
+					"enabled" : "none"
 				},
-				"guide":{
-                    "line-width":"1px",
-                    "line-color":"#b2b2b2",
-                    "line-style":"solid"
+				{
+					"id" : "Print",
+					"enabled" : "none"
 				},
-				"item" : {
-					"fontColor" : "#b2b2b2"
+				{
+					"id" : "ViewSource",
+					"enabled" : "all"
+				},
+				{
+					"id" : "BugReport",
+					"enabled" : "all"
+				},
+				{
+					"id" : "FullScreen",
+					"enabled" : "none"
+				},
+				{
+					"id" : "ZoomIn",
+					"enabled" : "none"
+				},
+				{
+					"id" : "ZoomOut",
+					"enabled" : "none"
+				},
+				{
+					"id" : "ViewAll",
+					"enabled" : "none"
+				},
+				{
+					"id" : "LogScale",
+					"enabled" : "none"
+				},
+				{
+					"id":"DownloadPDF",
+					"enabled":"none"
+				},
+				{
+					"id" : "3D",
+					"enabled" : "none"
 				}
-			},
-		"scale-y" : {
-				"line-color" : "#b2b2b2",
-				"line-width":"1px",
-				"line-style":"solid",
-				"fontColor" : "#b2b2b2",
-                "label":{
-                	"fontColor":"#b2b2b2"
-                },
-				"guide":{
-                    "line-width":"1px",
-                    "line-color":"#b2b2b2",
-                    "line-style":"solid"
-				},
-				"tick" : {
-					"lineColor" : "#b2b2b2",
-					"line-width":"1px"
-				},
-				"item" : {
-					"fontColor" : "#b2b2b2"
-				}
-		},
-        "source":{
-        	"fontColor":"#b2b2b2"
-        }
+			]
+		}
 	},
-
-	"line" : {
-		"plot" : {
-			"lineWidth" : 3,
+	"palette":[
+			["#ffffff","#7ca840","#95c43e","#6a941e"],
+			["#ffffff","#045169","#00baf0","#003849"],
+			["#ffffff","#cc3300","#fc784b","#a52800"],
+            ["#ffffff","#e0b13f","#edd466","#c5962d"],
+            ["#ffffff","#565F66","#7d909e","#393c3f"],
+            ["#ffffff","#6160ab","#9d9acc","#3e4089"],
+            ["#ffffff","#767f59","#9ba95d","#59603d"],
+            ["#ffffff","#e25933","#ee9559","#cc4828"],
+            ["#ffffff","#115c63","#1f9191","#094144"],
+            ["#ffffff","#6b464f","#af5473","#492f35"],
+            ["#ffffff","#825634","#ba7545","#5a3217"],
+            ["#ffffff","#ef3a5b","#f387a4","#ce2147"]
+	],
+	"graph":{
+		"font-family":"Arial",
+		"background-color":"#f4f4f4",
+		"title":{
+			"background-color":"#7ca840",
+			"font-color":"#ffffff",
+			"font-size":"18",
+			"font-weight":"none",
+			"height":"40px"
+		},
+		"subtitle":{
+			"font-color":"#003849",
+			"y":"36px"
+		},
+		"source":{
+			"font-color":"#003849"
+		},
+		"plot":{
+			"shadow":0
+		},
+		"tooltip":{
+			"shadow":0
+		},
+		"legend":{
+			"y":"45px",
 			"marker":{
-					"visible":true
-				},
-			"animate": true,
-            "effect": 4,
-            "speed":100,
-            "tooltip-text" : "%v"
+				"type":"square",
+				"border-width":0
+			},
+			"border-color":"#818181",
+			"border-width":1,
+			"border-radius":10,
+			"background-color":"#ffffff",
+			"shadow":0,
+			"item":{
+				"font-color":"#818181"
+			},
+			"header":{
+				"font-weight":"none",
+                "color":"#003849",
+				"border-radius":"10 10 0 0",
+				"background-color":"none",
+				"border-bottom":"none",
+				"border-color":"#818181",
+				"font-weight":"bold",
+				"font-family":"Arial"
+			},
+			"footer":{
+				"background-color":"#c7c9c9",
+				"border-width":0
+				}
 		},
-		"scale-x" : {
-			"markers" : {
-				"backgroundColor" : "#1bc9f2",
-				"lineColor" : "#947850"
+		"SCALE":{
+			"line-color":"#c7c9c9",
+			"shadow":0,
+			"tick":{
+				"line-color":"#c7c9c9"
+			},
+			"guide":{
+				"line-color":"#c7c9c9",
+				"alpha":0.2,
+				"line-style":"solid"
+			},
+			"item":{
+				"font-color":"#818181"
+			},
+			"label":{
+				"font-color":"#003849",
+				"font-weight":"none"
 			}
 		}
 	},
-
-	"area" : {
-		"plot" : {
-			"animate": true,
-            "effect": 1,
-            "speed":"100",
-	        "lineWidth" : 1,
-	        "tooltip-text" : "%v"
-		}
-	},
-
-	"gauge" : {
-		"scale-r" : {
-			"tick" : {
-				"lineColor" : "#dddddd"
-				},
-			"item" : {
-				"fontColor" : "#dddddd"
+	"area":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"90 50 55 80"
+		},
+		"plot":{
+			"line-width":2,
+			"marker":{
+				"type":"circle",
+				"size":4,
+				"shadow":0
+			},
+			"hover-marker":{
+				"type":"diamond",
+				"size":6,
+				"border-width":1,
+				"shadow":0,
+				"offset-x":1
 			}
 		}
 	},
-
-	"pie" : {
-		"plot" : {
-			"ref-angle":270,
-			"value-box" : {
-				"type" : "all",
-				"placement" : "out",
-				"backgroundTransparent" : true,
-				"text" : "%t\n"
+	"area3d":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"70 50 55 50"
+		}
+	},
+	"vbar":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"70 50 55 50"
+		}
+	},
+	"hbar":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"70 50 55 50"
+		}
+	},
+	"bubble":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"70 50 55 50"
+		},
+		"plot":{
+			"marker":{
+				"shadow":0
+			},
+			"hover-marker":{
+				"shadow":0
 			}
 		}
 	},
-
-	"diagram":{
-		"background-color":"#000"
+	"hbullet":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"70 50 55 50"
+		}
+	},
+	"vbullet":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"70 50 55 50"
+		}
+	},
+	"hfunnel":{
+		"plotarea":{
+			"margin":"50 100"
+		}
+	},
+	"vfunnel":{
+		"plotarea":{
+			"margin":"50 100"
+		}	
+	},
+	"gauge":{
+		"plotarea":{
+			"margin":"70 50 55 50"
+		}
+	},
+	"grid":{
+		"plotarea":{
+			"margin":"70 50 55 50"
+		}
+	},
+	"line":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"70 50 55 50"
+		},
+		"plot":{
+			"line-width":2,
+			"marker":{
+				"type":"circle",
+				"size":4,
+				"shadow":0
+			},
+			"hover-marker":{
+				"type":"diamond",
+				"size":6,
+				"border-width":1,
+				"shadow":0,
+				"offset-x":1
+			}
+		}
+	},
+	"line3d":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"60 50 55 50"
+		},
+		"plot":{
+			"line-width":2,
+			"marker":{
+				"type":"circle",
+				"size":4,
+				"shadow":0
+			},
+			"hover-marker":{
+				"type":"diamond",
+				"size":6,
+				"border-width":1,
+				"shadow":0,
+				"offset-x":1
+			}
+		}
+	},
+	"radar":{
+		"plot":{
+			"line-width":2,
+			"marker":{
+				"type":"circle",
+				"size":4,
+				"shadow":0
+			},
+			"hover-marker":{
+				"type":"diamond",
+				"size":6,
+				"border-width":1,
+				"shadow":0,
+				"offset-x":1
+			}
+		}
+	},
+	"scatter":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"60 50 55 50"
+		},
+		"plot":{
+			"marker":{
+				"type":"circle",
+				"border-width":1,
+				"shadow":0
+			},
+			"hover-marker":{
+				"type":"diamond",
+				"border-width":1,
+				"shadow":0
+			}
+		}
+	},
+	"stock":{
+		"plotarea":{
+			"background-color":"#fbfbfb",
+			"margin":"60 50 55 50"
+		}
 	}
 }
