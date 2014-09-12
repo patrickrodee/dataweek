@@ -1,4 +1,13 @@
 <div class="content-panel">
+	<!-- Charts -->
+	<script src="../charts/oneK.js"></script>
+	<script src="../charts/tenK.js"></script>
+	<script src="../charts/fiftyK.js"></script>
+	<script src="../charts/onehundredK.js"></script>
+	<script src="../charts/twohundredK.js"></script>
+	<script src="../charts/fourhundredK.js"></script>
+	<!-- Chart Libs -->
+
 	<div class="title">
 		<h2>ZingChart vs.</h2>
 	</div>
@@ -9,10 +18,10 @@
 					<div class="vs-options" dropdown-select="provider_options" dropdown-model="selected_provider" dropdown-item-label="name" dropdown-onchange="check_status()"></div>
 					<div class="vs-options" dropdown-select="chart_options" dropdown-model="selected_chart" dropdown-item-label="name" dropdown-onchange="check_status()"></div>
 					<div class="vs-options" dropdown-select="size_options" dropdown-model="selected_size" dropdown-item-label="name" dropdown-onchange="check_status()"></div>
-					<button type="button" ng-disabled="not_ready" ng-click="GO_SPEEDTEST_GO(selected_provider, selected_chart, selected_size)">Go!</button>
-					<div class="vs-speed-results">{{vs_speed_results.name}}</div>
+					<button type="button" ng-disabled="not_ready" ng-click="GO_SPEEDTEST_GO(selected_provider.name, selected_chart.name, selected_size.value)">Go!</button>
+					<div class="vs-speed-results">{{vs_speed_results}}</div>
 				</div>
-				<div class="resulting-chart"></div>
+				<div id="resulting-chart"></div>
 			</div>
 		</div>
 	</div>
