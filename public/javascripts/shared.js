@@ -17,6 +17,7 @@ this.red40      = "../images/red40.png";
 
 // zingchart.MODULESDIR = './lib/modules/';
 zingchart.loadModules('maps,maps-usa');
+zingchart.loadModules('patterns');
 
 
 function generateRandomNumbers(nodes) {

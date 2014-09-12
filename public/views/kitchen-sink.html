@@ -2,7 +2,9 @@
 	<div class="title fixed">
 		<h2>Beyond Bar Charts &amp; Pie Charts</h2>
 
-		<div dropdown-select="all_charts" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
+		<div class="buttons theme-buttons">
+			<div dropdown-select="theme_actions" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
+		</div>
 		<!--
 		<div class="buttons">
 			<ul>
@@ -23,37 +25,21 @@
 		<div class="kitchen-sink-demo">
 			<h2 class="subtitle">Chart Types</h2>
 
-			<!--
-			<div class="buttons">
-				<ul>
-					<li>
-						<button type="button" class="theme-change" ng-click="renderWithTheme(gotham)">Gotham</button>
-					</li>
-					<li>
-						<button type="button" class="theme-change" ng-click="renderWithTheme(googlish)">Googlish</button>
-					</li>
-					<li>
-						<button type="button" class="theme-change" ng-click="renderWithTheme(oceanic)">Oceanic</button>
-					</li>
-				</ul>
-			</div>
-			-->
-
 			<div class="row lotsa_rows">
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="line_chart" zc-data="line_data"></div>
 					<div class="button-row" id="lineBtns">
-			          <select ng-model="line_action" ng-options="action.name for action in line_chart_actions" ng-change="modify('line_chart',line_action.data)"></select>
-			          <button ng-model="line_dimension" ng-click="toggle_line('line_chart')">{{line_dimension}}</button>
+			          <div class="dropdown" dropdown-select="line_chart_actions" dropdown-model="line_action" dropdown-item-label="name" dropdown-onchange="modify('line_chart',line_action.data)"></div>
+			          <button class="toggle" ng-model="line_dimension" ng-click="toggle_line('line_chart')">{{line_dimension}}</button>
 			        </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="bar_chart" zc-data="bar_data"></div>
 					<div class="button-row" id="barBtns">
-			          <select ng-model="bar_action" ng-options="action.name for action in bar_chart_actions" ng-change="modify('bar_chart',bar_action.data)"></select>
-			          <button ng-model="bar_dimension" ng-click="toggle_bar('bar_chart')">{{bar_dimension}}</button>
+			          <div class="dropdown" dropdown-select="bar_chart_actions" dropdown-model="bar_action" dropdown-item-label="name" dropdown-onchange="modify('bar_chart',bar_action.data)"></div>
+			          <button class="toggle" ng-model="bar_dimension" ng-click="toggle_bar('bar_chart')">{{bar_dimension}}</button>
 			        </div>
 			    </div>
 
@@ -233,8 +219,7 @@
 				</div>
 
 				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="images_chart" zc-data="images_data"></div>
-					<select ng-model="images_action" ng-options="action.name for action in images_chart_actions" ng-change="modify('images_chart', images_action.data)"></select>
+					<div class="chart-demo" zingchart id="drilldown_chart" zc-data="drilldown_data"></div>
 				</div>
 
 				<div class="col col_1_of_3">
@@ -257,17 +242,17 @@
 
 			</div>
 
+			<!-- 
+
 			<div class="row lotsa_rows">
 				
-				<div class="col col_1_of_2">
-					<div class="chart-demo" zingchart id="drilldown_chart" zc-data="drilldown_data"></div>
-				</div>
-
 				<div class="col col_1_of_2">
 					<div class="chart-demo" zingchart id="parent_chart" zc-data="parent_data"></div>
 				</div>
 
 			</div>
+
+			-->
 
 			<!--
 

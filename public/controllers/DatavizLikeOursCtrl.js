@@ -7,6 +7,15 @@ angular.module('MyApp')
 		$scope.paypal_data = paypal_chart_data;
 		$scope.nike_data = nike_chart_data;
 
+		$scope.all_themes = [
+		{name: "Autodesk", 	theme: 'autodesk'},
+		{name: "Tesla", 	theme: 'tesla'},
+		{name: "Paypal", 	theme: 'paypal'},
+		{name: "Nike", 		theme: 'nike'}
+		]
+
+		$scope.current_theme = {name: "Autodesk"};
+
 		// FONTS ==============
 		 WebFontConfig = {
 		    google: { families: [ 'Istok+Web:400:latin', 'Muli:400', 'Passion+One:700:latin', 'Open+Sans:700:latin' ] }

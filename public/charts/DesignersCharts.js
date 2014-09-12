@@ -91,9 +91,9 @@ var tesla_chart_data = {
                 "type":"bar",
                 "title":{
                     "text":"Production Report",
-                    "color":"#666",
+                    "color":"#666666",
                     "font-family": "Muli",
-                    "background-color": "red",
+                    "background-color": "none",
                     "align": "left",
                     "x": "6%",
                     "y": "1%"

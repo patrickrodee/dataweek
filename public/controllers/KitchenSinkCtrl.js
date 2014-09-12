@@ -89,12 +89,13 @@ angular.module('MyApp')
 		];
 
 		$scope.theme_actions = [
-		{name: "Googlish", theme: googlish_theme},
-		{name: "Gotham", theme: gotham_theme},
-		{name: "Oceanic", theme: oceanic_theme}
+		{name: "Standard",	theme: default_theme},
+		{name: "Googlish", 	theme: googlish_theme},
+		{name: "Gotham", 	theme: gotham_theme},
+		{name: "Oceanic", 	theme: oceanic_theme}
 		]
 
-		$scope.theme_action = {name: "Googlish"};
+		$scope.theme_action = {name: "Standard"};
 		
 		$scope.renderWithTheme = function(theme) {
 			angular.forEach($scope.all_charts, function(value, key) {
@@ -105,8 +106,6 @@ angular.module('MyApp')
 				//console.log(value.id + " rendered");
 			});
 		};
-
-		$scope.renderWithTheme(googlish_theme);
 
 		//////////////////////////////////
 		// Actions ///////////////////////
@@ -157,7 +156,7 @@ angular.module('MyApp')
 		{name: "Jumped", data: {'object':"plot",'data' : {"aspect": 'jumped'}}}
 		]
 
-		$scope.line_action = $scope.line_chart_actions[0];
+		$scope.line_action = {name: "Standard"};
 
 		$scope.line_dimension = '2D';
 
@@ -175,7 +174,7 @@ angular.module('MyApp')
 		{name: "Pyramid", data: {'object':"plot",'data' : {"aspect": 'pyramid'}}}
 		]
 
-		$scope.bar_action = $scope.bar_chart_actions[0];
+		$scope.bar_action = {name: "Standard"};
 
 		$scope.bar_dimension = '2D';
 

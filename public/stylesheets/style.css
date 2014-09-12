@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #F9F8F8;
+	background-color: #FFF;
 	font-family: "Arial", sans-serif;
 }
 header {
@@ -64,6 +64,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+/*
 .dropdown {
 	background-color: #929292;
 	border: 2px solid #003849;
@@ -87,11 +88,19 @@ a {
 	border: 2px solid #003849;
 	width: 221px;
 }
+*/
+.dropdown {
+	float: left;
+}
+.toggle {
+	margin-left: 10px;
+}
 button {
 	font-size: 18px;
 	background-color: #003849;
 	color: #FFF;
 	border-style: none;
+	border-radius: 5px;
 	margin: 0;
 	padding: 8px 12px;
 	font-weight: normal;
@@ -132,7 +141,7 @@ button {
 	height: 1312px;
 }
 .active {
-	background-color: #F9F8F8;
+	background-color: #FFF;
 }
 /*
 .active h2 {
@@ -175,14 +184,16 @@ h2.thin {
 .title h2 {
 	float: left;
 	line-height: 36px;
-	color: #605e5e;
+	/* color: #605e5e; */
 }
 .title .buttons {
 	float: right;
+	height: 50px;
 }
 .fixed {
 	height: 75px;
 	position: fixed;
+	z-index: 1000;
 }
 .overflow {
 	position: absolute;
@@ -289,6 +300,7 @@ ul#float-right > li {
 	top: 346px;
 	left: 870px;
 	z-index: 1;
+	opacity: 0.9;
 }
 #mobile-cutout {
 	position: absolute;
@@ -313,10 +325,10 @@ ul#float-right > li {
 	position: relative;
 	width: 600px;
 	height: 400px;
-	top: -650px;
+	top: -687px;
 	left: 900px;
 	background-color: #FFF;
-	box-shadow: 10px 10px 5px #888;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 -10px 10px rgba(0,0,0,0.1);
 }
 #time-to-render {
 	margin-top: 9.5px;
@@ -332,6 +344,9 @@ ul#float-right > li {
 }
 .active_toggle {
 	background-color: #1FBBEE;
+}
+.theme-buttons {
+	width: 36%;
 }
 input:focus,
 button:focus,
