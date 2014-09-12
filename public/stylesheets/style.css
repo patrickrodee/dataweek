@@ -348,6 +348,53 @@ ul#float-right > li {
 .theme-buttons {
 	width: 36%;
 }
+.570 {
+	width: 570px;
+}
+.570:not(:last-child) {
+	margin-right: 75px;
+}
+.we-use-graphics {
+	margin-bottom: 80px;
+	height: 240px;
+}
+.we-use-text {
+	font-size: 25px;
+	font-weight: bold;
+	padding-right: 20px;
+}
+.checkmark {
+	margin-left: 150px;
+}
+.lock {
+	margin-left: 204px; 
+}
+.gear {
+	margin-left: 157px;
+}
+.undercolor {
+	height: 10px;
+}
+#green {
+	background-color: #7CA840;
+}
+#navy {
+	background-color: #003849;
+}
+#cyan {
+	background-color: #1FBBEE;
+}
+.grey {
+	color: #605E5E;
+}
+.dotted {
+	list-style-type: square;
+	padding-left: 30px;
+}
+.dotted li {
+	margin-bottom: 5px;
+	font-size: 25px;
+}
 input:focus,
 button:focus,
 select:focus {
