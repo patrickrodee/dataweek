@@ -9,6 +9,7 @@ angular.module('MyApp')
 		$scope.bar_data = bar_data_chart;
 		$scope.area_data = area_data_chart;
 		$scope.pie_data = pie_data_chart;
+		$scope.nestedpie_data = nestedpie_data_chart;
 		$scope.scatter_data = scatter_data_chart;
 		$scope.radar_data = radar_data_chart;
 		$scope.stock_data = stock_data_chart;
@@ -61,11 +62,12 @@ angular.module('MyApp')
 		{id: "stock_chart", 		data: stock_data_chart},
 		{id: "bubble_chart", 		data: bubble_data_chart},
 		{id: "piano_chart", 		data: piano_data_chart},
-		{id: "bullet_chart", 		data: scatter_data_chart},
+		{id: "bullet_chart", 		data: bullet_data_chart},
 		{id: "gauge_chart", 		data: gauge_data_chart},
 		{id: "funnel_chart", 		data: funnel_data_chart},
 		{id: "venn_chart", 			data: venn_data_chart},
 		{id: "pareto_chart", 		data: pareto_data_chart},
+		{id: "nestedpie_chart",		data: nestedpie_data_chart},
 		{id: "mixed_chart", 		data: mixed_data_chart},
 		{id: "grid_chart", 			data: grid_data_chart},
 		{id: "map_chart", 			data: map_data_chart},
@@ -92,7 +94,7 @@ angular.module('MyApp')
 		{name: "Oceanic", theme: oceanic_theme}
 		]
 
-		$scope.theme_action = $scope.theme_actions[0];
+		$scope.theme_action = {name: "Googlish"};
 		
 		$scope.renderWithTheme = function(theme) {
 			angular.forEach($scope.all_charts, function(value, key) {
@@ -177,6 +179,7 @@ angular.module('MyApp')
 
 		$scope.bar_dimension = '2D';
 
+
 		/************** Area Chart Specific **************/
 
 		$scope.toggle_area = function(target) {
@@ -203,8 +206,8 @@ angular.module('MyApp')
 
 		$scope.pie_chart_actions = [
 		{name: "Pie", 			values: {'update': 0, 'values':[[5],[2],[7],[10]]}, 								data: {'data': { 'type':'pie', 'plot': {'slice': 0} } } },
-		{name: "Donut/Ring", 	values: {'update': 0, 'values': [[5],[2],[7],[10]]}, 								data: {'data': {'type':'pie', 'plot': {'slice': 50 } } } },
-		{name: "Nested", 		values: {'update': 0, 'values': [ [5,6,3,8], [8,3,5,1], [7,10,3,6], [3,9,9,5] ] }, 	data: { 'data': { "type": 'nestedpie',"plot":{"slice":0,"value-box":{"visible":false}}}}}
+		{name: "Donut/Ring", 	values: {'update': 0, 'values': [[5],[2],[7],[10]]}, 								data: {'data': {'type':'pie', 'plot': {'slice': 50 } } } }
+		/* {name: "Nested", 		values: {'update': 0, 'values': [ [5,6,3,8], [8,3,5,1], [7,10,3,6], [3,9,9,5] ] }, 	data: { 'data': { "type": 'nestedpie',"plot":{"slice":0,"value-box":{"visible":false}}}}} */
 		]
 
 		$scope.pie_action = $scope.pie_chart_actions[0];
@@ -212,6 +215,9 @@ angular.module('MyApp')
 		$scope.is_nested_pie = false;
 
 		$scope.pie_dimension = '2D';
+
+		/************** Scatter Chart Specific **************/
+
 
 		/************** Scatter Chart Specific **************/
 

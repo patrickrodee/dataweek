@@ -7,7 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ZingChart Demo</title>
 	<link href="/stylesheets/style.css" rel="stylesheet">
-    <!-- <link href="/stylesheets/angular-multi-select.css" rel="stylesheet"> -->
+    <link href="/stylesheets/angular-dropdowns.css" rel="stylesheet">
+    <!-- <link href="/stylesheets/bootstrap.css" rel="stylesheet"> -->
+    <!-- <link href="/stylesheets/bootstrap-theme.css" rel="stylesheet"> -->
 </head>
 <body>
 	<header>
@@ -87,9 +89,7 @@
 	</section>
 	<section ng-view id="details-section"></section>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- ZingChart Library -->
-	<!-- <script src="/javascripts/lib/zingchart-html5-min.js"></script> -->
     <script src="/javascripts/lib/zingchart-html5-min.js"></script>
     <script>zingchart.MODULESDIR = '/javascripts/lib/modules/';</script>
     <script src="/javascripts/shared.js"></script>
@@ -100,12 +100,14 @@
     <script src="/charts/KitchenSinkCharts.js"></script>
     <script src="/charts/DesignersCharts.js"></script>
     <!-- Vendor -->
+    <script src="/vendor/jquery.min.js"></script>
 	<script src="/vendor/angular.js"></script>
 	<script src="/vendor/angular-strap.js"></script>
 	<script src="/vendor/angular-strap.tpl.js"></script>
 	<script src="/vendor/angular-resource.js"></script>
 	<script src="/vendor/angular-route.js"></script>
-    <script src="/vendor/angular-multi-select.js"></script>
+    <script src="/vendor/angular-select.js"></script>
+    <script src="/vendor/angular-dropdowns.js"></script>
     <!-- App -->
 	<script src="/app.js"></script>
     <!-- Controllers -->

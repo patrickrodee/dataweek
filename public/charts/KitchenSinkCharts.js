@@ -111,6 +111,45 @@ var pie_data_chart = {
 }
 };
 
+var nestedpie_data_chart = {
+    "data": {
+        "type":"nestedpie",
+        "title":{
+            "text":"Nested Pie Chart"
+        },
+        "crosshair-x":{
+            "visible":0
+        },
+        "plot":{
+            "slice":0,
+            "value-box":{
+                "visible":false
+            }
+        },
+        "plotarea":{
+            "margin":"45 30 30 30"
+        },
+        "series":[
+            {
+                "values":[5,6,3,8],
+                "text":"Alaska",
+            },
+            {
+                "values":[8,3,5,1],
+                "text":"Maine",
+            },
+            {
+                "values":[7,10,3,6],
+                "text":"Texas",
+            },
+            {
+                "values":[3,9,9,5],
+                "text":"Wyoming",
+            }
+        ],
+    }
+};
+
 var scatter_data_chart = {
 	"data" : {
     "type": "scatter",

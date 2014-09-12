@@ -2,7 +2,7 @@
 	<div class="title fixed">
 		<h2>Beyond Bar Charts &amp; Pie Charts</h2>
 
-		<select ng-model="theme_action" ng-options="action.name for action in theme_actions" ng-change="renderWithTheme(theme_action.theme)"></select>
+		<div dropdown-select="all_charts" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
 		<!--
 		<div class="buttons">
 			<ul>
@@ -141,12 +141,16 @@
 
 			<div class="row lotsa_rows">
 
-				<div class="col col_1_of_3 final_row">
+				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="venn_chart" zc-data="venn_data"></div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="pareto_chart" zc-data="pareto_data"></div>
+				</div>
+
+				<div class="col col_1_of_3">
+					<div class="chart-demo" zingchart id="nestedpie_chart" zc-data="nested_pie_data"></div>
 				</div>
 
 			</div>

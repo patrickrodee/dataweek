@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #7F7F7F;
+	background-color: #F9F8F8;
 	font-family: "Arial", sans-serif;
 }
 header {
@@ -58,11 +58,34 @@ h2 {
 h3 {
 	font-size: 25px;
 	line-height: 30px;
-	color: #FFF;
+	color: #F9F8F8;
 }
 a {
 	text-decoration: none;
 	color: inherit;
+}
+.dropdown {
+	background-color: #929292;
+	border: 2px solid #003849;
+	width: 221px;
+	background: url(../images/dropdown_arrow.png) no-repeat 100%;
+}
+.dropdown select {
+	background: transparent;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	color: #FFF;
+	width: 221px;
+	border: 0;
+	border-radius: 0;
+	height: 34px;
+	-webkit-appearance: none;
+}
+.dropdown select option {
+	background-color: #929292;
+	border: 2px solid #003849;
+	width: 221px;
 }
 button {
 	font-size: 18px;
@@ -109,10 +132,15 @@ button {
 	height: 1312px;
 }
 .active {
-	background-color: #7F7F7F;
+	background-color: #F9F8F8;
 }
+/*
 .active h2 {
-	color: #FFF;
+	color: #605e5e;
+}
+*/
+.active h3 {
+	color: #605E5E;
 }
 #details {
 	width: ;
@@ -120,7 +148,7 @@ button {
 #details {
 	margin: 18px 0px;
 }
-#details-section ul li {
+.big-data-input > li {
 	margin-left: 0px;
 	margin-right: 10px;
 	float: left;
@@ -137,7 +165,7 @@ h2.thin {
 }
 .content-panel {
 	margin-top: 75px;
-	color: #FFF;
+	color: #605e5e;
 }
 .title {
 	margin-bottom: 38px;
@@ -147,7 +175,7 @@ h2.thin {
 .title h2 {
 	float: left;
 	line-height: 36px;
-	color: #FFF;
+	color: #605e5e;
 }
 .title .buttons {
 	float: right;
@@ -167,7 +195,7 @@ h2.thin {
 	line-height: 25px;
 	margin-bottom: 10px;
 	font-weight: normal;
-	color: #E5E5E5;
+	color: #605e5e;
 }
 .content {
 	float: left;
@@ -293,7 +321,7 @@ ul#float-right > li {
 #time-to-render {
 	margin-top: 9.5px;
 	margin-bottom: 9.5px;
-	color: #E5E5E5;
+	color: #605e5e;
 }
 .ace_editor { 
 	height: 500px; 
@@ -301,4 +329,12 @@ ul#float-right > li {
 }
 .ace_scrollbar .ace_scrollbar-h {
 	font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+.active_toggle {
+	background-color: #1FBBEE;
+}
+input:focus,
+button:focus,
+select:focus {
+	outline: none;
 }

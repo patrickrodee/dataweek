@@ -12,9 +12,17 @@
 				<div>
 					<h2 class="subtitle">See &amp; interact with it</h2>
 					<div class="chart-demo" zingchart id="interact-demo" zc-data="interact_data"></div>
-					<ul>
+					<ul class="big-data-input">
 						<li class="width-50">
-							<select ng-model="points_to_render" ng-options="point.name for point in point_options" ng-change="timeToRun(points_to_render.value)"></select>
+							<!--
+							<div class="dropdown">
+								<select ng-model="points_to_render" ng-options="point.name for point in point_options" ng-change="timeToRun(points_to_render.value)"></select>
+							</div>
+							-->
+							<!--
+							<button type="button" ng-model="points_to_render" ng-options="point.name for point in point_options" ng-change="timeToRun(points_to_render.value)" bs-select></button>
+							-->
+							<div dropdown-select="point_options" dropdown-model="points_to_render" dropdown-item-label="name" dropdown-onchange="timeToRun(points_to_render.value)">
 						</li>
 						<li class="width-50">
 							<ul id="float-right">
@@ -22,7 +30,7 @@
 									<button type="button" id="z9">Need more?</button>
 								</li>
 								<li>
-									<p ng-model="time_to_render" id="time-to-render">{{points_to_render.name}} points rendered in {{time_to_render}}</p>
+									<p ng-model="time_to_render" id="time-to-render">{{points_to_render.name}} rendered in {{time_to_render}}</p>
 								</li>
 							</ul>
 						</li>
@@ -33,7 +41,7 @@
 				<div>
 					<h2 class="subtitle">Evaluate it</h2>
 					<div class="chart-demo" zingchart id="evaluate-demo" zc-data="evaluate_data_plot_rules"></div>
-					<ul>
+					<ul class="big-data-input">
 						<li>
 							<button type="button" ng-click="modify('evaluate-demo',evaluate_data_plot_rules)">Plot Rules</button>
 						</li>
@@ -52,7 +60,7 @@
 				<div>
 					<h2 class="subtitle">Annotate it</h2>
 					<div class="chart-demo" zingchart id="annotate-demo" zc-data="annotate_data"></div>
-					<ul>
+					<ul class="big-data-input">
 						<li>
 							<button type="button" id="draw-trend-lines">Draw Trend Lines</button>
 						</li>
@@ -69,7 +77,7 @@
 				<div>
 					<h2 class="subtitle">Share it</h2>
 					<div class="chart-demo" zingchart id="share-demo" zc-data="share_data"></div>
-					<ul>
+					<ul class="big-data-input">
 						<li>
 							<button>Export</button>
 						</li>

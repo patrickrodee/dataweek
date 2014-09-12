@@ -18,13 +18,13 @@ angular.module('MyApp')
 		// ACTIONS /////////////////
 
 		$scope.point_options = [
-			{name: "10,000", value: 10000},
-			{name: "25,000", value: 25000},
-			{name: "50,000", value: 50000},
-			{name: "100,000", value: 100000}
+			{name: "10,000 points", value: 10000},
+			{name: "25,000 points", value: 25000},
+			{name: "50,000 points", value: 50000},
+			{name: "100,000 points", value: 100000}
 		];
 
-		$scope.points_to_render = $scope.point_options[0];
+		$scope.points_to_render = {name:"10,000 points"};
 
 		$scope.time_to_render = "0.357s";
 
