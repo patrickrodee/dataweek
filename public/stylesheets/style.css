@@ -106,6 +106,10 @@ button {
 	font-weight: normal;
 	cursor: pointer;
 }
+button:disabled {
+	color: #BBB;
+	cursor: not-allowed;
+}
 #zingchart-title {
 	width: 500px;
 }
@@ -348,6 +352,9 @@ ul#float-right > li {
 .theme-buttons {
 	width: 36%;
 }
+.we-use-spacing {
+	margin-top: 82px;
+}
 .570 {
 	width: 570px;
 }
@@ -394,6 +401,14 @@ ul#float-right > li {
 .dotted li {
 	margin-bottom: 5px;
 	font-size: 25px;
+}
+.zingchart-vs {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.vs-options {
+	float: left;
+	margin-right: 10px;
 }
 input:focus,
 button:focus,

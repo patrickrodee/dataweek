@@ -9,15 +9,15 @@
     padding: 10px;
  
     /* Styles */
-    background: #BBB;
+    background: #FFF;
     border-radius: 5px;
-    /* border: 2px solid #003849; */
+    border: 1px solid #BBB;
     /* box-shadow: 0 1px 1px rgba(50,50,50,0.1); */
     cursor: pointer;
     outline: none;
  
     /* Font settings */
-    color: #F9F8F8;
+    color: #BBB;
 }
 
 .wrap-dd-select:after {
@@ -30,7 +30,7 @@
     margin-top: -3px;
     border-width: 6px 6px 0 6px;
     border-style: solid;
-    border-color: #FFF transparent;
+    border-color: #BBB transparent;
 }
 
 .wrap-dd-select .dropdown {

@@ -10,14 +10,6 @@
 					<div class="chart-demo" zingchart id="interact-demo" zc-data="interact_data"></div>
 					<ul class="big-data-input">
 						<li class="width-50">
-							<!--
-							<div class="dropdown">
-								<select ng-model="points_to_render" ng-options="point.name for point in point_options" ng-change="timeToRun(points_to_render.value)"></select>
-							</div>
-							-->
-							<!--
-							<button type="button" ng-model="points_to_render" ng-options="point.name for point in point_options" ng-change="timeToRun(points_to_render.value)" bs-select></button>
-							-->
 							<div dropdown-select="point_options" dropdown-model="points_to_render" dropdown-item-label="name" dropdown-onchange="timeToRun(points_to_render.value)">
 						</li>
 						<li class="width-50">

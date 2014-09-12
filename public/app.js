@@ -34,7 +34,8 @@ angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'ngDropdowns'
             controller: 'DatavizLikeOursCtrl'
     	})
     	.when('/dont-know-zc', {
-    		templateUrl: 'views/dont-know-zc.html'
+    		templateUrl: 'views/dont-know-zc.html',
+            controller: 'DontKnowZcCtrl'
     	})
     	.when('/cant-code', {
     		templateUrl: 'views/cant-code.html'
