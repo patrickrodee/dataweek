@@ -9,18 +9,14 @@
 					<h2 class="subtitle">See &amp; interact with it</h2>
 					<div class="chart-demo" zingchart id="interact-demo" zc-data="interact_data"></div>
 					<ul class="big-data-input">
-						<li class="width-50">
-							<div dropdown-select="point_options" dropdown-model="points_to_render" dropdown-item-label="name" dropdown-onchange="timeToRun(points_to_render.value)">
+						<li>
+							<div dropdown-select="point_options" dropdown-model="points_to_render" dropdown-item-label="name" dropdown-onchange="timeToRun(points_to_render.value)"></div>
 						</li>
-						<li class="width-50">
-							<ul id="float-right">
-								<li>
-									<button type="button" id="z9">Need more?</button>
-								</li>
-								<li>
-									<p ng-model="time_to_render" id="time-to-render">{{points_to_render.name}} rendered in {{time_to_render}}</p>
-								</li>
-							</ul>
+						<li id="render-time-container">
+							<p ng-model="time_to_render" id="time-to-render">{{points_to_render.name}} rendered in {{time_to_render}}</p>
+						</li>
+						<li>
+							<button class="right" type="button" id="z9">Need more?</button>
 						</li>
 					</ul>
 				</div>

@@ -173,21 +173,33 @@ var paypal_chart_data = {
             {
                 "type":"bar",
                 "background-color":"#199cde",
+                "border-radius-top-left":"15px",
+                "border-radius-top-right":"15px",
+                "border-radius-bottom-left":"10px",
+                "border-radius-bottom-right":"10px",
                 "title":{
                     "text":"Production Report",
-                    "background-color":"#199cde",
+                    "height":"40px",
+                    "background-color":"#fafafa",
+                    "font-size":"22px",
                     "font-family":"Open Sans",
-                    "font-size":"24px",
-                    "offset-y":"5px"
+                    "font-color":"#243b80",
+                    "font-style":"italic",
+                    "text-align":"left",
+                    "border-radius-top-left":"10px",
+                    "border-radius-top-right":"10px"
                 },
                 "plot":{
                     "border-radius-top-left":10,
                     "border-radius-top-right":10,
-                    "line-width":"1px"
+                    "line-width":"1px",
+                    "hover-state":{
+                        "alpha":1
+                    }
                 },
                 "plotarea":{
-                    "background-color":"#199cde",
-                    "margin":"70px 60px 90px 80px"
+                    "background-color":"#fff",
+                    "margin":"80px 60px 80px 80px"
                 },
                 "scale-x":{
                     "values":["2010","2011","2012","2013","2014<br>(Projected)"],
@@ -195,26 +207,33 @@ var paypal_chart_data = {
                         "font-color":"#fff"
                     },
                     "line-color":"#fff",
-                    "line-width":"1px",
                     "tick":{
-                        "visible":false
+                        "line-width":0
                     },
                     "guide":{
-                        "line-width":"1px",
-                        "line-color":"#fff",
-                        "line-style":"solid",
-                        "alpha":0.2
+                        "visible":false
                     }
                 },
                 "scale-y":{
+                    "values":"0:40000:5000",
+                    "max-labels":9,
+                    "background-color":"#fff",
                     "label":{
                         "text":"Units",
-                        "font-color":"#fff",
-                        "offset-x":"-10px"
+                        "font-color":"#fff"
                     },
                     "multiplier":true,
                     "item":{
-                        "font-color":"#fff"
+                        "rules":[
+                            {
+                            "rule":"%i%2==0",
+                            "font-color":"#fff"
+                            },
+                            {
+                            "rule":"%i%2==1",
+                            "visible":false
+                            }
+                        ]
                     },
                     "line-color":"#fff",
                     "line-width":"1px",
@@ -225,7 +244,16 @@ var paypal_chart_data = {
                         "line-width":"1px",
                         "line-color":"#fff",
                         "line-style":"solid",
-                        "alpha":0.2
+                        "items":[
+                            {
+                                "background-color":"#199CDE",
+                                "alpha":1
+                            },
+                            {
+                                "background-color":"#199CDE",
+                                "alpha":0.9
+                            }
+                        ]
                     }
                 },
                 "legend":{
@@ -237,13 +265,13 @@ var paypal_chart_data = {
                     "shadow":0,
                     "toggle-action":"remove",
                     "item":{
-                        "font-color":"#fff",
+                        "font-color":"#fff"
                     },
                     "marker":{
                         "type":"circle",
                         "size":6,
-                        "-border-width":"1px",
-                        "-border-color":"#fff"
+                        "border-width":"1px",
+                        "border-color":"#fff"
                     }
                 },
                 "series":[
@@ -251,7 +279,16 @@ var paypal_chart_data = {
                         "values":[28000,26000,19000,13000,13000],
                         "text":"Model A10",
                         "background-color":"#243b80",
-                        "alpha":0.6,
+                        "alpha":0.8,
+                        "tooltip":{
+                            "text":"<b>%t</b><br>Year: %k<br>Units: %v",
+                            "background-color":"#243b80",
+                            "font-color":"#f6fbfe",
+                            "shadow":0,
+                            "border-radius":10,
+                            "text-align":"left",
+                            "width":"20%"
+                        },
                         "legend-marker":{
                             "alpha":0.6
                         }
@@ -260,8 +297,15 @@ var paypal_chart_data = {
                         "values":[8000,14000,24000,32000,35000],
                         "text":"Model A20",
                         "background-color":"#f6fbfe",
+                        "alpha":0.8,
                         "tooltip":{
-                            "font-color":"#243b80"
+                            "text":"<b>%t</b><br>Year: %k<br>Units: %v",
+                            "background-color":"#f6fbfe",
+                            "font-color":"#243b80",
+                            "shadow":0,
+                            "border-radius":10,
+                            "text-align":"left",
+                            "width":"20%"
                         }
                     }
                 ]
