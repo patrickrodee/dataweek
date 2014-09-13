@@ -211,8 +211,6 @@ angular.module('MyApp')
 
 		$scope.pie_action = $scope.pie_chart_actions[0];
 
-		$scope.is_nested_pie = false;
-
 		$scope.pie_dimension = '2D';
 
 		/************** Scatter Chart Specific **************/

@@ -55,12 +55,10 @@ angular.module('MyApp')
 
 		// DESTROY RESULT-CONTAINER'S CHILDREN
 
-		/*
 		$scope.reset_container = function() {
 			$('#result-container').empty();
 			$('#result-container').append( '<div id="resulting-chart"></div>' );
 		}
-		*/
 
 		// SPECIFIC RENDER FUNCTIONS
 		
@@ -296,11 +294,91 @@ angular.module('MyApp')
 			return "HighCharts rendered a " + (values.length -1) + " point " + chart_type.toLowerCase() + " in " + time_elapsed + "s";
 		}
 
-		function zingchart_render (type, values) {
+		$scope.zcIsDone = function() {
+			$scope.zc_time_after = new Date().getTime();
+		}
+
+		$scope.zingchart_render = function (type, values) {
+			var chartdata = {
+				backgroundColor: '#fff',
+				plotarea: {
+					margin: 'dynamic'
+				},
+				scaleY: {
+					lineWidth: 0,
+					guide: {
+						lineStyle: 'solid'
+					},
+					tick: {
+						visible: false
+					},
+					minValue: 'auto'
+				},
+				scaleX: {
+					maxItems: 10,
+					lineWidth: 0,
+					short: true,
+					tick: {
+						lineColor: '#ccc',
+						lineWidth: 1
+					},
+					guide: {
+						visible: false
+					},
+					normalize: true,
+					zooming: true
+				},
+				scrollX: {},
+				plot: {
+					mode : 'fast',
+					exact: true
+				},
+				crosshairX: {},
+				series: [
+					{
+						values: values
+					}
+				]
+			};
+			switch(type) {
+				case 'Line Chart':
+					chartdata['type'] = 'line';
+					chartdata['series'][0]['line-width'] = 1;
+					chartdata['series'][0]['shadow'] = false;
+					break;
+				case 'Area Chart':
+					chartdata['type'] = 'area';
+					chartdata['series'][0]['line-width'] = 1;
+					chartdata['series'][0]['shadow'] = false;
+					break;
+				case 'Bar Chart':
+					chartdata['type'] = 'vbar';
+					chartdata['series'][0]['background-color'] = '#369';
+					chartdata['series'][0]['shadow'] = false;
+					break;
+			}
+		
+			zingchart.DEV.SORTTOKENS = 0;
+			zingchart.DEV.PLOTSTATS = 0;
+			zingchart.DEV.DOMFRAGMENTS = 1;
+			zingchart.DEV.RESOURCES = 0;
+			zingchart.DEV.SAVESOURCE = 0;
+			zingchart.TIMEOUT = 0;
+			zingchart.FASTWIDTH = 1;
 			var time_before = new Date().getTime();
+			zingchart.render({
+				id: 'resulting-chart',
+				output: 'svg',
+				hideprogresslogo: true,
+				events: {
+					load: function() {
+						$scope.zcIsDone();
+					}
+				},
+				data: chartdata
+			});
 			// RENDERER GOES HERE
-			var time_after = new Date().getTime();
-			var time_elapsed = (time_after - time_before)/1000;
+			var time_elapsed = ($scope.zc_time_after - time_before)/1000;
 			time_elapsed = time_elapsed.toString();
 			return "ZingChart rendered a " + (values.length -1) + " point " + type.toLowerCase() + " in " + time_elapsed + "s";
 		};
@@ -308,8 +386,9 @@ angular.module('MyApp')
 		// GO SPEEDTEST GO
 
 		$scope.GO_SPEEDTEST_GO = function(provider, type, size) {
+			$scope.reset_container();
 			if (provider == 'ZingChart') {
-				$scope.vs_speed_results = zingchart_render(type, size);
+				$scope.vs_speed_results = $scope.zingchart_render(type, size);
 			}
 			else if (provider == "C3JS") {
 				$scope.vs_speed_results = $scope.c3js(type, size);

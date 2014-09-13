@@ -411,9 +411,17 @@ ul#float-right > li {
 	display: inline;
 	margin-right: 10px;
 }
+#result-container {
+	border: 1px solid #605E5E;
+	border-radius: 5px;
+}
 #resulting-chart {
-	width: 1184px;
-	height: 600px;
+	margin: 50px;
+	width: 1500px;
+	height: 800px;
+}
+#vs_speeds {
+	font-size: 25px;
 }
 input:focus,
 button:focus,
