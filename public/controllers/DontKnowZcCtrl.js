@@ -5,10 +5,10 @@ angular.module('MyApp')
 
 		$scope.provider_options = [
 		{name: "ZingChart"},
+		{name: "HighCharts"},
 		{name: "C3JS"},
 		{name: "AmCharts"},
-		{name: "FusionCharts"},
-		{name: "HighCharts"}
+		{name: "FusionCharts"}
 		]
 
 		$scope.selected_provider = {name: "Choose a library"};
