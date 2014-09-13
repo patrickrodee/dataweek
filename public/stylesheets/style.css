@@ -406,9 +406,14 @@ ul#float-right > li {
 	padding-left: 200px;
 	padding-right: 200px;
 }
-.vs-options {
+.vs-options-panel div {
 	float: left;
+	display: inline;
 	margin-right: 10px;
+}
+#resulting-chart {
+	width: 1184px;
+	height: 600px;
 }
 input:focus,
 button:focus,

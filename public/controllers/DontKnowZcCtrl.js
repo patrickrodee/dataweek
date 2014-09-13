@@ -7,7 +7,8 @@ angular.module('MyApp')
 		{name: "ZingChart"},
 		{name: "C3JS"},
 		{name: "AmCharts"},
-		{name: "FusionCharts"}
+		{name: "FusionCharts"},
+		{name: "HighCharts"}
 		]
 
 		$scope.selected_provider = {name: "Choose a library"};
@@ -51,6 +52,15 @@ angular.module('MyApp')
 				$scope.not_ready = true;
 			}
 		};
+
+		// DESTROY RESULT-CONTAINER'S CHILDREN
+
+		/*
+		$scope.reset_container = function() {
+			$('#result-container').empty();
+			$('#result-container').append( '<div id="resulting-chart"></div>' );
+		}
+		*/
 
 		// SPECIFIC RENDER FUNCTIONS
 		
@@ -105,18 +115,12 @@ angular.module('MyApp')
 			var size = values.length - 1;
 			size = size.toString();
 			var type = chart_type.toLowerCase();
-			// console.log(size);
-			// console.log(type);
-			// console.log(time_elapsed);
 			output = "FusionCharts rendered a " + size + " point " + type + " in " + time_elapsed + "s";
 			$scope.displayResults(output);
 		};
 
 		$scope.fusion = function(chart_type, values) {
-			// FusionCharts Line Chart
-			var type = chart_type;
-			var vals = values;
-			FusionCharts.ready($scope.fusion_render(type, vals));
+			FusionCharts.ready($scope.fusion_render(chart_type, values));
 		};
 
 
@@ -124,8 +128,7 @@ angular.module('MyApp')
 			var chartdata = {
 				bindto: '#resulting-chart',
 				data: {
-					columns: [values],
-					type: 'line'
+					columns: [values]
 				},
 				point: {
 					show: false
@@ -164,8 +167,6 @@ angular.module('MyApp')
 		$scope.amIsDone = function() {
 			$scope.am_time_after = new Date().getTime();
 		}
-
-		$scope.am_time_after;
 
 		$scope.amcharts_render = function(type, values) {
 			var chartdata = [];
@@ -219,17 +220,81 @@ angular.module('MyApp')
 			chart.addChartCursor(chartCursor);
 			
 			chart.write('resulting-chart');
-			var time_elapsed = ($scope.am_time_after - time_before)/1000;
+			var time_after = new Date().getTime();
+			var time_elapsed = (time_after - time_before)/1000;
 			time_elapsed = time_elapsed.toString();
 			var output = "AmCharts rendered a " + (values.length - 1) + " point " + type.toLowerCase() + " in " + time_elapsed + "s";
 			$scope.displayResults(output);
 		}
 
 		$scope.amcharts = function (chart_type, values) {
-			var type = chart_type;
-			var vals = values;
-			AmCharts.ready($scope.amcharts_render(type, vals));
+			AmCharts.ready($scope.amcharts_render(chart_type, values));
 		};
+
+		$scope.hcIsDone = function () {
+			$scope.hc_time_after = new Date().getTime();
+		}
+
+		$scope.highcharts = function (chart_type, values) {
+			var time_before = new Date().getTime();
+			var chartdata = {
+				chart: {
+					zoomType: 'x',
+					animation: false,
+					events: {
+						load: function() {
+							$scope.hcIsDone();
+						}
+					}
+				},
+				title: {
+					text: null
+				},
+				xAxis: {
+					type: 'linear'
+				},
+				yAxis: {
+					title: null
+				},
+				legend: {
+					enabled: false
+				},
+				plotOptions: {
+					line: {
+						animation: 0,
+						lineWidth: 1
+					},
+					area: {
+						animation: 0,
+						lineWidth: 1
+					},
+					column: {
+						animation: 0
+					}
+				},
+				series: [
+					{
+						data: values
+					}
+				]
+			}
+			
+			switch(chart_type) {
+				case 'Line Chart':
+					chartdata['series'][0]['type'] = 'line';
+					break;
+				case 'Area Chart':
+					chartdata['series'][0]['type'] = 'area';
+					break;
+				case 'Bar Chart':
+					chartdata['series'][0]['type'] = 'column';
+					break;
+			}
+			$('#resulting-chart').highcharts(chartdata);
+			var time_elapsed = ($scope.hc_time_after - time_before)/1000;
+			time_elapsed = time_elapsed.toString();
+			return "HighCharts rendered a " + (values.length -1) + " point " + chart_type.toLowerCase() + " in " + time_elapsed + "s";
+		}
 
 		function zingchart_render (type, values) {
 			var time_before = new Date().getTime();
@@ -237,7 +302,7 @@ angular.module('MyApp')
 			var time_after = new Date().getTime();
 			var time_elapsed = (time_after - time_before)/1000;
 			time_elapsed = time_elapsed.toString();
-			return "ZingChart rendered a " + values.length + " point " + type.toLowerCase() + " in " + time_elapsed + "s";
+			return "ZingChart rendered a " + (values.length -1) + " point " + type.toLowerCase() + " in " + time_elapsed + "s";
 		};
 
 		// GO SPEEDTEST GO
@@ -248,6 +313,9 @@ angular.module('MyApp')
 			}
 			else if (provider == "C3JS") {
 				$scope.vs_speed_results = $scope.c3js(type, size);
+			}
+			else if (provider == "HighCharts") {
+				$scope.vs_speed_results = $scope.highcharts(type, size);
 			}
 			else if (provider == "AmCharts") {
 				$scope.amcharts(type, size);
