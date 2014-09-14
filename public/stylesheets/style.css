@@ -200,6 +200,9 @@ h2.thin {
 	margin-left: 71px;
 	height: 50px;
 }
+.title .theme-buttons {
+	float: right;
+}
 .fixed {
 	height: 75px;
 	position: fixed;
@@ -340,8 +343,8 @@ ul#float-right > li {
 	background-color: #FFF;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 -10px 10px rgba(0,0,0,0.1);
 }
-#render_time_container {
-	height: 44px;
+#render-time-container {
+	width: 426px;
 }
 #time-to-render {
 	color: #605e5e;
@@ -436,9 +439,6 @@ ul#float-right > li {
 }
 #vs_speeds {
 	font-size: 25px;
-}
-#render-time-container {
-	width: 488px;
 }
 input:focus,
 button:focus,

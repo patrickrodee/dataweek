@@ -2,24 +2,9 @@
 	<div class="title fixed">
 		<h2>Beyond Bar Charts &amp; Pie Charts</h2>
 
-		<div class="buttons theme-buttons">
+		<div class="theme-buttons">
 			<div dropdown-select="theme_actions" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
 		</div>
-		<!--
-		<div class="buttons">
-			<ul>
-				<li>
-					<button type="button" class="theme-change" ng-click="renderWithTheme(gotham)">Gotham</button>
-				</li>
-				<li>
-					<button type="button" class="theme-change" ng-click="renderWithTheme(googlish)">Googlish</button>
-				</li>
-				<li>
-					<button type="button" class="theme-change" ng-click="renderWithTheme(oceanic)">Oceanic</button>
-				</li>
-			</ul>
-		</div>
-		-->
 	</div>
 	<div class="content overflow">
 		<div class="kitchen-sink-demo">
@@ -46,8 +31,8 @@
 			    <div class="col col_1_of_3">
 			    	<div class="chart-demo" zingchart id="area_chart" zc-data="area_data"></div>
 			    	<div class="button-row" id="areaBtns">
-			          <select ng-model="area_action" ng-options="action.name for action in area_chart_actions" ng-change="modify('area_chart',area_action.data)"></select>
-			          <button ng-model="area_dimension" ng-click="toggle_area('area_chart')">{{area_dimension}}</button>
+			          <div class="dropdown" dropdown-select="area_chart_actions" dropdown-model="area_action" dropdown-item-label="name" dropdown-onchange="modify('area_chart',area_action.data)"></div>
+			          <button class="toggle" ng-model="area_dimension" ng-click="toggle_area('area_chart')">{{area_dimension}}</button>
 			        </div>
 			    </div>
 
@@ -58,25 +43,21 @@
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="pie_chart" zc-data="pie_data"></div>
 					<div class="button-row" id="pieBtns">
-			          <select ng-model="pie_action" ng-options="action.name for action in pie_chart_actions" ng-change="set_values_and_modify('pie_chart', pie_action.values, pie_action.data)"></select>
-			          <button ng-model="pie_dimension" ng-click="toggle_pie('pie_chart')">{{pie_dimension}}</button>
+			          <div class="dropdown" dropdown-select="pie_chart_actions" dropdown-model="pie_action" dropdown-item-label="name" dropdown-onchange="set_values_and_modify('pie_chart', pie_action.values, pie_action.data)"></div>
+			          <button class="toggle" ng-model="pie_dimension" ng-click="toggle_pie('pie_chart')">{{pie_dimension}}</button>
 			        </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="scatter_chart" zc-data="scatter_data"></div>
 					<div class="button-row">
-						<!--
-						<select ng-model="scatter_action" ng-options="action.name for action in scatter_chart_actions" ng-change="modify('scatter_chart',scatter_action.data)"></select>
-				        <button ng-model="scatter_dimension" ng-click="toggle_scatter('scatter_chart')">{{scatter_dimension}}</button>
-					    -->
 				    </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="radar_chart" zc-data="radar_data"></div>
 					<div class="button-row" id="radarBtns">
-			          <select ng-model="radar_action" ng-options="action.name for action in radar_chart_actions" ng-change="set_series_and_modify('radar_chart', radar_action.series, radar_action.data)"></select>
+			          <div class="dropdown" dropdown-select="radar_chart_actions" dropdown-model="radar_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('radar_chart', radar_action.series, radar_action.data)"></div>
 			      </div>
 				</div>
 			</div>
@@ -86,21 +67,21 @@
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="stock_chart" zc-data="stock_data"></div>
 					<div class="button-row" id="stockBtns">
-						<select ng-model="stock_action" ng-options="action.name for action in stock_chart_actions" ng-change="modify('stock_chart',stock_action.data)"></select>
+						<div class="dropdown" dropdown-select="stock_chart_actions" dropdown-model="stock_action" dropdown-item-label="name" dropdown-onchange="modify('stock_chart',stock_action.data)"></div>
 				    </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="bubble_chart" zc-data="bubble_data"></div>
 					<div class="button-row" id="bubbleBtns">
-				        <select ng-model="bubble_action" ng-options="action.name for action in bubble_chart_actions" ng-change="modify('bubble_chart',bubble_action.data)"></select>
+				        <div class="dropdown" dropdown-select="bubble_chart_actions" dropdown-model="bubble_action" dropdown-item-label="name" dropdown-onchange="modify('bubble_chart',bubble_action.data)"></div>
 			        </div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="piano_chart" zc-data="piano_data"></div>
 					<div class="button-row" id="pianoBtns">
-				        <select ng-model="piano_action" ng-options="action.name for action in piano_chart_actions" ng-change="modify('piano_chart',piano_action.data)"></select>
+				        <div class="dropdown" dropdown-select="piano_chart_actions" dropdown-model="piano_action" dropdown-item-label="name" dropdown-onchange="modify('piano_chart',piano_action.data)"></div>
 				    </div>
 				</div>
 				
@@ -111,7 +92,7 @@
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="bullet_chart" zc-data="bullet_data"></div>
 					<div class="button-row" id="bulletBtns">
-				        <select ng-model="bullet_action" ng-options="action.name for action in bullet_chart_actions" ng-change="modify('bullet_chart',bullet_action.data)"></select>
+				        <div class="dropdown" dropdown-select="bullet_chart_actions" dropdown-model="bullet_action" dropdown-item-label="name" dropdown-onchange="modify('bullet_chart',bullet_action.data)"></div>
 				    </div>
 				</div>
 
@@ -146,7 +127,7 @@
 				<div class="col col_1_of_1">
 					<div class="chart-demo" zingchart id="mixed_chart" zc-data="mixed_data"></div>
 					<div class="button-row" id="mixedBtns">
-						<select ng-model="mixed_action" ng-options="action.name for action in mixed_chart_actions" ng-change="setdata('mixed_chart',mixed_action.data)"></select>
+						<div class="dropdown" dropdown-select="mixed_chart_actions" dropdown-model="mixed_action" dropdown-item-label="name" dropdown-onchange="setdata('mixed_chart',mixed_action.data)"></div>
 					</div>
 				</div>
 
@@ -198,12 +179,12 @@
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="bar_rules_chart" zc-data="bar_rules_data"></div>
-					<select ng-model="bar_rules_action" ng-options="action.name for action in bar_rules_chart_actions" ng-change="setdata('bar_rules_chart', bar_rules_action.data)"></select>
+					<div class="dropdown" dropdown-select="bar_rules_chart_actions" dropdown-model="bar_rules_action" dropdown-item-label="name" dropdown-onchange="setdata('bar_rules_chart', bar_rules_action.data)"></div>
 				</div>
 
 				<div class="col col_1_of_3">
 					<div class="chart-demo" zingchart id="currency_chart" zc-data="currency_data"></div>
-					<select ng-model="currency_action" ng-options="action.name for action in currency_chart_actions" ng-change="modify('currency_chart', currency_action.data)"></select>
+					<div class="dropdown" dropdown-select="currency_chart_actions" dropdown-model="currency_action" dropdown-item-label="name" dropdown-onchange="modify('currency_chart', currency_action.data)"></div>
 				</div>
 
 				<div class="col col_1_of_3">
@@ -232,59 +213,15 @@
 
 				<div class="col col_1_of_2">
 					<div class="chart-demo" zingchart id="stacked_chart" zc-data="stacked_data"></div>
-					<select ng-model="stacked_action" ng-options="action.name for action in stacked_chart_actions" ng-change="set_series_and_modify('stacked_chart', stacked_action.series, stacked_action.data)"></select>
+					<div class="dropdown" dropdown-select="stacked_chart_actions" dropdown-model="stacked_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('stacked_chart', stacked_action.series, stacked_action.data)"></div>
 				</div>
 
 				<div class="col col_1_of_2">
 					<div class="chart-demo" zingchart id="area_stacked_chart" zc-data="area_stacked_data"></div>
-					<select ng-model="area_stacked_action" ng-options="action.name for action in area_stacked_chart_actions" ng-change="modify('area_stacked_chart', area_stacked_action.data)"></select>
+					<div class="dropdown" dropdown-select="area_stacked_chart_actions" dropdown-model="area_stacked_action" dropdown-item-label="name" dropdown-onchange="modify('area_stacked_chart', area_stacked_action.data)"></div>
 				</div>
 
 			</div>
-
-			<!-- 
-
-			<div class="row lotsa_rows">
-				
-				<div class="col col_1_of_2">
-					<div class="chart-demo" zingchart id="parent_chart" zc-data="parent_data"></div>
-				</div>
-
-			</div>
-
-			-->
-
-			<!--
-
-			<div class="row lotsa_rows">
-				
-				<div class="col col_1_of_1">
-					<div class="chart-demo" zingchart id="big_chart" zc-data="big_data"></div>
-				</div>
-
-			</div>
-
-			<div class="row lotsa_rows">
-				
-				<div class="col col_1_of_1">
-					<div class="chart-demo" zingchart id="tooltips_chart" zc-data="tooltips_data"></div>
-					<button ng-model="tooltips_current_text" ng-click="toggle_tooltips('tooltips_chart')">{{tooltips_current_text}}</button>
-					<div multi-select input-model="tooltips_actions" button-label="name" item-label="name" helper-elements="" tick-property="ticked" default-label="Select an option" on-item-click="modify_tooltips( data )"></div>
-				</div>
-
-			</div>
-
-			<div class="row lotsa_rows">
-				
-				<div class="col col_1_of_1">
-					<div class="chart-demo" zingchart id="zooming_chart" zc-data="zooming_data"></div>
-					<button ng-model="tooltips_current_text" ng-click="toggle_tooltips('tooltips_chart')">{{tooltips_current_text}}</button>
-					<div multi-select input-model="tooltips_actions" button-label="name" item-label="name" helper-elements="" tick-property="ticked" default-label="Select an option" on-item-click="modify_tooltips( data )"></div>
-				</div>
-
-			</div>
-
-			-->
 
 		</div>
 	</div>

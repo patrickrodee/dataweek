@@ -16,7 +16,7 @@
 							<p ng-model="time_to_render" id="time-to-render">{{points_to_render.name}} rendered in {{time_to_render}}</p>
 						</li>
 						<li>
-							<button class="right" type="button" id="z9">Need more?</button>
+							<button class="right" type="button" id="z9">Need more? Try Z9</button>
 						</li>
 					</ul>
 				</div>
@@ -24,16 +24,10 @@
 			<div class="col col_1_of_2">
 				<div>
 					<h2 class="subtitle">Evaluate it</h2>
-					<div class="chart-demo" zingchart id="evaluate-demo" zc-data="evaluate_data_plot_rules"></div>
+					<div class="chart-demo" zingchart id="evaluate-demo" zc-data="evaluate_data"></div>
 					<ul class="big-data-input">
 						<li>
-							<button type="button" ng-click="modify('evaluate-demo',evaluate_data_plot_rules)">Plot Rules</button>
-						</li>
-						<li>
-							<button type="button" ng-click="modify('evaluate-demo',evaluate_data_marker_rules)">Marker Rules</button>
-						</li>
-						<li>
-							<button>Drilldown</button>
+							<button type="button" ng-click="set_data('evaluate-demo', evaluate_data_rules)">Apply Rules</button>
 						</li>
 					</ul>
 				</div>

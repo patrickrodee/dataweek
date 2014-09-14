@@ -95,7 +95,7 @@ angular.module('MyApp')
 		{name: "Oceanic Theme", 	theme: oceanic_theme}
 		]
 
-		$scope.theme_action = {name: "Standard"};
+		$scope.theme_action = {name: "Standard Theme"};
 		
 		$scope.renderWithTheme = function(theme) {
 			angular.forEach($scope.all_charts, function(value, key) {
@@ -192,7 +192,7 @@ angular.module('MyApp')
 		{name: "Stepped", data: {'object':"plot",'data' : {"aspect": 'Stepped'}}}
 		]
 
-		$scope.area_action = $scope.area_chart_actions[0];
+		$scope.area_action = {name: "Standard"};
 
 		$scope.area_dimension = '2D';
 
@@ -204,12 +204,11 @@ angular.module('MyApp')
 		};
 
 		$scope.pie_chart_actions = [
-		{name: "Pie", 			values: {'update': 0, 'values':[[5],[2],[7],[10]]}, 								data: {'data': { 'type':'pie', 'plot': {'slice': 0} } } },
-		{name: "Donut/Ring", 	values: {'update': 0, 'values': [[5],[2],[7],[10]]}, 								data: {'data': {'type':'pie', 'plot': {'slice': 50 } } } }
-		/* {name: "Nested", 		values: {'update': 0, 'values': [ [5,6,3,8], [8,3,5,1], [7,10,3,6], [3,9,9,5] ] }, 	data: { 'data': { "type": 'nestedpie',"plot":{"slice":0,"value-box":{"visible":false}}}}} */
+		{name: "Pie", 			values: {'update': 0, 'values':[[5],[2],[7],[10]]}, 	data: {'data': { 'type':'pie', 'plot': {'slice': 0} } } },
+		{name: "Donut/Ring", 	values: {'update': 0, 'values': [[5],[2],[7],[10]]}, 	data: {'data': {'type':'pie', 'plot': {'slice': 50 } } } }
 		]
 
-		$scope.pie_action = $scope.pie_chart_actions[0];
+		$scope.pie_action = {name: "Pie"};
 
 		$scope.pie_dimension = '2D';
 
@@ -254,7 +253,7 @@ angular.module('MyApp')
 		{name: "Mixed", 	series: radar_data_chart_mixed, 	data: {}}
 		]
 
-		$scope.radar_action = $scope.radar_chart_actions[0];
+		$scope.radar_action = {name: "Line"};
 
 		/************** Stock Chart Specific **************/
 
@@ -263,7 +262,7 @@ angular.module('MyApp')
 		{name: "Whisker", 	 	data: {object:'plot',data:{'aspect':'whisker'}}}
 		]
 
-		$scope.stock_action = $scope.stock_chart_actions[0];
+		$scope.stock_action = {name: "Candlestick"};
 
 		/************** Bubble Chart Specific **************/
 
@@ -273,7 +272,7 @@ angular.module('MyApp')
 		{name: "Area", 			data: {'object':'plot','data':{'scaling':'area'}}}
 		]
 
-		$scope.bubble_action = $scope.bubble_chart_actions[0];
+		$scope.bubble_action = {name: "Square Root"};
 
 		/************** Piano Chart Specific **************/
 
@@ -284,7 +283,7 @@ angular.module('MyApp')
 		{name: "Vertical", 		data: {'object':'plot','data':{'aspect':'vertical'}}}
 		]
 
-		$scope.piano_action = $scope.piano_chart_actions[0];
+		$scope.piano_action = {name: "Brightness"};
 
 		/************** Bullet Chart Specific **************/
 
@@ -293,7 +292,7 @@ angular.module('MyApp')
 		{name: "Cone", 		data: {'object':'plot','data':{'aspect':'cone'}}}
 		]
 
-		$scope.bullet_action = $scope.bullet_chart_actions[0];
+		$scope.bullet_action = {name: "Standard"};
 
 		/************** Mixed Chart Specific **************/
 
@@ -305,7 +304,7 @@ angular.module('MyApp')
 		{name: "Bar/Line Only", 		data: {"data": {"type":"mixed","title":{"text":"Mixed - XY","height":"20px"},"labels":[{"text":"Up to 9-Y and 9-X Axis","x":"70%","y":"18%","text-align":"left","background-color":"#fff","border-radius":"6px","padding":"10px"}],"plotarea":{"margin":"80 150 60 60"},"scale-y":{"line-color":"#7ca82b","label":{"text":"Y-Axis Bar Values"}},"scale-y-2":{"values":"0:100:10","line-color":"#1db0e1","label":{"text":"Y2-Axis Line Value"}},"scale-y-3":{"values":"0:1000:100","line-color":"#cc3300","label":{"text":"Y3-Axis Line Value"}},"scale-y-4":{"values":"0:10000:1000","line-color":"#f9c332","label":{"text":"Y4-Axis Line Value"}},"scale-x":{"values":["1","2","3","4","5","6","7","8","9"]},"scale-x-2":{"values":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"line-color":"#f9c332"},"series":[{"values":[8,31,12,41,24,20,16,40,9],"type":"bar","hover-state":{"visible":0}},{"values":[26,13,11,26,7,44,11,28,42],"type":"line","scales":"scale-x,scale-y-2"},{"values":[180,320,490,500,650,501,705,500,402],"type":"line","scales":"scale-x,scale-y-3"},{"values":[7300,8103,9010,8200,7600,6400,8101,7020,9040,8003,7010,6900],"type":"line","scales":"scale-x-2,scale-y-4"}]}}}
 		]
 
-		$scope.mixed_action = $scope.mixed_chart_actions[0];
+		$scope.mixed_action = {name: "Bar/Line Area"};
 
 		/************** Bar Rules Chart Specific **************/
 
@@ -315,7 +314,7 @@ angular.module('MyApp')
 		{name: "Value Box Rules", 	data: {"data": {"type":"bar","title":{"text":"Value Box Rules"},"plot":{"value-box":{"placement":"top-in","shadow":"0","rules":[{"rule":"%v > 0","visible":"true","color":"#fff","background-color":"none"},{"rule":"%v < 0","visible":"true","color":"#fff","background-color":"#cc3300","border-radius":"4px"}]}},"series":[{"values":[50,-24,68,98,-35],"background-color":"#85bdcd"}]}}}
 		]
 
-		$scope.bar_rules_action = $scope.bar_rules_chart_actions[0];
+		$scope.bar_rules_action = {name: "Bar Rules"};
 
 		/************** Currency Chart Specific **************/
 
@@ -325,17 +324,7 @@ angular.module('MyApp')
 		{name: "₹ - RTL", 	data: {"data": {"subtitle":{"text":"Indian Rupee - RTL lol","rtl":1},"scale-y":{"format":"₹%v"}}}}
 		]
 
-		$scope.currency_action = $scope.currency_chart_actions[0];
-
-		/************** Images Chart Specific **************/
-
-		$scope.images_chart_actions = [
-		{name: "Logo", 		data: {"data": {"images":[{"src":logo_sm,"x":"5%","y":"90%","shadow":1,"border-radius":5,"shadow-offset":0,"shadow-distance":0,"shadow-alpha":0.7}]}}},
-		{name: "Plot", 		data: {"data": {"plot":{"background-image":ocean_wave},"plotarea":{"background-image":null}}}},
-		{name: "Plot Area", data: {"data": {"plotarea":{"background-image":ocean_wave},"plot":{"background-image":null}}}}
-		]
-
-		$scope.images_action = $scope.images_chart_actions[0];
+		$scope.currency_action = {name: "$ - PDT"};
 
 		/************** Stacked Chart Specific **************/
 
@@ -345,9 +334,7 @@ angular.module('MyApp')
 		{name: "Grouped", 	series: barstack01,		data: {"data":{"stack-type": 'normal'}}}
 		]
 
-		$scope.stacked_action = $scope.stacked_chart_actions[0];
-
-		$scope.images_action = $scope.images_chart_actions[0];
+		$scope.stacked_action = {name: "Normal"};
 
 		/************** Area Stacked Chart Specific **************/
 
@@ -356,7 +343,7 @@ angular.module('MyApp')
 		{name: "100%", 		data: {"data":{"stack-type": '100%'}}}
 		]
 
-		$scope.area_stacked_action = $scope.area_stacked_chart_actions[0];
+		$scope.area_stacked_action = {name: "Normal"};
 
 		/************** Area Stacked Chart Specific **************/
 
