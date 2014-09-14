@@ -445,3 +445,6 @@ button:focus,
 select:focus {
 	outline: none;
 }
+.builder-demo {
+	margin-left: 200px;
+}
