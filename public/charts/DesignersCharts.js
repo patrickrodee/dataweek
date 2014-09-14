@@ -1,3 +1,42 @@
+var standard_chart_data = {
+    "data": {
+        "graphset":[
+            {
+                "type":"bar",
+                "title":{
+                    "text":"Production Report"
+                },
+                "plot":{
+                    "border-radius-top-left":5,
+                    "border-radius-top-right":5
+                },
+                "scale-x":{
+                    "values":["2010","2011","2012","2013","2014<br>(Projected)"]
+                },
+                "scale-y":{
+                    "label":{
+                        "text":"Units"
+                    },
+                    "multiplier":true
+                },
+                "legend":{
+
+                },
+                "series":[
+                    {
+                        "values":[28000,26000,19000,13000,13000],
+                        "text":"Model A10"
+                    },
+                    {
+                        "values":[8000,14000,24000,32000,35000],
+                        "text":"Model A20"
+                    }
+                ]
+            }
+        ]
+    }
+};
+
 var autodesk_chart_data = {
     "data": {
         "graphset":[
@@ -8,11 +47,11 @@ var autodesk_chart_data = {
                 "title":{
                     "font-family": "Istok Web",
                     "text":"Production Report",
-                    "background-image":"autoGray.png",
-                    "background-repeat": "no-repeat",
-                    "background-position": "50% 0%",
-                    "background-alpha": 0.2,
-                    "color": "#5E5E5E"
+                    "color": "#5E5E5E",
+                    "border-right":"1px solid #dfdfdf",
+                    "border-left":"1px solid #dfdfdf",
+                    "gradient-colors":"#eeeeee #ffffff #fbfbfb #dfdfdf #aaaaaa",
+                    "gradient-stops":"0.05 0.2 0.3 0.85 0.98"
                 },
                 "plot":{
                     "border-radius-top-left":5,
@@ -27,6 +66,12 @@ var autodesk_chart_data = {
                     "item":{
                         "color": "#5e5e5e",
                         "font-family": "Istok Web",
+                    },
+                    "tick":{
+                        "line-color": "#5e5e5e"
+                    },
+                    "guide":{
+                        "visible":false
                     }
                 },
                 "scale-y":{
@@ -40,6 +85,12 @@ var autodesk_chart_data = {
                     "item":{
                         "color": "#5e5e5e",
                         "font-family": "Istok Web",
+                    },
+                    "tick":{
+                        "line-color": "#5e5e5e"
+                    },
+                    "guide":{
+                        "visible":false
                     }
                 },
                 "legend":{
@@ -67,7 +118,15 @@ var autodesk_chart_data = {
                         "gradient-colors": "#1E8A80 #B1EAF0 #5D9796 #3FA292 #1A696B",
                         "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
                         "fill-angle": 0,
-                        "alpha": 0.9
+                        "alpha": 0.9,
+                        "tooltip":{
+                            "gradient-colors": "#1E8A80 #B1EAF0 #5D9796 #3FA292 #1A696B",
+                            "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
+                            "shadow":0,
+                            "border-color":"#1E8A80",
+                            "border-width":2,
+                            "border-radius":2
+                        }
                     },
                     {
                         "values":[8000,14000,24000,32000,35000],
@@ -75,7 +134,15 @@ var autodesk_chart_data = {
                         "gradient-colors": "#376A19 #9EEE8D #4A7E38 #578D43 #20470D",
                         "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
                         "fill-angle": 0,
-                        "alpha": 0.9
+                        "alpha": 0.9,
+                        "tooltip":{
+                            "gradient-colors": "#376A19 #9EEE8D #4A7E38 #578D43 #20470D",
+                            "gradient-stops":"0.05 0.1 0.5 0.85 0.95",
+                            "shadow":0,
+                            "border-color":"#376A19",
+                            "border-width":2,
+                            "border-radius":2
+                        }
                     }
                 ]
             }

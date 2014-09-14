@@ -3,7 +3,7 @@ angular.module('MyApp')
 
 		$scope.chart_json = complicated_chart_data;
 
-		$scope.editable_json = JSON.stringify($scope.chart_json, null, '\t');
+		$scope.editable_json = JSON.stringify($scope.chart_json, null, '\t').replace(/(\u005B)\s*(\d)/g, '$1$2').replace(/(\d\u002C?)[\s*|\n]+/g, '$1');
 
 		$scope.aceLoaded = function(_editor) {
 			_editor.setOptions({

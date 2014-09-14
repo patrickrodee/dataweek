@@ -3,22 +3,6 @@
 		<h2>DIY Dataviz</h2>
 		<div class="buttons">
 			<div dropdown-select="all_themes" dropdown-model="current_theme" dropdown-item-label="name" dropdown-onchange="new_screen(current_theme.theme)"></div>
-			<!--
-			<ul>
-				<li>
-					<button ng-click="new_screen('autodesk')">Autodesk</button>
-				</li>
-				<li>
-					<button ng-click="new_screen('tesla')">Tesla</button>
-				</li>
-				<li>
-					<button ng-click="new_screen('paypal')">Paypal</button>
-				</li>
-				<li>
-					<button ng-click="new_screen('nike')">Nike</button>
-				</li>
-			</ul>
-			-->
 		</div>
 	</div>
 	<div class="content">
@@ -26,7 +10,7 @@
 			<div class="laptop-demo">
 				<img id="laptop-cutout" src="../images/laptop.png">
 				<img id="laptop-screen" ng-src="{{screen_image}}">
-				<div zingchart id="designers_chart" zc-data="autodesk_data"></div>
+				<div zingchart id="designers_chart" zc-data="standard_data"></div>
 			</div>
 		</div>
 	</div>

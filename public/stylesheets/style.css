@@ -196,7 +196,8 @@ h2.thin {
 	/* color: #605e5e; */
 }
 .title .buttons {
-	float: right;
+	float: left;
+	margin-left: 71px;
 	height: 50px;
 }
 .fixed {
@@ -269,17 +270,16 @@ ul#float-right > li {
 
 /* Height of .easy is just for testing purposes */
 .easy {
-	height: 645px;
+	height: 660px;
+	width: 880px;
 	border: 1px solid;
+}
+.chart {
+	margin-left: 100px;
 }
 
 
 /* Height of .json is just for testing purposes */
-.json {
-	height: 645px;
-	width: 400px;
-	margin-bottom: 10px;
-}
 
 .big-complex {
 	height: 695px;
@@ -336,6 +336,7 @@ ul#float-right > li {
 	height: 400px;
 	top: -687px;
 	left: 900px;
+	border-radius: 5px;
 	background-color: #FFF;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 -10px 10px rgba(0,0,0,0.1);
 }
@@ -347,10 +348,15 @@ ul#float-right > li {
 	margin-top: 11.5px;
 	margin-bottom: 11.5px;
 }
+.editor {
+	height: 660px;
+}
+/*
 .ace_editor { 
-	height: 500px; 
+	height: 660px;
 	font-family: Monaco, Consolas, "Lucida Console", monospace;
 }
+*/
 .ace_scrollbar .ace_scrollbar-h {
 	font-family: Monaco, Consolas, "Lucida Console", monospace;
 }

@@ -89,10 +89,10 @@ angular.module('MyApp')
 		];
 
 		$scope.theme_actions = [
-		{name: "Standard",	theme: default_theme},
-		{name: "Googlish", 	theme: googlish_theme},
-		{name: "Gotham", 	theme: gotham_theme},
-		{name: "Oceanic", 	theme: oceanic_theme}
+		{name: "Standard Theme",	theme: default_theme},
+		{name: "Googlish Theme", 	theme: googlish_theme},
+		{name: "Gotham Theme", 		theme: gotham_theme},
+		{name: "Oceanic Theme", 	theme: oceanic_theme}
 		]
 
 		$scope.theme_action = {name: "Standard"};

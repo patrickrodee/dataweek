@@ -7,22 +7,22 @@
 			<div class="col_1_of_2">
 				<div class="easy-demo">
 					<h2 class="subtitle thin">JSON</h2>
-					<div ui-ace="{
+					<div class="editor" ui-ace="{
 							useWrapMode : true,
 							showGutter: false,
 							theme:'dawn',
 							mode: 'json',
 							onLoad: aceLoaded,
 						
-							}" ng-model="editable_json"  class=" ace-editor"
+							}" ng-model="editable_json"  class="ace-editor"
 ></div>
 					<!-- <button class="right">Render</button> -->
 				</div>
 			</div>
 			<div class="col_1_of_2">
-				<div class="easy-demo">
+				<div class="easy-demo chart">
 					<h2 class="subtitle thin">Chart</h2>
-					<div class="easy chart" zingchart id="complicated_chart" zc-data="chart_json"></div>
+					<div class="easy" zingchart id="complicated_chart" zc-data="chart_json"></div>
 				</div>
 			</div>
 		</div>

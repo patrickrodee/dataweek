@@ -2,7 +2,7 @@ var complicated_chart_data = {
 	"data": {
 		"type": "line",
 		"title":{
-			"text":"Hello ZingChart World!"
+			"text":"Hello Dataweek 2014!"
 		},
 		"series": [
 			{
