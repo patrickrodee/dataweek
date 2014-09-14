@@ -44,10 +44,10 @@ var autodesk_chart_data = {
                 "background-color": "#f5f5f5",  
                 "alpha": 0.3,
                 "type":"bar",
-                "title":{
-                    "font-family": "Istok Web",
-                    "text":"Production Report",
-                    "color": "#5E5E5E",
+                 "title":{
+                    "font-family":"Istok Web",
+                    "text":"PRODUCTION REPORT",
+                    "font-color":"#5E5E5E",
                     "border-right":"1px solid #dfdfdf",
                     "border-left":"1px solid #dfdfdf",
                     "gradient-colors":"#eeeeee #ffffff #fbfbfb #dfdfdf #aaaaaa",
@@ -157,9 +157,8 @@ var tesla_chart_data = {
                 "background-color":"none",
                 "type":"bar",
                 "title":{
-                    "text":"Production Report",
-                    "color":"#666666",
-                    "font-family": "Muli",
+                    "text":"PRODUCTION REPORT",
+                    "font-color":"#666666",
                     "background-color": "none",
                     "align": "left",
                     "x": "6%",
@@ -169,15 +168,13 @@ var tesla_chart_data = {
                     "value-box":{
                         "short":true,
                         "short-unit":"K",
-                        "font-family":"Muli",
                         "color": "#666666"
                     }
                 },
                 "scale-x":{
-                    "values":["2010","2011","2012","2013","2014<br>(Projected)"],
+                    "values":["2010","2011","2012","2013","2014<br><b>Projected</b>"],
                     "item":{
                         "color": "#666666",
-                        "font-family": "Muli"
                     },
                     "guide":{
                         "visible":0
@@ -191,7 +188,6 @@ var tesla_chart_data = {
                 "scale-y":{
                     "label":{
                         "text":"Units Produced",
-                        "font-family": "Muli",
                         "color": "#666666"
                     },
                     "item":{
@@ -209,24 +205,57 @@ var tesla_chart_data = {
                 "legend":{
                     "layout":"horizontal",
                     "item":{
-                        "font-family": "Muli",
                         "color":"#666666"
+                    },
+                    "marker":{
+                        "border-color":"#fff",
+                        "border-width":1
                     },
                     "background-color": "transparent",
                     "shadow": 0,
                     "border-color": "none",
-                    "position": "5% 6%"
+                    "position": "5% 7%"
                 },
                 "series":[
                     {
                         "values":[28000,26000,19000,13000,13000],
                         "text":"Model A10",
-                        "background-color": "#EC0C19 #910C11"
+                        "background-color": "#EC0C19 #910C11",
+                        "rules":[
+                            {
+                                "rule":"%i == 4",
+                                "background-image":"PATTERN_WEAVE",
+                            }
+                        ],
+                        "tooltip":{
+                            "text":"<b>%t</b><br>Production Year: <b>%k</b><br>Units Produced: <b>%v</b>",
+                            "shadow":0,
+                            "background-color": "#910C11 #EC0C19",
+                            "text-align":"left",
+                            "border-radius":2,
+                            "border-width":1,
+                            "border-color":"#fff"
+                        }
                     },
                     {
                         "values":[8000,14000,24000,32000,35000],
                         "text":"Model A20",
-                        "background-color": "#1A9AF3 #074780"
+                        "background-color": "#1A9AF3 #074780",
+                        "rules":[
+                            {
+                                "rule":"%i == 4",
+                                "background-image":"PATTERN_WEAVE",
+                            }
+                        ],
+                        "tooltip":{
+                            "text":"<b>%t</b><br>Production Year: <b>%k</b><br>Units Produced: <b>%v</b>",
+                            "shadow":0,
+                            "background-color": "#074780 #1A9AF3",
+                            "text-align":"left",
+                            "border-radius":2,
+                            "border-width":1,
+                            "border-color":"#fff"
+                        }
                     }
                 ]
             }
@@ -240,19 +269,18 @@ var paypal_chart_data = {
             {
                 "type":"bar",
                 "background-color":"#199cde",
-                "border-radius-top-left":"15px",
-                "border-radius-top-right":"15px",
-                "border-radius-bottom-left":"10px",
-                "border-radius-bottom-right":"10px",
+                "border-radius-top-left":"8px",
+                "border-radius-top-right":"8px",
+                "border-radius-bottom-left":"8px",
+                "border-radius-bottom-right":"8px",
                 "title":{
                     "text":"Production Report",
                     "height":"40px",
-                    "background-color":"#fafafa",
+                    "background-color":"none",
                     "font-size":"22px",
                     "font-family":"Open Sans",
-                    "font-color":"#243b80",
-                    "font-style":"italic",
-                    "text-align":"left",
+                    "font-color":"#fff",
+                    "text-align":"center",
                     "border-radius-top-left":"10px",
                     "border-radius-top-right":"10px"
                 },
@@ -266,7 +294,7 @@ var paypal_chart_data = {
                 },
                 "plotarea":{
                     "background-color":"#fff",
-                    "margin":"80px 60px 80px 80px"
+                    "margin":"70px 60px 80px 80px"
                 },
                 "scale-x":{
                     "values":["2010","2011","2012","2013","2014<br>(Projected)"],
@@ -274,6 +302,7 @@ var paypal_chart_data = {
                         "font-color":"#fff"
                     },
                     "line-color":"#fff",
+                    "line-width":"1px",
                     "tick":{
                         "line-width":0
                     },
@@ -325,7 +354,7 @@ var paypal_chart_data = {
                 },
                 "legend":{
                     "layout":"h",
-                    "y":"82%",
+                    "y":"87%",
                     "x":"30%",
                     "background-color":"none",
                     "border-width":0,
