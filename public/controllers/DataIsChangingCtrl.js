@@ -21,6 +21,8 @@ angular.module('MyApp')
 			zingchart.exec('pulling-demo', 'setdata', pulling_data_go);
 		}
 
+		
+
 		// Initial Toggles
 
 		$scope.pushing_state = 'Stop Pushing';
