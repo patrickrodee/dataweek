@@ -15,9 +15,9 @@ angular.module('MyApp')
 
 		//$scope.evaluate_data_marker_rules 	= evaluate_data_marker_rules_chart;
 
-		$scope.annotate_data 				= annotate_data_chart;
+		$scope.annotate_data 		= annotate_data_chart;
 
-		$scope.share_data 					= share_data_chart;
+		$scope.share_data 			= share_data_chart;
 
 		// ACTIONS /////////////////
 
@@ -82,41 +82,7 @@ angular.module('MyApp')
 
 			var aRange = [a + b*fScaleMin, a + b*fScaleMax];
 
-			var payload = {
-				'data' : {
-		             "labels":[{
-		                    "text":"Click to add your own trend lines!",
-		                    "background-color":"#fff",
-		                    "padding":"2 6 2 6",
-		                    "x":"65%",
-		                    "y":"14%",
-		                    "width":200
-		                    },
-		                    {
-		                    "text":"Select a node to create call-out.",
-		                    "background-color":"#fff",
-		                    "padding":"2 6 2 6",
-		                    "x":"65%",
-		                    "y":"18%",
-		                    "width":200
-		                }],
-					'scale-y' : {
-						markers : [
-							{
-								type : 'line',
-								range : aRange,
-								lineColor : '#c00',
-								lineWidth : 3,
-								alpha : 0.75,
-								lineStyle : 'dashed',
-								label : {
-									text : ''
-								}
-							}
-						]
-					}
-				}
-			};
+			var payload = {"data":{"labels":[{"text":"2. Click two blank spots in the plot (start/end) to draw your own trend line!","background-color":"#fff","font-size":"12px","padding":"2 6 2 6","x":"8%","y":"17%"},{"text":"1. Select a node to create a note.","background-color":"#fff","font-size":"12px","padding":"2 6 2 6","x":"8%","y":"11%"}],'scale-y':{markers:[{type:'line',range:aRange,lineColor:'#c00',lineWidth:3,alpha:0.75,lineStyle:'dashed',label:{text:''}}]}}};
 
 			zingchart.exec('annotate-demo', 'modify', payload);
 		};

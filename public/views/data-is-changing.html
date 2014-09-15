@@ -4,14 +4,18 @@
 	</div>
 	<div class="content">
 		<div class="row row_1_of_2">
-			<h2 class="subtitle">Pushing Data</h2>
-			<div class="chart-demo" zingchart id="pushing-demo" zc-data="pushing_data"></div>
-			<button type="button" ng-click="togglepushing()">{{pushing_state}}</button>
+			<div class="col col_1_of_1">
+				<h2 class="subtitle">Pushing Data</h2>
+				<div class="chart-demo" zingchart id="pushing-demo" zc-data="pushing_data_go"></div>
+				<button type="button" ng-click="togglepushing()">{{pushing_state}}</button>
+			</div>
 		</div>
 		<div class="row row_1_of_2">
-			<h2 class="subtitle">Pulling Data</h2>
-			<div class="chart-demo" zingchart id="pulling-demo" zc-data="pulling_data"></div>
-			<button type="button" ng-click="togglepulling()">{{pulling_state}}</button>
+			<div class="col col_1_of_1">
+				<h2 class="subtitle">Pulling Data</h2>
+				<div class="chart-demo" zingchart id="pulling-demo" zc-data="pulling_data_go"></div>
+				<button type="button" ng-click="togglepulling()">{{pulling_state}}</button>
+			</div>
 		</div>
 	</div>
 </div>
