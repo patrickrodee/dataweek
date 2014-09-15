@@ -1,4 +1,4 @@
-angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'ngDropdowns', 'ui.ace'])
+angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'ngDropdowns', 'ui.ace', 'snap'])
   .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     
     $locationProvider.html5Mode(false);

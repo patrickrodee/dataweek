@@ -5,9 +5,12 @@ body {
 }
 header {
 	width: 100%;
+	z-index: 4;
+	position: fixed;
 }
 section {
 	float: left;
+	background-color: #FFF;
 }
 ul {
 	list-style: none;
@@ -20,13 +23,11 @@ header ul li {
 	height: 128px;
 	background-color: #003849;
 }
+nav {
+	background-color: #74D3EE;
+}
 nav ul li {
 	padding: 27px 25px;
-	/*
-	padding-left: 25px;
-	padding-top: 27px;
-	padding-bottom: 27px;
-	*/
 	color: #666;
 }
 nav ul li:first-child {
@@ -95,6 +96,9 @@ button:disabled,
 	color: #BBB;
 	cursor: not-allowed;
 }
+.nav-burger {
+	margin: 10px;
+}
 #no-float {
 	float: none;
 }
@@ -135,7 +139,6 @@ button:disabled,
 }
 #nav-section {
 	width: 500px;
-	background-color: #74D3EE;
 }
 #details-section {
 	padding-left: 100px;
@@ -450,4 +453,45 @@ select:focus {
 }
 .builder-demo {
 	margin-left: 200px;
+}
+.aside-nav {
+	width: 300px;
+	position: absolute;
+	top: 128px;
+}
+.aside-nav h3 {
+	font-size: 18px;
+	line-height: 20px;
+}
+.aside-nav h2 {
+	font-size: 24px;
+	line-height: 26px;
+}
+.aside-nav li {
+	padding: 10px;
+	width: 300px;
+}
+
+#nav-button {
+	display: none;
+}
+
+/* MEDIA QUERY FOR LESS THAN PRESENTATION MONITOR */
+
+@media (max-width: 2559px) {
+	#zingchart-title {
+		width: 20%;
+	}
+	#nav-button {
+		display: block;
+		width: 3%;
+	}
+	#bigviz-bigdata {
+		width: 77%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.nav-burger {
+		margin-top: 50px;
+	}
 }
