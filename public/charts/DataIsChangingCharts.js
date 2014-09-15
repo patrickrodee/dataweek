@@ -31,7 +31,7 @@ var pushing_data_chart_go = {
             "type":"feed",
             "max-ticks":20,
             "transport":"websockets",
-            "url":"ws://localhost:8888/",
+            "url":"ws://198.101.197.138:8888/",
             "method":"push"
         },
         "series":[
@@ -57,7 +57,7 @@ var pulling_data_chart_go = {
             "type":"feed",
             "max-ticks":20,
             "transport":"websockets",
-            "url":"ws://localhost:8888/",
+            "url":"ws://198.101.197.138:8888/",
             "method":"pull"
         },
         "series":[

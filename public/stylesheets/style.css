@@ -449,9 +449,11 @@ select:focus {
 	margin-left: 200px;
 }
 
-/* MEDIA QUERY FOR LESS THAN PRESENTATION MONITOR */
+/******************************************************/
+/*** MEDIA QUERY FOR LESS THAN PRESENTATION MONITOR ***/
+/******************************************************/
 
-@media (max-width: 2559px) {
+@media (max-width: 2558px) {
 	#zingchart-title {
 		width: 20%;
 	}
