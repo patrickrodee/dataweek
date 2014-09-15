@@ -531,6 +531,9 @@ var annotate_data_chart = {
 
 var share_data_chart = {
 	"data": {
+	}
+};
+/*
         "type":"line",
         "title":{
             "text":"Callout Demo"
@@ -586,3 +589,4 @@ var share_data_chart = {
         ]
     }
 };
+*/
