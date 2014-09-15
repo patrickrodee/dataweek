@@ -27,7 +27,8 @@ angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'ngDropdowns'
     		templateUrl: 'views/we-use.html'
     	})
     	.when('/data-is-changing', {
-    		templateUrl: 'views/data-is-changing.html'
+    		templateUrl: 'views/data-is-changing.html',
+            controller: 'DataIsChangingCtrl'
     	})
     	.when('/dataviz-like-ours', {
     		templateUrl: 'views/dataviz-like-ours.html',
