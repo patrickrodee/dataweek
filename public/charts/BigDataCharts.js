@@ -442,7 +442,7 @@ var annotate_data_chart = {
 	            "title":{
 	                "text":"Annotate Your Data"
 	            },
-	            "labels":[
+	            "-labels":[
 	                {
 	                    "text":"1. Select a node to create a note.",
 	                    "background-color":"#fff",

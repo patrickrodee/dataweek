@@ -451,35 +451,3 @@ select:focus {
 .builder-demo {
 	margin-left: 200px;
 }
-
-/* MEDIA QUERY FOR LESS THAN PRESENTATION MONITOR */
-
-@media (max-width: 2559px) {
-	#zingchart-title {
-		width: 20%;
-	}
-	#bigviz-bigdata {
-		width: 80%;
-		padding-left: 0;
-		padding-right: 0;
-	}
-	#nav-section {
-		width: 100%;
-	}
-	.navigation {
-		height: inherit;
-	}
-	.navigation ul li {
-		float: left;
-		display: inline;
-		padding: 10px;
-	}
-	.navigation ul li h2 {
-		font-size: 12px;
-		line-height: 14px;
-	}
-	.navigation ul li h3 {
-		font-size: 12px;
-		line-height: 14px;
-	}
-}

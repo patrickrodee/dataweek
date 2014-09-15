@@ -6,10 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ZingChart Demo</title>
-	<link href="/stylesheets/style.css" rel="stylesheet">
+	<link href="/stylesheets/style.css"             rel="stylesheet">
     <link href="/stylesheets/angular-dropdowns.css" rel="stylesheet">
-    <link href="/stylesheets/c3.css" rel="stylesheet">
-    <link href="/stylesheets/jquery-ui.css" rel="stylesheet">
+    <link href="/stylesheets/c3.css"                rel="stylesheet">
+    <link href="/stylesheets/jquery-ui.css"         rel="stylesheet">
+    <link href="/stylesheets/font-awesome.css"      rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -25,8 +26,8 @@
         </ul>
 	</header>
 	<section id="nav-section">
-		<div class="navigation">
-    		<nav role="navigation" bs-navbar>
+		<div class="navigation" ng-controller="NavCtrl">
+    		<nav role="navigation" bs-navbar ng-hide="not_presentation">
     			<ul>
     				<li id="big-data" data-match-route="/big-data">
     					<a href="#/big-data">
@@ -117,6 +118,7 @@
     <!-- App -->
 	<script src="/app.js"></script>
     <!-- Controllers -->
+    <script src="/controllers/NavCtrl.js"></script>
 	<script src="/controllers/BigDataCtrl.js"></script>
     <script src="/controllers/ComplicatedVizCtrl.js"></script>
     <script src="/controllers/MobileCtrl.js"></script>
