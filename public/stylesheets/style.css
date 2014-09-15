@@ -74,7 +74,8 @@ a {
 .toggle {
 	margin-left: 10px;
 }
-button {
+button,
+.button {
 	font-size: 18px;
 	background-color: #605E5E;
 	color: #FFF;
@@ -85,10 +86,12 @@ button {
 	font-weight: normal;
 	cursor: pointer;
 }
-button:hover {
+button:hover,
+.button:hover {
 	background-color: #727272;
 }
-button:disabled {
+button:disabled,
+.button:disabled {
 	color: #BBB;
 	cursor: not-allowed;
 }
@@ -339,7 +342,7 @@ ul#float-right > li {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 -10px 10px rgba(0,0,0,0.1);
 }
 #render-time-container {
-	width: 426px;
+	width: 437px;
 }
 #time-to-render {
 	color: #605e5e;
@@ -464,6 +467,19 @@ select:focus {
 		width: 100%;
 	}
 	.navigation {
-		height: 124px;
+		height: inherit;
+	}
+	.navigation ul li {
+		float: left;
+		display: inline;
+		padding: 10px;
+	}
+	.navigation ul li h2 {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.navigation ul li h3 {
+		font-size: 12px;
+		line-height: 14px;
 	}
 }
