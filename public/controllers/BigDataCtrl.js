@@ -11,13 +11,7 @@ angular.module('MyApp')
 
 		$scope.evaluate_data_rules 	= evaluate_data_chart_rules;
 
-	    //$scope.evaluate_data_plot_rules 	= evaluate_data_plot_rules_chart;
-
-		//$scope.evaluate_data_marker_rules 	= evaluate_data_marker_rules_chart;
-
 		$scope.annotate_data 		= annotate_data_chart;
-
-		$scope.share_data 			= share_data_chart;
 
 		// ACTIONS /////////////////
 
@@ -87,6 +81,17 @@ angular.module('MyApp')
 			zingchart.exec('annotate-demo', 'modify', payload);
 		};
 
-		// $scope.points_to_render = $scope.timeToRun('interact-demo', $scope.point_options[0].value);
+		// ANNOTATE IT
+
+		// SHARE IT
+		
+		$scope.annotate_chart_output = "";
+
+		$scope.no_img = true;
+
+		$scope.get_annotate_chart = function() {
+			$scope.no_img = false;
+			$scope.annotate_chart_output = zingchart.exec("annotate-demo", "getimagedata", {filetype : 'png'});
+		}
 
 	}])

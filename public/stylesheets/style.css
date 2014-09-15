@@ -64,31 +64,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-/*
-.dropdown {
-	background-color: #929292;
-	border: 2px solid #003849;
-	width: 221px;
-	background: url(../images/dropdown_arrow.png) no-repeat 100%;
+#to-bottom {
+	position: absolute;
+	bottom: 0;
 }
-.dropdown select {
-	background: transparent;
-	padding: 5px;
-	font-size: 16px;
-	line-height: 1;
-	color: #FFF;
-	width: 221px;
-	border: 0;
-	border-radius: 0;
-	height: 34px;
-	-webkit-appearance: none;
-}
-.dropdown select option {
-	background-color: #929292;
-	border: 2px solid #003849;
-	width: 221px;
-}
-*/
 .dropdown {
 	float: left;
 }
@@ -113,6 +92,9 @@ button:disabled {
 	color: #BBB;
 	cursor: not-allowed;
 }
+#no-float {
+	float: none;
+}
 #zingchart-title {
 	width: 500px;
 }
@@ -124,6 +106,15 @@ button:disabled {
 	background:url(../images/zingchart-logo-white_02.png) no-repeat 0 0;
 	margin-top: 2px;
 }
+#zingchart-logo-dark {
+	font-size: 0;
+	display: block;
+	width: 291px;
+	height: 97px;
+	background:url(../images/zingchart-logo-dark_02.png) no-repeat 0 0;
+	margin-top: 2px;
+	margin-bottom: 20px;
+}
 #bigviz-bigdata {
 	padding-left: 100px;
 	padding-right: 100px;
@@ -134,6 +125,10 @@ button:disabled {
 }
 .left-25 {
 	padding-left: 25px;
+}
+#bottom-10 {
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 #nav-section {
 	width: 500px;
@@ -354,6 +349,11 @@ ul#float-right > li {
 .editor {
 	height: 660px;
 }
+.center {
+	text-align: center;
+	float: none;
+}
+*/
 /*
 .ace_editor { 
 	height: 660px;
@@ -447,4 +447,23 @@ select:focus {
 }
 .builder-demo {
 	margin-left: 200px;
+}
+
+/* MEDIA QUERY FOR LESS THAN PRESENTATION MONITOR */
+
+@media (max-width: 2559px) {
+	#zingchart-title {
+		width: 20%;
+	}
+	#bigviz-bigdata {
+		width: 80%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#nav-section {
+		width: 100%;
+	}
+	.navigation {
+		height: 124px;
+	}
 }

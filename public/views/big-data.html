@@ -175,7 +175,7 @@
 			<div class="col col_1_of_2">
 				<div>
 					<h2 class="subtitle">Annotate it</h2>
-					<div class="chart-demo" zingchart id="annotate-demo" zc-data="annotate_data"></div>
+					<div class="chart-demo" zingchart id="annotate-demo" zc-data="annotate_data" zc-output="{'output':'canvas'}"></div>
 					<ul class="big-data-input">
 						<li>
 							<button type="button" id="draw-trend-lines" ng-click="calc_trend_line()">Calculate Trend Lines</button>
@@ -186,10 +186,12 @@
 			<div class="col col_1_of_2">
 				<div>
 					<h2 class="subtitle">Share it</h2>
-					<div class="chart-demo" zingchart id="share-demo" zc-data="share_data"></div>
+					<div class="chart-demo" id="share-demo" ng-class="{border: no_img}">
+						<img ng-src="{{annotate_chart_output}}">
+					</div>
 					<ul class="big-data-input">
 						<li>
-							<button>Share Chart</button>
+							<button type="button" ng-click="get_annotate_chart()">Share Chart</button>
 						</li>
 					</ul>
 				</div>
