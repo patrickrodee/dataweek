@@ -453,7 +453,7 @@ select:focus {
 /*** MEDIA QUERY FOR LESS THAN PRESENTATION MONITOR ***/
 /******************************************************/
 
-@media (max-width: 2558px) {
+@media (max-width: 2559px) {
 	#zingchart-title {
 		width: 20%;
 	}
