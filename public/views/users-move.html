@@ -1,21 +1,17 @@
 <div class="content-panel">
 	<div class="title">
-		<h2>Anywhere. Anytime.</h2>
+		<h2>{{mobile_greeting}}</h2>
 	</div>
-	<div class="content">
+	<div class="content" id="mobile-content">
 		<div class="row row_1_of_1">
-			<div class="mobile-demo">
+			<div class="mobile-demo" ng-hide="is_mobile">
 				<img id="mobile-cutout" src="../images/mobile.png">
-				<div zingchart id="iphone_chart" zc-data="iphone_data">
-				<!--
-					<iframe src="http://www.zingchart.com" width="341" height="579" frameborder="0"></iframe>
-				-->
-				</div>
-				<div zingchart id="ipad_chart" zc-data="ipad_data">
-				<!--
-					<iframe src="http://www.zingchart.com" width="1179" height="858" frameborder="0"></iframe>
-				-->
-				</div>
+				<div zingchart id="iphone_chart" zc-data="iphone_data"></div>
+				<div zingchart id="ipad_chart" zc-data="ipad_data"></div>
+			</div>
+			<!-- Demo for Real Mobile Users -->
+			<div class="true-mobile-demo" ng-show="is_mobile">
+				<div zingchart id="true_phone_chart" zc-data="iphone_data"></div>
 			</div>
 		</div>
 	</div>

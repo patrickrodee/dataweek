@@ -21,6 +21,15 @@ angular.module('MyApp')
 			zingchart.exec('pulling-demo', 'setdata', pulling_data_go);
 		}
 
+		zingchart.complete = function (chart) {
+			if (chart.id == 'pushing-demo') {
+				zingchart.exec('pushing-demo', 'setdata', pushing_data_chart_go);
+			}
+			else if (chart.id == 'pulling-demo') {
+				zingchart.exec('pulling-demo', 'setdata', pulling_data_chart_go);
+			}
+		}
+
 		
 
 		// Initial Toggles

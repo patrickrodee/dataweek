@@ -213,3 +213,26 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+/*** MEDIA QUERY ***/
+
+@media (max-width: 2590px) {
+    .wrap-dd-select {
+    z-index: 1000;
+    /* Size and position */
+    position: relative;
+    width: 150px;
+    padding: 10px;
+ 
+    /* Styles */
+    background: #FFF;
+    border-radius: 5px;
+    border: 1px solid #605E5E;
+    /* box-shadow: 0 1px 1px rgba(50,50,50,0.1); */
+    cursor: pointer;
+    outline: none;
+ 
+    /* Font settings */
+    color: #605E5E;
+}
+}

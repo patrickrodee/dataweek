@@ -42,6 +42,24 @@ var pushing_data_chart_go = {
     }
 };
 
+var pulling_data_chart = {
+    "data": {
+        "type":"line",
+        "scale-x":{
+            "transform":{
+                "type":"date",
+                "all":"%D, %d %M %Y<br>%h:%i %A"
+            }
+        },
+        "scale-y":{},
+        "series":[
+            {
+                "values":[]
+            }
+        ]
+    }
+};
+
 var pulling_data_chart_go = {
 	"data": {
         "type":"line",
@@ -66,23 +84,4 @@ var pulling_data_chart_go = {
             }
         ]
     }
-};
-
-var pulling_data_chart = {
-	"data": {
-		"graphset":[
-		    {
-		        "type":"line",
-		        "scale-x":{
-		            
-		        },
-		        "series":[
-		            {
-		                "values":[],
-		                "stack":1
-		            }
-		        ]
-		    }
-		]
-	}
 };
