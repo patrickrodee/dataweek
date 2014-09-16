@@ -1,226 +1,222 @@
 <div class="content-panel">
-	<div class="title fixed">
+	<div class="title">
 		<h2>Beyond Bar Charts &amp; Pie Charts</h2>
 
 		<div class="theme-buttons">
 			<div dropdown-select="theme_actions" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
 		</div>
 	</div>
-	<div class="content overflow">
-		<div class="kitchen-sink-demo">
+	<div class="content">
+		<div class="row lotsa_rows">
 			<h2 class="subtitle">Chart Types</h2>
 
-			<div class="row lotsa_rows">
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="line_chart" zc-data="line_data"></div>
+				<div class="button-row" id="lineBtns">
+		          <div class="dropdown" dropdown-select="line_chart_actions" dropdown-model="line_action" dropdown-item-label="name" dropdown-onchange="modify('line_chart',line_action.data)"></div>
+		          <button class="toggle" ng-model="line_dimension" ng-click="toggle_line('line_chart')">{{line_dimension}}</button>
+		        </div>
+			</div>
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="line_chart" zc-data="line_data"></div>
-					<div class="button-row" id="lineBtns">
-			          <div class="dropdown" dropdown-select="line_chart_actions" dropdown-model="line_action" dropdown-item-label="name" dropdown-onchange="modify('line_chart',line_action.data)"></div>
-			          <button class="toggle" ng-model="line_dimension" ng-click="toggle_line('line_chart')">{{line_dimension}}</button>
-			        </div>
-				</div>
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="bar_chart" zc-data="bar_data"></div>
+				<div class="button-row" id="barBtns">
+		          <div class="dropdown" dropdown-select="bar_chart_actions" dropdown-model="bar_action" dropdown-item-label="name" dropdown-onchange="modify('bar_chart',bar_action.data)"></div>
+		          <button class="toggle" ng-model="bar_dimension" ng-click="toggle_bar('bar_chart')">{{bar_dimension}}</button>
+		        </div>
+		    </div>
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="bar_chart" zc-data="bar_data"></div>
-					<div class="button-row" id="barBtns">
-			          <div class="dropdown" dropdown-select="bar_chart_actions" dropdown-model="bar_action" dropdown-item-label="name" dropdown-onchange="modify('bar_chart',bar_action.data)"></div>
-			          <button class="toggle" ng-model="bar_dimension" ng-click="toggle_bar('bar_chart')">{{bar_dimension}}</button>
-			        </div>
+		    <div class="col col_1_of_3">
+		    	<div class="chart-demo" zingchart id="area_chart" zc-data="area_data"></div>
+		    	<div class="button-row" id="areaBtns">
+		          <div class="dropdown" dropdown-select="area_chart_actions" dropdown-model="area_action" dropdown-item-label="name" dropdown-onchange="modify('area_chart',area_action.data)"></div>
+		          <button class="toggle" ng-model="area_dimension" ng-click="toggle_area('area_chart')">{{area_dimension}}</button>
+		        </div>
+		    </div>
+
+		</div>
+
+		<div class="row lotsa_rows">
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="pie_chart" zc-data="pie_data"></div>
+				<div class="button-row" id="pieBtns">
+		          <div class="dropdown" dropdown-select="pie_chart_actions" dropdown-model="pie_action" dropdown-item-label="name" dropdown-onchange="set_values_and_modify('pie_chart', pie_action.values, pie_action.data)"></div>
+		          <button class="toggle" ng-model="pie_dimension" ng-click="toggle_pie('pie_chart')">{{pie_dimension}}</button>
+		        </div>
+			</div>
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="scatter_chart" zc-data="scatter_data"></div>
+				<div class="button-row">
 			    </div>
+			</div>
 
-			    <div class="col col_1_of_3">
-			    	<div class="chart-demo" zingchart id="area_chart" zc-data="area_data"></div>
-			    	<div class="button-row" id="areaBtns">
-			          <div class="dropdown" dropdown-select="area_chart_actions" dropdown-model="area_action" dropdown-item-label="name" dropdown-onchange="modify('area_chart',area_action.data)"></div>
-			          <button class="toggle" ng-model="area_dimension" ng-click="toggle_area('area_chart')">{{area_dimension}}</button>
-			        </div>
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="radar_chart" zc-data="radar_data"></div>
+				<div class="button-row" id="radarBtns">
+		          <div class="dropdown" dropdown-select="radar_chart_actions" dropdown-model="radar_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('radar_chart', radar_action.series, radar_action.data)"></div>
+		      </div>
+			</div>
+		</div>
+
+		<div class="row lotsa_rows">
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="stock_chart" zc-data="stock_data"></div>
+				<div class="button-row" id="stockBtns">
+					<div class="dropdown" dropdown-select="stock_chart_actions" dropdown-model="stock_action" dropdown-item-label="name" dropdown-onchange="modify('stock_chart',stock_action.data)"></div>
 			    </div>
-
 			</div>
 
-			<div class="row lotsa_rows">
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="bubble_chart" zc-data="bubble_data"></div>
+				<div class="button-row" id="bubbleBtns">
+			        <div class="dropdown" dropdown-select="bubble_chart_actions" dropdown-model="bubble_action" dropdown-item-label="name" dropdown-onchange="modify('bubble_chart',bubble_action.data)"></div>
+		        </div>
+			</div>
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="pie_chart" zc-data="pie_data"></div>
-					<div class="button-row" id="pieBtns">
-			          <div class="dropdown" dropdown-select="pie_chart_actions" dropdown-model="pie_action" dropdown-item-label="name" dropdown-onchange="set_values_and_modify('pie_chart', pie_action.values, pie_action.data)"></div>
-			          <button class="toggle" ng-model="pie_dimension" ng-click="toggle_pie('pie_chart')">{{pie_dimension}}</button>
-			        </div>
-				</div>
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="piano_chart" zc-data="piano_data"></div>
+				<div class="button-row" id="pianoBtns">
+			        <div class="dropdown" dropdown-select="piano_chart_actions" dropdown-model="piano_action" dropdown-item-label="name" dropdown-onchange="modify('piano_chart',piano_action.data)"></div>
+			    </div>
+			</div>
+			
+		</div>
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="scatter_chart" zc-data="scatter_data"></div>
-					<div class="button-row">
-				    </div>
-				</div>
+		<div class="row lotsa_rows">
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="radar_chart" zc-data="radar_data"></div>
-					<div class="button-row" id="radarBtns">
-			          <div class="dropdown" dropdown-select="radar_chart_actions" dropdown-model="radar_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('radar_chart', radar_action.series, radar_action.data)"></div>
-			      </div>
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="bullet_chart" zc-data="bullet_data"></div>
+				<div class="button-row" id="bulletBtns">
+			        <div class="dropdown" dropdown-select="bullet_chart_actions" dropdown-model="bullet_action" dropdown-item-label="name" dropdown-onchange="modify('bullet_chart',bullet_action.data)"></div>
+			    </div>
+			</div>
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="gauge_chart" zc-data="gauge_data"></div>
+			</div>
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="funnel_chart" zc-data="funnel_data"></div>
+			</div>
+
+		</div>
+
+		<div class="row lotsa_rows">
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="venn_chart" zc-data="venn_data"></div>
+			</div>
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="pareto_chart" zc-data="pareto_data"></div>
+			</div>
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="nestedpie_chart" zc-data="nestedpie_data"></div>
+			</div>
+
+		</div>
+
+		<div class="row lotsa_rows">
+
+			<div class="col col_1_of_1">
+				<div class="chart-demo" zingchart id="mixed_chart" zc-data="mixed_data"></div>
+				<div class="button-row" id="mixedBtns">
+					<div class="dropdown" dropdown-select="mixed_chart_actions" dropdown-model="mixed_action" dropdown-item-label="name" dropdown-onchange="setdata('mixed_chart',mixed_action.data)"></div>
 				</div>
 			</div>
 
-			<div class="row lotsa_rows">
+		</div>
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="stock_chart" zc-data="stock_data"></div>
-					<div class="button-row" id="stockBtns">
-						<div class="dropdown" dropdown-select="stock_chart_actions" dropdown-model="stock_action" dropdown-item-label="name" dropdown-onchange="modify('stock_chart',stock_action.data)"></div>
-				    </div>
-				</div>
+		<div class="row lotsa_rows">
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="bubble_chart" zc-data="bubble_data"></div>
-					<div class="button-row" id="bubbleBtns">
-				        <div class="dropdown" dropdown-select="bubble_chart_actions" dropdown-model="bubble_action" dropdown-item-label="name" dropdown-onchange="modify('bubble_chart',bubble_action.data)"></div>
-			        </div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="piano_chart" zc-data="piano_data"></div>
-					<div class="button-row" id="pianoBtns">
-				        <div class="dropdown" dropdown-select="piano_chart_actions" dropdown-model="piano_action" dropdown-item-label="name" dropdown-onchange="modify('piano_chart',piano_action.data)"></div>
-				    </div>
-				</div>
-				
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="grid_chart" zc-data="grid_data"></div>
 			</div>
 
-			<div class="row lotsa_rows">
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="bullet_chart" zc-data="bullet_data"></div>
-					<div class="button-row" id="bulletBtns">
-				        <div class="dropdown" dropdown-select="bullet_chart_actions" dropdown-model="bullet_action" dropdown-item-label="name" dropdown-onchange="modify('bullet_chart',bullet_action.data)"></div>
-				    </div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="gauge_chart" zc-data="gauge_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="funnel_chart" zc-data="funnel_data"></div>
-				</div>
-
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="map_chart" zc-data="map_data"></div>
 			</div>
 
-			<div class="row lotsa_rows">
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="venn_chart" zc-data="venn_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="pareto_chart" zc-data="pareto_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="nestedpie_chart" zc-data="nestedpie_data"></div>
-				</div>
-
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="chord_chart" zc-data="chord_data"></div>
 			</div>
 
-			<div class="row lotsa_rows">
+		</div>
 
-				<div class="col col_1_of_1">
-					<div class="chart-demo" zingchart id="mixed_chart" zc-data="mixed_data"></div>
-					<div class="button-row" id="mixedBtns">
-						<div class="dropdown" dropdown-select="mixed_chart_actions" dropdown-model="mixed_action" dropdown-item-label="name" dropdown-onchange="setdata('mixed_chart',mixed_action.data)"></div>
-					</div>
-				</div>
+		<div class="row lotsa_rows">
 
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="rankflow_chart" zc-data="rankflow_data"></div>
 			</div>
 
-			<div class="row lotsa_rows">
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="grid_chart" zc-data="grid_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="map_chart" zc-data="map_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="chord_chart" zc-data="chord_data"></div>
-				</div>
-
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="treemap_chart" zc-data="treemap_data"></div>
 			</div>
 
-			<div class="row lotsa_rows">
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="rankflow_chart" zc-data="rankflow_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="treemap_chart" zc-data="treemap_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="wordcloud_chart" zc-data="wordcloud_data"></div>
-				</div>
-
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="wordcloud_chart" zc-data="wordcloud_data"></div>
 			</div>
 
-			<div class="row lotsa_rows">
+		</div>
 
-				<div class="col col_1_of_1">
-					<div class="chart-demo" zingchart id="network_chart" zc-data="network_data"></div>
-				</div>
+		<div class="row lotsa_rows">
 
+			<div class="col col_1_of_1">
+				<div class="chart-demo" zingchart id="network_chart" zc-data="network_data"></div>
 			</div>
 
-			<h2 class="subtitle">Features</h2>
+		</div>
 
-			<div class="row lotsa_rows">
+		<h2 class="subtitle">Features</h2>
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="bar_rules_chart" zc-data="bar_rules_data"></div>
-					<div class="dropdown" dropdown-select="bar_rules_chart_actions" dropdown-model="bar_rules_action" dropdown-item-label="name" dropdown-onchange="setdata('bar_rules_chart', bar_rules_action.data)"></div>
-				</div>
+		<div class="row lotsa_rows">
 
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="currency_chart" zc-data="currency_data"></div>
-					<div class="dropdown" dropdown-select="currency_chart_actions" dropdown-model="currency_action" dropdown-item-label="name" dropdown-onchange="modify('currency_chart', currency_action.data)"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="patterns_chart" zc-data="patterns_data"></div>
-				</div>
-
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="bar_rules_chart" zc-data="bar_rules_data"></div>
+				<div class="dropdown" dropdown-select="bar_rules_chart_actions" dropdown-model="bar_rules_action" dropdown-item-label="name" dropdown-onchange="setdata('bar_rules_chart', bar_rules_action.data)"></div>
 			</div>
 
-			<div class="row lotsa_rows">
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="arrows_chart" zc-data="arrows_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="drilldown_chart" zc-data="drilldown_data"></div>
-				</div>
-
-				<div class="col col_1_of_3">
-					<div class="chart-demo" zingchart id="shapes_chart" zc-data="shapes_data"></div>
-				</div>
-
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="currency_chart" zc-data="currency_data"></div>
+				<div class="dropdown" dropdown-select="currency_chart_actions" dropdown-model="currency_action" dropdown-item-label="name" dropdown-onchange="modify('currency_chart', currency_action.data)"></div>
 			</div>
 
-			<div class="row lotsa_rows">
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="patterns_chart" zc-data="patterns_data"></div>
+			</div>
 
-				<div class="col col_1_of_2">
-					<div class="chart-demo" zingchart id="stacked_chart" zc-data="stacked_data"></div>
-					<div class="dropdown" dropdown-select="stacked_chart_actions" dropdown-model="stacked_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('stacked_chart', stacked_action.series, stacked_action.data)"></div>
-				</div>
+		</div>
 
-				<div class="col col_1_of_2">
-					<div class="chart-demo" zingchart id="area_stacked_chart" zc-data="area_stacked_data"></div>
-					<div class="dropdown" dropdown-select="area_stacked_chart_actions" dropdown-model="area_stacked_action" dropdown-item-label="name" dropdown-onchange="modify('area_stacked_chart', area_stacked_action.data)"></div>
-				</div>
+		<div class="row lotsa_rows">
 
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="arrows_chart" zc-data="arrows_data"></div>
+			</div>
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="drilldown_chart" zc-data="drilldown_data"></div>
+			</div>
+
+			<div class="col col_1_of_3">
+				<div class="chart-demo" zingchart id="shapes_chart" zc-data="shapes_data"></div>
+			</div>
+
+		</div>
+
+		<div class="row lotsa_rows">
+
+			<div class="col col_1_of_2">
+				<div class="chart-demo" zingchart id="stacked_chart" zc-data="stacked_data"></div>
+				<div class="dropdown" dropdown-select="stacked_chart_actions" dropdown-model="stacked_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('stacked_chart', stacked_action.series, stacked_action.data)"></div>
+			</div>
+
+			<div class="col col_1_of_2">
+				<div class="chart-demo" zingchart id="area_stacked_chart" zc-data="area_stacked_data"></div>
+				<div class="dropdown" dropdown-select="area_stacked_chart_actions" dropdown-model="area_stacked_action" dropdown-item-label="name" dropdown-onchange="modify('area_stacked_chart', area_stacked_action.data)"></div>
 			</div>
 
 		</div>

@@ -10,14 +10,11 @@
     <link href="/stylesheets/angular-dropdowns.css" rel="stylesheet">
     <link href="/stylesheets/c3.css"                rel="stylesheet">
     <link href="/stylesheets/jquery-ui.css"         rel="stylesheet">
-    <!-- <link href="/stylesheets/bootstrap.css"         rel="stylesheet"> 
-    <link href="/stylesheets/bootstrap-theme.css"   rel="stylesheet">
-    <link href="/stylesheets/bootstrap-additions.css" rel="stylesheet"> -->
     <link href="/stylesheets/angular-snap.css" rel="stylesheet">
     <link href="/stylesheets/font-awesome.css"      rel="stylesheet">
 </head>
 <body ng-controller="NavCtrl">
-	<header>
+	<header id="navy">
 		<ul>
             <li id="nav-button">
                 <button type="button" class="nav-burger" snap-toggle=""><i class="fa fa-bars"></i></button>
@@ -160,7 +157,7 @@
             </nav>
         </div>
 	</section>
-	<section ng-view snap-content id="details-section"></section>
+	<section ng-view snap-content snap-options="{disable:'right'}" id="details-section"></section>
 
     <!-- ZingChart Library -->
     <script src="/javascripts/lib/zingchart-html5-min.js"></script>
