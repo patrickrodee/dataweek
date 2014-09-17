@@ -1293,4 +1293,16 @@ select:focus {
 	.title h2 {
 		font-size: 18px; 
 	}
+	h2.subtitle {
+		font-size: 14px;
+	}
+	.col_1_of_2 {
+		width: 100%;
+		float: none;
+	}
+	.col_1_of_3 {
+		width: 100%;
+		float: none;
+	}
+
 }
