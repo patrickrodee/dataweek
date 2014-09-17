@@ -482,6 +482,9 @@ select:focus {
 #cover-image {
 	position: fixed;
 }
+.show-for-mobile {
+	display: none;
+}
 /*
 #social-buttons {
 	width: 400px;
@@ -589,9 +592,11 @@ select:focus {
 	#mobile-cutout {
 		width: 1400px;
 	}
+	/*
 	#diverse-data {
 		margin-top: 0px;
 	}
+	*/
 	#laptop-screen {
 		position: relative;
 		top: -1043px;
@@ -815,7 +820,7 @@ select:focus {
 	#evaluate-demo,
 	#annotate-demo,
 	#share-demo {
-		width: 400px;
+		width: 800px;
 	}
 	#pushing-demo,
 	#pulling-demo,
@@ -946,27 +951,77 @@ select:focus {
 		width: 150px;
 		height: 58px;
 	}
+	/*
 	#diverse-data {
 		top: 80px;
 	}
+	*/
 	.aside-nav {
 		top: 70px;
 	}
 	.title {
 		top: -60px;
+		width: 800px;
 	}
 	.content-panel {
 		top: 40px;
 	}
+	/*
 	#diverse-data .title {
 		padding-top: 15px;
 		margin-bottom: 45px;
 	}
+	*/
 	#greeting-big {
 		display: none;
 	}
 	#greeting-small {
 		display: block;
+		margin-right: 10px;
+	}
+	.dropdown.hide-for-mobile,
+	.hide-for-mobile *{
+		display: none;
+	}
+	.show-for-mobile {
+		display: inline;
+	}
+	ul.show-for-mobile li {
+		float: left;
+		display: inline;
+		margin-right: 5px;
+	}
+	ul.show-for-mobile li button {
+		font-size: 14px;
+		padding: 10px 12px;
+		background-color: #003849;
+	}
+	button,
+	.button {
+		font-size: 14px;
+	}
+	.title ul.show-for-mobile li button {
+		float: left;
+		display: inline;
+		font-size: 12px;
+		padding: 8px 10px;
+		background-color: #1FBBEE;
+	}
+	#render-time-container {
+		float: left;
+		width: 300px;
+	}
+	#render-time-container {
+		font-size: 14px;
+	}
+	#render-time {
+		font-size: 14px;
+		margin-top: 6px;
+		margin-bottom: 0px;
+		margin-left: 20px;
+	}
+	.we-use-spacing {
+		margin-top: 0px;
 	}
 }
 
@@ -1168,9 +1223,6 @@ select:focus {
 	#true_phone_chart {
 		width: 400px;
 		height: 600px;
-	}
-	#no-grow {
-		height: 60px;
 	}
 	#laptop-cutout {
 		display: none;

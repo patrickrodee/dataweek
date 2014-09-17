@@ -4,10 +4,18 @@
     <link href='http://fonts.googleapis.com/css?family=Passion+One:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 	<div class="title">
-		<h2>DIY Dataviz</h2>
-		<div class="buttons">
-			<div dropdown-select="all_themes" dropdown-model="current_theme" dropdown-item-label="name" dropdown-onchange="new_screen(current_theme.theme)"></div>
+		<h2 id="greeting-big">DIY Dataviz</h2>
+		<h2 id="greeting-small">DIY</h2>
+		<div class="hide-for-mobile">
+			<div class="buttons">
+				<div dropdown-select="all_themes" dropdown-model="current_theme" dropdown-item-label="name" dropdown-onchange="new_screen(current_theme.theme)"></div>
+			</div>
 		</div>
+		<ul class="show-for-mobile" ng-repeat="action in all_themes">
+			<li class="mobile-button-list">
+				<button type="button" class="mobile-button" ng-click="new_screen(action.theme)">{{action.name}}</button>
+			</li>
+		</ul>
 	</div>
 	<div class="content">
 		<div class="row row_1_of_1">

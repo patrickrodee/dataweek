@@ -3,9 +3,16 @@
 		<h2 id="greeting-small">Charts +</h2>
 		<h2 id="greeting-big">Beyond Bar Charts &amp; Pie Charts</h2>
 
-		<div class="theme-buttons" id="kitchen-theme-buttons">
-			<div dropdown-select="theme_actions" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
+		<div class="hide-for-mobile">
+			<div class="theme-buttons" id="kitchen-theme-buttons">
+				<div dropdown-select="theme_actions" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
+			</div>
 		</div>
+		<ul class="show-for-mobile" ng-repeat="action in theme_actions_mobile">
+			<li class="mobile-button-list">
+				<button type="button" class="mobile-button" ng-click="renderWithTheme(action.theme)">{{action.name}}</button>
+			</li>
+		</ul>
 	</div>
 	<div class="content">
 		<div class="row lotsa_rows">
@@ -14,7 +21,12 @@
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="line_chart" zc-data="line_data"></div>
 				<div class="button-row" id="lineBtns">
-		          <div class="dropdown" dropdown-select="line_chart_actions" dropdown-model="line_action" dropdown-item-label="name" dropdown-onchange="modify('line_chart',line_action.data)"></div>
+		          <div class="dropdown hide-for-mobile" dropdown-select="line_chart_actions" dropdown-model="line_action" dropdown-item-label="name" dropdown-onchange="modify('line_chart',line_action.data)"></div>
+		          <ul class="show-for-mobile" ng-repeat="action in line_chart_actions">
+		          	<li class="mobile-button-list">
+		          		<button type="button" class="mobile-button" ng-click="modify('line_chart',action.data)">{{action.name}}</button>
+		          	</li>
+		          </ul>
 		          <button class="toggle" ng-model="line_dimension" ng-click="toggle_line('line_chart')">{{line_dimension}}</button>
 		        </div>
 			</div>
@@ -22,7 +34,12 @@
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="bar_chart" zc-data="bar_data"></div>
 				<div class="button-row" id="barBtns">
-		          <div class="dropdown" dropdown-select="bar_chart_actions" dropdown-model="bar_action" dropdown-item-label="name" dropdown-onchange="modify('bar_chart',bar_action.data)"></div>
+		          <div class="dropdown hide-for-mobile" dropdown-select="bar_chart_actions" dropdown-model="bar_action" dropdown-item-label="name" dropdown-onchange="modify('bar_chart',bar_action.data)"></div>
+		          <ul class="show-for-mobile" ng-repeat="action in bar_chart_actions">
+		          	<li class="mobile-button-list">
+		          		<button type="button" class="mobile-button" ng-click="modify('bar_chart',action.data)">{{action.name}}</button>
+		          	</li>
+		          </ul>
 		          <button class="toggle" ng-model="bar_dimension" ng-click="toggle_bar('bar_chart')">{{bar_dimension}}</button>
 		        </div>
 		    </div>
@@ -30,7 +47,12 @@
 		    <div class="col col_1_of_3">
 		    	<div class="chart-demo" zingchart id="area_chart" zc-data="area_data"></div>
 		    	<div class="button-row" id="areaBtns">
-		          <div class="dropdown" dropdown-select="area_chart_actions" dropdown-model="area_action" dropdown-item-label="name" dropdown-onchange="modify('area_chart',area_action.data)"></div>
+		          <div class="dropdown hide-for-mobile" dropdown-select="area_chart_actions" dropdown-model="area_action" dropdown-item-label="name" dropdown-onchange="modify('area_chart',area_action.data)"></div>
+		          <ul class="show-for-mobile" ng-repeat="action in area_chart_actions">
+		          	<li class="mobile-button-list">
+		          		<button type="button" class="mobile-button" ng-click="modify('area_chart',action.data)">{{action.name}}</button>
+		          	</li>
+		          </ul>
 		          <button class="toggle" ng-model="area_dimension" ng-click="toggle_area('area_chart')">{{area_dimension}}</button>
 		        </div>
 		    </div>
@@ -42,7 +64,12 @@
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="pie_chart" zc-data="pie_data"></div>
 				<div class="button-row" id="pieBtns">
-		          <div class="dropdown" dropdown-select="pie_chart_actions" dropdown-model="pie_action" dropdown-item-label="name" dropdown-onchange="set_values_and_modify('pie_chart', pie_action.values, pie_action.data)"></div>
+		          <div class="dropdown hide-for-mobile" dropdown-select="pie_chart_actions" dropdown-model="pie_action" dropdown-item-label="name" dropdown-onchange="set_values_and_modify('pie_chart', pie_action.values, pie_action.data)"></div>
+		          <ul class="show-for-mobile" ng-repeat="action in pie_chart_actions">
+		          	<li class="mobile-button-list">
+		          		<button type="button" class="mobile-button" ng-click="modify('pie_chart',action.data)">{{action.name}}</button>
+		          	</li>
+		          </ul>
 		          <button class="toggle" ng-model="pie_dimension" ng-click="toggle_pie('pie_chart')">{{pie_dimension}}</button>
 		        </div>
 			</div>
@@ -56,7 +83,12 @@
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="radar_chart" zc-data="radar_data"></div>
 				<div class="button-row" id="radarBtns">
-		          <div class="dropdown" dropdown-select="radar_chart_actions" dropdown-model="radar_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('radar_chart', radar_action.series, radar_action.data)"></div>
+		          <div class="dropdown hide-for-mobile" dropdown-select="radar_chart_actions" dropdown-model="radar_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('radar_chart', radar_action.series, radar_action.data)"></div>
+		          <ul class="show-for-mobile" ng-repeat="action in radar_chart_actions">
+		          	<li class="mobile-button-list">
+		          		<button type="button" class="mobile-button" ng-click="set_series_and_modify('radar_chart',action.series,action.data)">{{action.name}}</button>
+		          	</li>
+		          </ul>
 		      </div>
 			</div>
 		</div>
@@ -66,21 +98,36 @@
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="stock_chart" zc-data="stock_data"></div>
 				<div class="button-row" id="stockBtns">
-					<div class="dropdown" dropdown-select="stock_chart_actions" dropdown-model="stock_action" dropdown-item-label="name" dropdown-onchange="modify('stock_chart',stock_action.data)"></div>
+					<div class="dropdown hide-for-mobile" dropdown-select="stock_chart_actions" dropdown-model="stock_action" dropdown-item-label="name" dropdown-onchange="modify('stock_chart',stock_action.data)"></div>
+					<ul class="show-for-mobile" ng-repeat="action in stock_chart_actions">
+						<li class="mobile-button-list">
+							<button type="button" class="mobile-button" ng-click="modify('stock_chart',action.data)">{{action.name}}</button>
+						</li>
+					</ul>
 			    </div>
 			</div>
 
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="bubble_chart" zc-data="bubble_data"></div>
 				<div class="button-row" id="bubbleBtns">
-			        <div class="dropdown" dropdown-select="bubble_chart_actions" dropdown-model="bubble_action" dropdown-item-label="name" dropdown-onchange="modify('bubble_chart',bubble_action.data)"></div>
+			        <div class="dropdown hide-for-mobile" dropdown-select="bubble_chart_actions" dropdown-model="bubble_action" dropdown-item-label="name" dropdown-onchange="modify('bubble_chart',bubble_action.data)"></div>
+			        <ul class="show-for-mobile" ng-repeat="action in bubble_chart_actions">
+			        	<li class="mobile-button-list">
+			        		<button type="button" class="mobile-button" ng-click="modify('bubble_chart',action.data)">{{action.name}}</button>
+			        	</li>
+			        </ul>
 		        </div>
 			</div>
 
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="piano_chart" zc-data="piano_data"></div>
 				<div class="button-row" id="pianoBtns">
-			        <div class="dropdown" dropdown-select="piano_chart_actions" dropdown-model="piano_action" dropdown-item-label="name" dropdown-onchange="modify('piano_chart',piano_action.data)"></div>
+			        <div class="dropdown hide-for-mobile" dropdown-select="piano_chart_actions" dropdown-model="piano_action" dropdown-item-label="name" dropdown-onchange="modify('piano_chart',piano_action.data)"></div>
+			        <ul class="show-for-mobile" ng-repeat="action in piano_chart_actions">
+			        	<li class="mobile-button-list">
+			        		<button type="button" class="mobile-button" ng-click="modify('piano_chart',action.data)">{{action.name}}</button>
+			        	</li>
+			        </ul>
 			    </div>
 			</div>
 			
@@ -91,7 +138,12 @@
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="bullet_chart" zc-data="bullet_data"></div>
 				<div class="button-row" id="bulletBtns">
-			        <div class="dropdown" dropdown-select="bullet_chart_actions" dropdown-model="bullet_action" dropdown-item-label="name" dropdown-onchange="modify('bullet_chart',bullet_action.data)"></div>
+			        <div class="dropdown hide-for-mobile" dropdown-select="bullet_chart_actions" dropdown-model="bullet_action" dropdown-item-label="name" dropdown-onchange="modify('bullet_chart',bullet_action.data)"></div>
+			        <ul class="show-for-mobile" ng-repeat="action in bullet_chart_actions">
+			        	<li class="mobile-button-list">
+			        		<button type="button" class="mobile-button" ng-click="modify('bullet_chart',action.data)">{{action.name}}</button>
+			        	</li>
+			        </ul>
 			    </div>
 			</div>
 
@@ -126,7 +178,12 @@
 			<div class="col col_1_of_1">
 				<div class="chart-demo" zingchart id="mixed_chart" zc-data="mixed_data"></div>
 				<div class="button-row" id="mixedBtns">
-					<div class="dropdown" dropdown-select="mixed_chart_actions" dropdown-model="mixed_action" dropdown-item-label="name" dropdown-onchange="setdata('mixed_chart',mixed_action.data)"></div>
+					<div class="dropdown hide-for-mobile" dropdown-select="mixed_chart_actions" dropdown-model="mixed_action" dropdown-item-label="name" dropdown-onchange="setdata('mixed_chart',mixed_action.data)"></div>
+					<ul class="show-for-mobile" ng-repeat="action in mixed_chart_actions">
+						<li class="mobile-button-list">
+							<button type="button" class="mobile-button" ng-click="setdata('mixed_chart',action.data)">{{action.name}}</button>
+						</li>
+					</ul>
 				</div>
 			</div>
 
@@ -178,12 +235,22 @@
 
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="bar_rules_chart" zc-data="bar_rules_data"></div>
-				<div class="dropdown" dropdown-select="bar_rules_chart_actions" dropdown-model="bar_rules_action" dropdown-item-label="name" dropdown-onchange="setdata('bar_rules_chart', bar_rules_action.data)"></div>
+				<div class="dropdown hide-for-mobile" dropdown-select="bar_rules_chart_actions" dropdown-model="bar_rules_action" dropdown-item-label="name" dropdown-onchange="setdata('bar_rules_chart', bar_rules_action.data)"></div>
+				<ul class="show-for-mobile" ng-repeat="action in bar_rules_chart_actions">
+					<li class="mobile-button-list">
+						<button type="button" class="mobile-button" ng-click="setdata('bar_rules_chart',action.data)">{{action.name}}</button>
+					</li>
+				</ul>
 			</div>
 
 			<div class="col col_1_of_3">
 				<div class="chart-demo" zingchart id="currency_chart" zc-data="currency_data"></div>
-				<div class="dropdown" dropdown-select="currency_chart_actions" dropdown-model="currency_action" dropdown-item-label="name" dropdown-onchange="modify('currency_chart', currency_action.data)"></div>
+				<div class="dropdown hide-for-mobile" dropdown-select="currency_chart_actions" dropdown-model="currency_action" dropdown-item-label="name" dropdown-onchange="modify('currency_chart', currency_action.data)"></div>
+				<ul class="show-for-mobile" ng-repeat="action in currency_chart_actions">
+					<li class="mobile-button-list">
+						<button type="button" class="mobile-button" ng-click="modify('currency_chart',action.data)">{{action.name}}</button>
+					</li>
+				</ul>
 			</div>
 
 			<div class="col col_1_of_3">
@@ -212,12 +279,22 @@
 
 			<div class="col col_1_of_2">
 				<div class="chart-demo" zingchart id="stacked_chart" zc-data="stacked_data"></div>
-				<div class="dropdown" dropdown-select="stacked_chart_actions" dropdown-model="stacked_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('stacked_chart', stacked_action.series, stacked_action.data)"></div>
+				<div class="dropdown hide-for-mobile" dropdown-select="stacked_chart_actions" dropdown-model="stacked_action" dropdown-item-label="name" dropdown-onchange="set_series_and_modify('stacked_chart', stacked_action.series, stacked_action.data)"></div>
+				<ul class="show-for-mobile" ng-repeat="action in stacked_chart_actions">
+					<li class="mobile-button-list">
+						<button type="button" class="mobile-button" ng-click="set_series_and_modify('stacked_chart',action.series,action.data)">{{action.name}}</button>
+					</li>
+				</ul>
 			</div>
 
 			<div class="col col_1_of_2">
 				<div class="chart-demo" zingchart id="area_stacked_chart" zc-data="area_stacked_data"></div>
-				<div class="dropdown" dropdown-select="area_stacked_chart_actions" dropdown-model="area_stacked_action" dropdown-item-label="name" dropdown-onchange="modify('area_stacked_chart', area_stacked_action.data)"></div>
+				<div class="dropdown hide-for-mobile" dropdown-select="area_stacked_chart_actions" dropdown-model="area_stacked_action" dropdown-item-label="name" dropdown-onchange="modify('area_stacked_chart', area_stacked_action.data)"></div>
+				<ul class="show-for-mobile" ng-repeat="action in area_stacked_chart_actions">
+					<li class="mobile-button-list">
+						<button type="button" class="mobile-button" ng-click="modify('area_stacked_chart',action.data)">{{action.name}}</button>
+					</li>
+				</ul>
 			</div>
 
 		</div>

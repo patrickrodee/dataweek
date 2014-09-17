@@ -16,15 +16,17 @@ angular.module('MyApp')
 		// ACTIONS /////////////////
 
 		$scope.point_options = [
-			{name: "10,000 points", value: 10000},
-			{name: "25,000 points", value: 25000},
-			{name: "50,000 points", value: 50000},
-			{name: "100,000 points", value: 100000}
+			{name: "10,000 pts", value: 10000},
+			{name: "25,000 pts", value: 25000},
+			{name: "50,000 pts", value: 50000},
+			{name: "100,000 pts", value: 100000}
 		];
 
 		$scope.points_to_render = {name:"10,000 points"};
 
 		$scope.time_to_render = "0.157s";
+
+		$scope.render_time = "";
 
 		$scope.modify = function(target, payload) {
 			zingchart.exec(target, 'modify', payload);
@@ -32,6 +34,24 @@ angular.module('MyApp')
 
 		$scope.set_data = function(target, payload) {
 			zingchart.exec(target, 'setdata', payload);
+		};
+
+		$scope.timeToRunMobile = function(number_of_points) {
+			var name = number_of_points.name;
+			var number_of_points = number_of_points.value;
+			var newVals0 = generateRandomNumbers(number_of_points/5);
+	    	var newVals1 = generateRandomNumbers(number_of_points/5);
+	    	var newVals2 = generateRandomNumbers(number_of_points/5);
+	    	var newVals3 = generateRandomNumbers(number_of_points/5);
+	    	var newVals4 = generateRandomNumbers(number_of_points/5);
+	    	var new_data = { "data": { "series": [ { "values" : newVals0 }, { "values" : newVals1 }, { "values" : newVals2 }, {"values" : newVals3 }, {"values" : newVals4 } ] } };
+	    	var time_before = new Date().getTime();
+	    	$scope.modify('interact-demo', new_data);
+	    	var time_after = new Date().getTime();
+	    	var time_to_render = (time_after-time_before)/1000;
+	    	time_to_render.toString();
+	    	var result = name + " points rendered in ";
+	    	$scope.render_time = result + time_to_render + "s";
 		};
 
 		$scope.timeToRun = function(number_of_points) {

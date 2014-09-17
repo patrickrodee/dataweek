@@ -95,6 +95,13 @@ angular.module('MyApp')
 		{name: "Oceanic Theme", 	theme: oceanic_theme}
 		]
 
+		$scope.theme_actions_mobile = [
+		{name: "Standard",	theme: default_theme},
+		{name: "Googlish", 	theme: googlish_theme},
+		{name: "Gotham", 	theme: gotham_theme},
+		{name: "Oceanic", 	theme: oceanic_theme}
+		]
+
 		$scope.theme_action = {name: "Standard Theme"};
 		
 		$scope.renderWithTheme = function(theme) {
@@ -189,7 +196,7 @@ angular.module('MyApp')
 		$scope.area_chart_actions = [
 		{name: "Standard", data: {'object':"plot",'data': {"aspect": 'standard'}}},
 		{name: "Spline", data: {'object':"plot",'data' : {"aspect": 'spline'}}},
-		{name: "Stepped", data: {'object':"plot",'data' : {"aspect": 'Stepped'}}}
+		{name: "Stepped", data: {'object':"plot",'data' : {"aspect": 'stepped'}}}
 		]
 
 		$scope.area_action = {name: "Standard"};
