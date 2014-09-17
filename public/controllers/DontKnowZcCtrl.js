@@ -21,20 +21,20 @@ angular.module('MyApp')
 		{name: "Bar Chart"}
 		]
 
-		$scope.selected_chart = {name: "Choose a chart type"};
+		$scope.selected_chart = {name: "Choose a chart"};
 
 		// SIZE DROPDOWN
 		
 		$scope.size_options = [
-		{name: "1k", 	value: oneK},
-		{name: "10k", 	value: tenK},
-		{name: "50k", 	value: fiftyK},
-		{name: "100k", 	value: onehundredK},
-		{name: "200k", 	value: twohundredK},
-		{name: "400k", 	value: fourhundredK}
+		{name: "1k points", 	value: oneK},
+		{name: "10k points", 	value: tenK},
+		{name: "50k points", 	value: fiftyK},
+		{name: "100k points", 	value: onehundredK},
+		{name: "200k points", 	value: twohundredK},
+		{name: "400k points", 	value: fourhundredK}
 		]
 
-		$scope.selected_size = {name: "Choose a data size"};
+		$scope.selected_size = {name: "Choose data size"};
 
 		// SPEED RESULTS
 		

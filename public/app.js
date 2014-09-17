@@ -24,7 +24,8 @@ angular.module('MyApp', ['ngResource','ngRoute', 'mgcrea.ngStrap', 'ngDropdowns'
             controller: 'MobileCtrl'
     	})
     	.when('/we-use', {
-    		templateUrl: 'views/we-use.html'
+    		templateUrl: 'views/we-use.html',
+            controller: 'WeUseCtrl'
     	})
     	.when('/data-is-changing', {
     		templateUrl: 'views/data-is-changing.html',

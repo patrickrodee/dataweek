@@ -27,10 +27,14 @@
         	<li id="bigviz-bigdata">
         		<h1>BIG VIZ <span class="thin">for</span> BIG DATA</h1>
         	</li>
+            <li id="social-buttons">
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52be0a3632e390f1"></script>
+            </li>
         </ul>
 	</header>
 	<section id="nav-section">
-		<div class="navigation" ng-hide="not_presentation">
+		<div class="navigation" id="presentation-nav">
     		<nav role="navigation" bs-navbar>
     			<ul>
     				<li id="big-data" data-match-route="/big-data">
@@ -93,7 +97,7 @@
     			</ul>
     		</nav>
     	</div>
-        <div snap-drawer>
+        <div snap-drawer id="side-nav">
             <nav role="navigation" class="aside-nav" bs-navbar>
                 <ul>
                     <li id="big-data" data-match-route="/big-data">
@@ -191,6 +195,7 @@
     <script src="/controllers/ComplicatedVizCtrl.js"></script>
     <script src="/controllers/MobileCtrl.js"></script>
     <script src="/controllers/KitchenSinkCtrl.js"></script>
+    <script src="/controllers/WeUseCtrl.js"></script>
     <script src="/controllers/DatavizLikeOursCtrl.js"></script>
     <script src="/controllers/DataIsChangingCtrl.js"></script>
     <script src="/controllers/DontKnowZcCtrl.js"></script>

@@ -13,6 +13,12 @@ angular.module('MyApp')
 			});
 			_editor.setFontSize(16);
 		};
+
+		if ( $(window).width() < 641 ) {
+			$scope.aceLoaded = function(_editor) {
+				_editor.setFontSize(12);
+			}
+		}
 		
 		$scope.$watch('editable_json', function() {
 			try {

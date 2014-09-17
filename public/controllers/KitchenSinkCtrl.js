@@ -1,6 +1,17 @@
 angular.module('MyApp')
 	.controller('KitchenSinkCtrl', ['$scope', function ($scope) {
 
+		$scope.kitchen_greeting = 'Beyond Bar Charts & Pie Charts';
+
+		$scope.is_mobile = false;
+
+		$scope.current_width = $(window).width();
+
+		if ($scope.current_width < 641) {
+			$scope.is_mobile = true;
+			$scope.kitchen_greeting = 'Beyond Bars & Pie';
+		}
+
 		//////////////////////////////////
 		// Chart Objects /////////////////
 		//////////////////////////////////
