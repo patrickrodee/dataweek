@@ -1310,6 +1310,14 @@ select:focus {
 	#cover-image {
 		width: 600px;
 	}
+	#interact-demo,
+	#evaluate-demo,
+	#annotate-demo,
+	#share-demo,
+	.editor,
+	#complicated_chart {
+		height: 300px;
+	}
 	ul.show-for-mobile li button.mobile-button {
 		font-size: 10px;
 		padding: 2px 4px;
