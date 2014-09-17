@@ -160,8 +160,8 @@
 							<a class="right button" id="z9" href="localhost:9999/index.html" target="_blank">Need more? Try Z9</a>
 						</li>
 					</ul>
-					<ul class="show-for-mobile" ng-repeat="option in point_options">
-						<li class="mobile-button-list">
+					<ul class="show-for-mobile">
+						<li ng-repeat="option in point_options" class="mobile-button-list">
 							<button type="button" class="mobile-button" ng-click="timeToRunMobile(option)">{{option.name}}</button>
 						</li>
 					</ul>

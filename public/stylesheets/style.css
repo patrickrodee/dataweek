@@ -1296,13 +1296,17 @@ select:focus {
 	h2.subtitle {
 		font-size: 14px;
 	}
-	.col_1_of_2 {
-		width: 100%;
-		float: none;
-	}
+	.col_1_of_2,
 	.col_1_of_3 {
-		width: 100%;
+		width: 90%;
 		float: none;
 	}
-
+	.col_1_of_2 .chart-demo,
+	.col_1_of_3 .chart-demo {
+		height: 400px;
+	}
+	ul.show-for-mobile li button.mobile-button {
+		font-size: 12px;
+		padding: 5px 7px;
+	}
 }
