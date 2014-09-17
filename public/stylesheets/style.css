@@ -960,7 +960,7 @@ select:focus {
 		height: initial;
 		padding-top: 10px;
 		top: -60px;
-		width: 600px;
+		width: 100%;
 	}
 	.content-panel {
 		top: 40px;
@@ -1219,6 +1219,12 @@ select:focus {
 @media (max-width: 640px) {
 	.builder-demo {
 		margin-left: 0px;
+	}
+	header ul li {
+		float: left;
+	}
+	#bigviz-bigdata {
+		display: none;
 	}
 	.mobile-demo {
 		display: none;
