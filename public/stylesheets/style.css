@@ -1307,11 +1307,15 @@ select:focus {
 	.zingchart-vs,
 	#resulting-chart,
 	#builder-image,
-	#cover-image {
+	#cover-image,
+	#interact-demo,
+	#evaluate-demo,
+	#annotate-demo,
+	#share-demo {
 		width: 600px;
 	}
 	ul.show-for-mobile li button.mobile-button {
-		font-size: 12px;
-		padding: 5px 7px;
+		font-size: 10px;
+		padding: 2px 4px;
 	}
 }
