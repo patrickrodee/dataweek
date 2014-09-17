@@ -1290,4 +1290,7 @@ select:focus {
 		width: 400px;
 		height: 300px;
 	}
+	.title h2 {
+		font-size: 18px; 
+	}
 }
