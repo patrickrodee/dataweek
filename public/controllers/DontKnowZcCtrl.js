@@ -13,6 +13,8 @@ angular.module('MyApp')
 
 		$scope.selected_provider = {name: "Choose a library"};
 
+		$scope.selected_provider_mobile = "Choose a library";
+
 		// CHART DROPDOWN
 		
 		$scope.chart_options = [
@@ -22,6 +24,8 @@ angular.module('MyApp')
 		]
 
 		$scope.selected_chart = {name: "Choose a chart"};
+
+		$scope.selected_chart_mobile = "Choose a chart";
 
 		// SIZE DROPDOWN
 		
@@ -34,7 +38,9 @@ angular.module('MyApp')
 		{name: "400k points", 	value: fourhundredK}
 		]
 
-		$scope.selected_size = {name: "Choose data size"};
+		$scope.selected_size = {name: "Choose a data size"};
+
+		$scope.selected_size_mobile = "Choose a data size";
 
 		// SPEED RESULTS
 		
@@ -45,7 +51,16 @@ angular.module('MyApp')
 		$scope.not_ready = true;
 
 		$scope.check_status = function() {
-			if ($scope.selected_provider.name !== "Choose a library" && $scope.selected_chart.name !== "Choose a chart type" && $scope.selected_size.name !== "Choose a data size") {
+			if (($scope.selected_provider.name != "Choose a library") && ($scope.selected_chart.name !== "Choose a chart type") && ($scope.selected_size.name !== "Choose a data size")) {
+				$scope.not_ready = false;
+			}
+			else {
+				$scope.not_ready = true;
+			}
+		};
+
+		$scope.check_status_mobile = function() {
+			if (($scope.selected_provider.name !== "Choose a library") && ($scope.selected_chart.name !== "Choose a chart") && ($scope.selected_size.name !== "Choose a data size")) {
 				$scope.not_ready = false;
 			}
 			else {

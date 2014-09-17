@@ -961,7 +961,7 @@ select:focus {
 	}
 	.title {
 		top: -60px;
-		width: 800px;
+		width: 600px;
 	}
 	.content-panel {
 		top: 40px;
@@ -990,6 +990,7 @@ select:focus {
 		float: left;
 		display: inline;
 		margin-right: 5px;
+		margin-top: 2px;
 	}
 	ul.show-for-mobile li button {
 		font-size: 14px;
@@ -1022,6 +1023,15 @@ select:focus {
 	}
 	.we-use-spacing {
 		margin-top: 0px;
+	}
+	select {
+		background-color: #1FBBEE;
+		color: #FFF;
+		height: 38px;
+		margin-top: -2px;
+		font-size: 14px;
+		border: 0;
+		border-radius: 5px;
 	}
 }
 
@@ -1243,7 +1253,8 @@ select:focus {
 		width: 400px;
 		height: 300px;
 	}
-	.vs-options-panel div {
+	.vs-options-panel div,
+	.vs-options-panel select {
 		margin-bottom: 10px;
 		z-index: 1000;
 	}

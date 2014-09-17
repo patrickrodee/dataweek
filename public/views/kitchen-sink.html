@@ -8,8 +8,8 @@
 				<div dropdown-select="theme_actions" dropdown-model="theme_action" dropdown-item-label="name" dropdown-onchange="renderWithTheme(theme_action.theme)"></div>
 			</div>
 		</div>
-		<ul class="show-for-mobile" ng-repeat="action in theme_actions_mobile">
-			<li class="mobile-button-list">
+		<ul class="show-for-mobile">
+			<li class="mobile-button-list" ng-repeat="action in theme_actions_mobile">
 				<button type="button" class="mobile-button" ng-click="renderWithTheme(action.theme)">{{action.name}}</button>
 			</li>
 		</ul>

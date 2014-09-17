@@ -12,12 +12,31 @@
 	<div class="content">
 		<div class="row row_1_of_1">
 			<div class="zingchart-vs">
-				<div class="vs-options-panel">
-					<div dropdown-select="provider_options" dropdown-model="selected_provider" dropdown-item-label="name" dropdown-onchange="check_status()" style="z-index:1111;"></div>
-					<div dropdown-select="chart_options" dropdown-model="selected_chart" dropdown-item-label="name" dropdown-onchange="check_status()"></div>
-					<div dropdown-select="size_options" dropdown-model="selected_size" dropdown-item-label="name" dropdown-onchange="check_status()"></div>
-					<button type="button" ng-disabled="not_ready" ng-click="GO_SPEEDTEST_GO(selected_provider.name, selected_chart.name, selected_size.value)">Go!</button>
+				<div class="hide-for-mobile">
+					<div class="vs-options-panel">
+						<div dropdown-select="provider_options" dropdown-model="selected_provider" dropdown-item-label="name" dropdown-onchange="check_status()" style="z-index:1111;"></div>
+						<div dropdown-select="chart_options" dropdown-model="selected_chart" dropdown-item-label="name" dropdown-onchange="check_status()"></div>
+						<div dropdown-select="size_options" dropdown-model="selected_size" dropdown-item-label="name" dropdown-onchange="check_status()"></div>
+						<button type="button" ng-disabled="not_ready" ng-click="GO_SPEEDTEST_GO(selected_provider.name, selected_chart.name, selected_size.value)">Go!</button>
+					</div>
 				</div>
+				<div class="show-for-mobile">
+					<div class="vs-options-panel">
+						<div class="vs-options-panel">
+							<select ng-model="selected_provider" ng-options="option.name for option in provider_options" ng-change="check_status_mobile()">
+							    <option value="">Choose a library</option>
+						    </select>
+						    <select ng-model="selected_chart" ng-options="option.name for option in chart_options" ng-change="check_status_mobile()">
+							    <option value="">Choose a chart</option>
+						    </select>
+						    <select ng-model="selected_size" ng-options="option.name for option in size_options" ng-change="check_status_mobile()">
+							    <option value="">Choose a data size</option>
+						    </select>
+							<button type="button" ng-disabled="not_ready" ng-click="GO_SPEEDTEST_GO(selected_provider.name, selected_chart.name, selected_size.value)">Go!</button>
+						</div>
+					</div>
+				</div>
+				<br/>
 				<br/>
 				<div>
 					<p id="vs_speeds">{{vs_speed_results}}</p>
