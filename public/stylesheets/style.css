@@ -1298,12 +1298,16 @@ select:focus {
 	}
 	.col_1_of_2,
 	.col_1_of_3 {
-		width: 90%;
 		float: none;
 	}
-	.col_1_of_2 .chart-demo,
-	.col_1_of_3 .chart-demo {
-		height: 400px;
+	#pushing-demo,
+	#pulling-demo,
+	#laptop-screen,
+	.zingchart-vs,
+	#resulting-chart,
+	#builder-image,
+	#cover-image {
+		width: 600px;
 	}
 	ul.show-for-mobile li button.mobile-button {
 		font-size: 12px;
