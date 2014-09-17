@@ -533,6 +533,7 @@ select:focus {
 		top: 128px;
 		margin-top: 100px;
 	}
+	/*
 	.title {
 		position: fixed;
 		top: 128px;
@@ -540,6 +541,10 @@ select:focus {
 		z-index: 1005;
 		padding-top: 10px;
 		background-color: #FFF;
+	}
+	*/
+	.title {
+		position: absolute;
 	}
 	.content {
 		width: 95%;
@@ -948,7 +953,7 @@ select:focus {
 		top: 70px;
 	}
 	.title {
-		top: 70px;
+		top: -60px;
 	}
 	.content-panel {
 		top: 40px;
