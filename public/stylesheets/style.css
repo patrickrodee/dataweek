@@ -1298,6 +1298,7 @@ select:focus {
 	}
 	.col_1_of_2,
 	.col_1_of_3 {
+		width: 95%;
 		float: none;
 	}
 	#pushing-demo,
