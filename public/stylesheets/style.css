@@ -1307,11 +1307,7 @@ select:focus {
 	.zingchart-vs,
 	#resulting-chart,
 	#builder-image,
-	#cover-image,
-	#interact-demo,
-	#evaluate-demo,
-	#annotate-demo,
-	#share-demo {
+	#cover-image {
 		width: 600px;
 	}
 	ul.show-for-mobile li button.mobile-button {
