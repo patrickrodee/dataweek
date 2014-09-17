@@ -18,21 +18,7 @@ angular.module('MyApp')
 		{name: "Nike", 		theme: 'nike'}
 		]
 
-		$scope.current_theme = {name: "Standard"};
-
-		// FONTS ==============
-		 WebFontConfig = {
-		    google: { families: [ 'Istok+Web:400:latin', 'Muli:400', 'Passion+One:700:latin', 'Open+Sans:700:latin' ] }
-		  };
-		  (function() {
-		    var wf = document.createElement('script');
-		    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-		      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-		    wf.type = 'text/javascript';
-		    wf.async = 'true';
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(wf, s);
-		  })();		
+		$scope.current_theme = {name: "Standard"};	
 
 		$scope.new_screen = function(type) {
 			if (type == 'standard') {
