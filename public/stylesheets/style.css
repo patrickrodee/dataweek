@@ -481,6 +481,7 @@ select:focus {
 }
 #cover-image {
 	position: fixed;
+	bottom: 0;
 }
 .show-for-mobile {
 	display: none;
@@ -605,6 +606,15 @@ select:focus {
 	}
 	#resulting-chart {
 		height: 500px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.#nav-button {
+		display: block;
+	}
+	#cover-image {
+		bottom: 0;
 	}
 }
 
