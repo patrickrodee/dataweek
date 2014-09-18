@@ -38,7 +38,7 @@ angular.module('MyApp')
 		{name: "400k points", 	value: fourhundredK}
 		]
 
-		$scope.selected_size = {name: "Choose a data size"};
+		$scope.selected_size = {name: "Choose data size"};
 
 		$scope.selected_size_mobile = "Choose a data size";
 
