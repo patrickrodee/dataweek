@@ -421,10 +421,12 @@ ul#float-right > li {
 	margin-bottom: 5px;
 	font-size: 25px;
 }
+/*
 .zingchart-vs {
 	padding-left: 200px;
 	padding-right: 200px;
 }
+*/
 .vs-options-panel div {
 	float: left;
 	display: inline;
@@ -434,11 +436,13 @@ ul#float-right > li {
 	border: 1px solid #605E5E;
 	border-radius: 5px;
 }
+/*
 #resulting-chart {
 	margin: 50px;
 	width: 1500px;
 	height: 800px;
 }
+*/
 #vs_speeds {
 	font-size: 25px;
 }
@@ -619,7 +623,7 @@ select:focus {
 		bottom: 0;
 	}
 	#bigviz-bigdata {
-		width: 80%;
+		width: 60%;
 	}
 }
 
