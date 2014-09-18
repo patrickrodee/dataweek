@@ -185,10 +185,11 @@ h2.thin {
 .content-panel {
 	margin-top: 75px;
 	color: #605e5e;
+	width: 95%;
 }
 .title {
 	margin-bottom: 38px;
-	width: 100%;
+	/* width: 100%; */
 	float: left;
 }
 .title h2 {
@@ -355,7 +356,7 @@ ul#float-right > li {
 	text-align: center;
 	float: none;
 }
-*/
+
 /*
 .ace_editor { 
 	height: 660px;
@@ -487,7 +488,8 @@ select:focus {
 	position: fixed;
 	bottom: 0;
 }
-.show-for-mobile {
+.show-for-mobile,
+.show-for-phone {
 	display: none;
 }
 /*
@@ -886,6 +888,7 @@ select:focus {
 	}
 }
 
+/*
 @media (max-width: 1199px) and (min-width: 900px) {
 	.builder-demo {
 		margin-left: 0px;
@@ -927,6 +930,7 @@ select:focus {
 		height: 400px;
 	}
 }
+*/
 
 @media (max-width: 899px) and (min-width: 700px) {
 	.builder-demo {
@@ -1012,7 +1016,7 @@ select:focus {
 	}
 }
 
-@media (max-width: 1110px) {
+@media only screen and (max-width: 1000px) {
 	header ul li {
 		height: 70px;
 	}
@@ -1044,12 +1048,21 @@ select:focus {
 	.content-panel {
 		top: 40px;
 	}
-	/*
-	#diverse-data .title {
-		padding-top: 15px;
-		margin-bottom: 45px;
+	#bigviz-bigdata {
+		display: none;
 	}
-	*/
+	.col_1_of_2,
+	.col_1_of_3 {
+		width: 600px;
+		margin-bottom: 20px;
+	}
+	#complicated_chart {
+		width: 600px;
+	}
+	.editor {
+		width: 600px;
+		height: 400px;
+	}
 	#greeting-big {
 		display: none;
 	}
@@ -1111,32 +1124,32 @@ select:focus {
 		border: 0;
 		border-radius: 5px;
 	}
+	#result-container {
+		width: 500px;
+		height: 400px;
+	}
+	#resulting-chart {
+		width: 400px;
+		height: 300px;
+	}
+	#speeds_container {
+		display: inline;
+		float: none;
+	}
+	#vs_speeds {
+		font-size: 14px;
+		float: none;
+		width: 500px;
+	}
 }
 
-@media (max-width: 1110px) and (min-width: 800px) {
+/*
+@media screen, (max-width: 799px) and (min-width: 600px) {
 	#bigviz-bigdata {
 		display: none;
 	}
 	.col_1_of_2,
 	.col_1_of_3 {
-		width: 750px;
-		margin-bottom: 20px;
-	}
-	#complicated_chart {
-		width: 700px;
-	}
-	.editor {
-		width: 700px;
-		height: 400px;
-	}
-}
-
-@media (max-width: 799px) and (min-width: 600px) {
-	#bigviz-bigdata {
-		display: none;
-	}
-	.col_1_of_2,
-	.col_1_of_3 {
 		width: 550px;
 		margin-bottom: 20px;
 	}
@@ -1148,7 +1161,7 @@ select:focus {
 		height: 400px;
 	}
 }
-@media (max-width: 599px) and (min-width: 400px) {
+@media screen, (max-width: 599px) and (min-width: 400px) {
 	#bigviz-bigdata {
 		display: none;
 	}
@@ -1173,8 +1186,9 @@ select:focus {
 	}
 
 }
+*/
 
-@media (max-width: 2559px) and (min-width: 1400px) {
+@media screen, (max-width: 2559px) and (min-width: 1400px) {
 	#iphone_chart {
 		top: 248px;
 		left: 27px;
@@ -1188,11 +1202,11 @@ select:focus {
 		width: 920px;
 	}
 	.editor {
-		width: 500px;
+		width: 700px;
 	}
 }
 
-@media (max-width: 1399px) and (min-width: 1281px) {
+@media screen, (max-width: 1399px) and (min-width: 1281px) {
 	.mobile-demo {
 		display: none;
 	}
@@ -1211,7 +1225,7 @@ select:focus {
 	}
 }
 
-@media (max-width: 1280px) and (min-width: 1060px) {
+@media screen, (max-width: 1280px) and (min-width: 1060px) {
 	.mobile-demo {
 		display: none;
 	}
@@ -1232,7 +1246,7 @@ select:focus {
 	*/
 }
 
-@media (max-width: 1059px) and (min-width: 870px) {
+@media screen, (max-width: 1059px) and (min-width: 870px) {
 	.mobile-demo {
 		display: none;
 	}
@@ -1248,7 +1262,7 @@ select:focus {
 	}
 }
 
-@media (max-width: 869px) and (min-width: 641px) {
+@media screen, (max-width: 869px) and (min-width: 641px) {
 	.mobile-demo {
 		display: none;
 	}
@@ -1264,7 +1278,7 @@ select:focus {
 	}
 }
 
-@media (min-width: 1374px) {
+@media screen, (min-width: 1374px) {
 	.small-icon {
 		display: none;
 	}
@@ -1273,7 +1287,7 @@ select:focus {
 	}
 }
 
-@media (max-width: 1373px) {
+@media screen, (max-width: 1373px) {
 	.hide-under-1374 {
 		display: none;
 	}
@@ -1293,8 +1307,118 @@ select:focus {
 	}
 }
 
+/*** Mac Pro Screen ***/
+@media only screen and (max-width: 1920px) and (min-width: 1441px) {
+	#nav-button {
+		display: inline;
+		height: 50px;
+		width: 50px;
+	}
+	.nav-burger {
+		margin-top: 15px;
+	}
+	#nav-button button {
+		padding: 6px 8px;
+	}
+	#cover-image {
+		bottom: 0;
+	}
+	header ul li {
+		height: 60px;
+	}
+	#bigviz-bigdata {
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 60%;
+	}
+	#bigviz-bigdata h1 {
+		font-size: 24px;
+		margin-top: 18px;
+	}
+	#zingchart-logo {
+		background-size: 150px;
+		height: 60px;
+		width: 200px;
+	}
+	.title {
+		top: 60px;
+		padding-top: 15px;
+		z-index: 1200;
+	}
+	.aside-nav {
+		top: 60px;
+	}
+	.content-panel {
+		margin-top: 20px;
+	}
+	.editor,
+	.easy {
+		height: 500px;
+	}
+	.chart-demo {
+		height: 400px;
+	}
+	.mobile-demo {
+		display: none;
+	}
+	.mobile-demo-ipad {
+		display: block;
+	}
+	#ipad-cutout,
+	#builder-image {
+		width: 800px;
+	}
+	#just_ipad_chart {
+		position: absolute;
+		top: 50px;
+		left: 72px;
+		height: 478px;
+		width: 656px;
+	}
+	.we-use-spacing {
+		margin-top: 0px;
+	}
+	#designers_chart {
+		z-index: 5;
+		position: absolute;
+		width: 450px;
+		height: 350px;
+		top: 300px;
+		left: 540px;
+	}
+	#vs_speeds {
+		margin: 0px;
+	}
+	#result-container {
+		height: 450px;
+		width: 1400px;
+		height: 700px;
+	}
+	#resulting-chart {
+		margin: 50px;
+		height: 350px;
+		width: 1300px;
+		height: 600px;
+	}
+	.mtop-25 {
+		margin-top: 25px;
+	}
+	.small-icon {
+		display: inline;
+		float: left;
+		margin-right: 20px;
+		vertical-align: text-top;
+	}
+	.570 h2 {
+		float: left;
+	}
+	.we-use-text {
+		font-weight: lighter;
+	}
+}
+
 /* MACBOOK AIR SIZE */
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) and (min-width: 1281px) {
 	.#nav-button {
 		display: inline;
 		height: 50px;
@@ -1377,10 +1501,14 @@ select:focus {
 	}
 	#result-container {
 		height: 450px;
+		width: 1200px;
+		height: 600px;
 	}
 	#resulting-chart {
 		margin: 50px;
 		height: 350px;
+		width: 1100px;
+		height: 500px;
 	}
 	/* TEST */
 	.hide-under-1374 {
@@ -1407,7 +1535,7 @@ select:focus {
 }
 
 /* MACBOOK PRO SIZE */
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1280px) and (min-width: 1000px) {
 	.#nav-button {
 		display: inline;
 		height: 50px;
@@ -1483,15 +1611,135 @@ select:focus {
 		margin: 0px;
 	}
 	#result-container {
-		height: 450px;
+		width: 1000px;
+		height: 550px;
 	}
 	#resulting-chart {
+		width: 900px;
+		height: 450px;
+		margin: 50px;
+	}
+}
+
+/* BELOW MACBOOK PRO SIZE BUT ABOVE PHONE */
+@media only screen and (max-width: 999px) and (min-width: 641px) {
+	.#nav-button {
+		display: inline;
+		height: 50px;
+		width: 50px;
+	}
+	.nav-burger {
+		margin-top: 15px;
+	}
+	#nav-button button {
+		padding: 6px 8px;
+	}
+	#cover-image {
+		bottom: 0;
+	}
+	header ul li {
+		height: 60px;
+	}
+	#bigviz-bigdata {
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 60%;
+	}
+	#bigviz-bigdata h1 {
+		font-size: 24px;
+		margin-top: 18px;
+	}
+	#zingchart-logo {
+		background-size: 150px;
+		height: 60px;
+		width: 200px;
+	}
+	.title {
+		position: absolute;
+		top: 0px;
+		padding-top: 15px;
+		z-index: 1200;
+	}
+	.content {
+		position: absolute;
+		top: 65px;
+	}
+	#speeds_container {
+		display: block;
+		margin-top: 15px;
+	}
+	.aside-nav {
+		top: 60px;
+	}
+	.content-panel {
+		margin-top: 20px;
+	}
+	.editor,
+	.easy {
+		height: 400px;
+	}
+	.chart-demo {
+		height: 400px;
+	}
+	#ipad-cutout,
+	#builder-image {
+		width: 700px;
+	}
+	#just_ipad_chart {
+		position: absolute;
+		top: 44px;
+		left: 63px;
+		height: 418px;
+		width: 573px;
+	}
+	.we-use-spacing {
+		margin-top: 0px;
+	}
+	#designers_chart {
+		z-index: 5;
+		position: absolute;
+		width: 450px;
 		height: 350px;
+		top: 300px;
+		left: 540px;
+	}
+	#vs_speeds {
+		margin: 0px;
+	}
+	#result-container {
+		width: 600px;
+		height: 550px;
+	}
+	#resulting-chart {
+		width: 500px;
+		height: 450px;
+		margin: 50px;
+	}
+	.show-for-mobile {
+		display: inline;
+	}
+	.hide-for-mobile {
+		display: none;
 	}
 }
 
 /* PHONE SIZE */
 @media (max-width: 640px) {
+	.show-for-phone {
+		display: inline;
+	}
+	.content-panel {
+		position: absolute;
+		top: 100px;
+	}
+	#render-time {
+		margin-top: 10px;
+		margin-left: 0px;
+		font-weight: bold;
+	}
+	.title {
+		position: absolute;
+	}
 	.builder-demo {
 		margin-left: 0px;
 	}
@@ -1518,7 +1766,7 @@ select:focus {
 	}
 	#true_phone_chart {
 		width: 400px;
-		height: 600px;
+		height: 500px;
 	}
 	#laptop-cutout {
 		display: none;
@@ -1545,9 +1793,8 @@ select:focus {
 		z-index: 1000;
 	}
 	#resulting-chart {
-		margin: 25px;
-		width: 350px;
-		height: 250px;
+		margin: 50px;
+		height: 300px;
 	}
 	#laptop-screen {
 		position: absolute;
@@ -1580,10 +1827,12 @@ select:focus {
 	#pulling-demo,
 	#laptop-screen,
 	.zingchart-vs,
-	#resulting-chart,
 	#builder-image,
 	#cover-image {
 		width: 600px;
+	}
+	#resulting-chart {
+		width: 400px;
 	}
 	#interact-demo,
 	#evaluate-demo,
@@ -1593,8 +1842,10 @@ select:focus {
 	#complicated_chart {
 		height: 300px;
 	}
+	/*
 	ul.show-for-mobile li button.mobile-button {
 		font-size: 10px;
 		padding: 2px 4px;
 	}
+	*/
 }

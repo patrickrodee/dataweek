@@ -30,7 +30,7 @@
 							    <option value="">Choose a chart</option>
 						    </select>
 						    <select ng-model="selected_size" ng-options="option.name for option in size_options" ng-change="check_status_mobile()">
-							    <option value="">Choose a data size</option>
+							    <option value="">Choose data size</option>
 						    </select>
 							<button type="button" ng-disabled="not_ready" ng-click="GO_SPEEDTEST_GO(selected_provider.name, selected_chart.name, selected_size.value)">Go!</button>
 						</div>
@@ -38,7 +38,7 @@
 				</div>
 				<br/>
 				<br/>
-				<div>
+				<div id="speeds_container">
 					<p id="vs_speeds">{{vs_speed_results}}</p>
 				</div>
 				<br/>

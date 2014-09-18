@@ -16,10 +16,10 @@ angular.module('MyApp')
 		// ACTIONS /////////////////
 
 		$scope.point_options = [
-			{name: "10,000 pts", value: 10000},
-			{name: "25,000 pts", value: 25000},
-			{name: "50,000 pts", value: 50000},
-			{name: "100,000 pts", value: 100000}
+			{name: "10,000", value: 10000},
+			{name: "25,000", value: 25000},
+			{name: "50,000", value: 50000},
+			{name: "100,000", value: 100000}
 		];
 
 		$scope.points_to_render = {name:"10,000 points"};
