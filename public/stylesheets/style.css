@@ -1379,6 +1379,7 @@ select:focus {
 		height: 450px;
 	}
 	#resulting-chart {
+		margin: 50px;
 		height: 350px;
 	}
 	/* TEST */
