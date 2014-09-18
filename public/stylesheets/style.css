@@ -611,10 +611,15 @@ select:focus {
 
 @media (max-width: 1280px) {
 	.#nav-button {
-		display: block;
+		display: inline;
+		height: 50px;
+		width: 50px;
 	}
 	#cover-image {
 		bottom: 0;
+	}
+	#bigviz-bigdata {
+		width: 80%;
 	}
 }
 
