@@ -112,6 +112,9 @@ angular.module('MyApp')
 				zingchart.render(payload);
 				//console.log(value.id + " rendered");
 			});
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		//////////////////////////////////
@@ -120,6 +123,9 @@ angular.module('MyApp')
 
 		$scope.modify = function(target, payload) {
 			zingchart.exec(target, 'modify', payload);
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.setseriesvalues = function(target, data) {
@@ -132,6 +138,9 @@ angular.module('MyApp')
 
 		$scope.setdata = function(target, data) {
 			zingchart.exec(target, 'setdata', data);
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		}
 
 		$scope.set_values_and_modify = function(target, values, payload) {
@@ -154,6 +163,9 @@ angular.module('MyApp')
 		$scope.toggle_line = function(target) {
 			$scope.line_dimension = $scope.line_dimension == '2D' ? '3D' : '2D';
 			zingchart.exec(target, 'toggledimension');
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.line_chart_actions = [
@@ -172,6 +184,9 @@ angular.module('MyApp')
 		$scope.toggle_bar = function(target) {
 			$scope.bar_dimension = $scope.bar_dimension == '2D' ? '3D' : '2D';
 			zingchart.exec(target, 'toggledimension');
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.bar_chart_actions = [
@@ -191,6 +206,9 @@ angular.module('MyApp')
 		$scope.toggle_area = function(target) {
 			$scope.area_dimension = $scope.area_dimension == '2D' ? '3D' : '2D';
 			zingchart.exec(target, 'toggledimension');
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.area_chart_actions = [
@@ -208,6 +226,9 @@ angular.module('MyApp')
 		$scope.toggle_pie = function(target) {
 			$scope.pie_dimension = $scope.pie_dimension == '2D' ? '3D' : '2D';
 			zingchart.exec(target, 'toggledimension');
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.pie_chart_actions = [
@@ -219,38 +240,7 @@ angular.module('MyApp')
 
 		$scope.pie_dimension = '2D';
 
-		/************** Scatter Chart Specific **************/
-
-
-		/************** Scatter Chart Specific **************/
-
-		/*
-
-		$scope.toggle_scatter = function(target) {
-			$scope.scatter_dimension = $scope.scatter_dimension == '2D' ? '3D' : '2D';
-			zingchart.exec(target, 'toggledimension');
-		};
-
-		$scope.scatter_chart_actions = [
-		{name: "Standard", data: {'object':"plot",'data': {"aspect": 'standard'}}},
-		{name: "Spline", data: {'object':"plot",'data' : {"aspect": 'spline'}}},
-		{name: "Stepped", data: {'object':"plot",'data' : {"aspect": 'Stepped'}}}
-		]
-
-		$scope.scatter_action = $scope.scatter_chart_actions[0];
-
-		$scope.scatter_dimension = '2D';
-
-		*/
-
 		/************** Radar Chart Specific **************/
-
-		/*
-		$scope.toggle_radar = function(target) {
-			$scope.radar_dimension = $scope.radar_dimension == '2D' ? '3D' : '2D';
-			zingchart.exec(target, 'toggledimension');
-		};
-		*/
 
 		$scope.radar_chart_actions = [
 		{name: "Line", 		series: radar_data_chart_series,	data: {'object':'plot','data':{'aspect':'line'}}},

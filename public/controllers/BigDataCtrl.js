@@ -30,10 +30,16 @@ angular.module('MyApp')
 
 		$scope.modify = function(target, payload) {
 			zingchart.exec(target, 'modify', payload);
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.set_data = function(target, payload) {
 			zingchart.exec(target, 'setdata', payload);
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.timeToRunMobile = function(number_of_points) {
@@ -52,6 +58,9 @@ angular.module('MyApp')
 	    	time_to_render.toString();
 	    	var result = name + " points rendered in ";
 	    	$scope.render_time = result + time_to_render + "s";
+	    	/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.timeToRun = function(number_of_points) {
@@ -67,6 +76,9 @@ angular.module('MyApp')
 	    	var time_to_render = (time_after-time_before)/1000;
 	    	time_to_render.toString();
 	    	$scope.time_to_render = time_to_render + "s";
+	    	/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		};
 
 		$scope.calc_trend_line = function() {
@@ -112,6 +124,9 @@ angular.module('MyApp')
 		$scope.get_annotate_chart = function() {
 			$scope.no_img = false;
 			$scope.annotate_chart_output = zingchart.exec("annotate-demo", "getimagedata", {filetype : 'png'});
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 		}
 
 	}])

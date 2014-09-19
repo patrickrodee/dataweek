@@ -144,12 +144,16 @@ button:disabled,
 	padding-left: 100px;
 	padding-right: 100px;
 	width: 1860px;
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 10px 20px;
 }
 .navigation {
 	height: 1312px;
 }
 .active {
 	background-color: #FFF;
+}
+.active-button {
+	background-color: #74D3EE;
 }
 /*
 .active h2 {
@@ -189,7 +193,7 @@ h2.thin {
 }
 .title {
 	margin-bottom: 38px;
-	/* width: 100%; */
+	width: 100%;
 	float: left;
 }
 .title h2 {
@@ -611,7 +615,7 @@ select:focus {
 		margin-bottom: 20px;
 	}
 	#resulting-chart {
-		height: 500px;
+		height: 400px;
 	}
 }
 
@@ -688,10 +692,10 @@ select:focus {
 		margin: 0px;
 	}
 	#result-container {
-		height: 450px;
+		height: 500px;
 	}
 	#resulting-chart {
-		height: 350px;
+		height: 400px;
 	}
 }
 
@@ -719,6 +723,12 @@ select:focus {
 	#builder-image,
 	#cover-image {
 		width: 1700px;
+	}
+}
+
+@media (max-width: 1920px) {
+	.laptop-cutout {
+		display: none;
 	}
 }
 
@@ -768,8 +778,8 @@ select:focus {
 	}
 	#pushing-demo,
 	#pulling-demo,
-	#laptop-screen,
 	.zingchart-vs,
+	#laptop-screen,
 	#builder-image,
 	#cover-image {
 		width: 1500px;
@@ -844,15 +854,17 @@ select:focus {
 	.editor {
 		width: 550px;
 	}
+	#laptop-cutout {
+		display: none;
+	}
 }
 
 @media (max-width: 1249px) and (min-width: 1000px) {
-	#complicated_chart {
-		width: 500px;
-	}
 	.editor {
-		width: 500px;
 		margin-right: 20px;
+	}
+	#laptop-cutout {
+		display: none;
 	}
 }
 
@@ -886,35 +898,13 @@ select:focus {
 		top: 0;
 		left: 0;
 	}
+	#designers_chart {
+		top: 280px;
+		left: 330px;
+	}
 }
 
-/*
 @media (max-width: 1199px) and (min-width: 900px) {
-	.builder-demo {
-		margin-left: 0px;
-	}
-	#interact-demo,
-	#evaluate-demo,
-	#annotate-demo,
-	#share-demo {
-		width: 800px;
-	}
-	#pushing-demo,
-	#pulling-demo,
-	.zingchart-vs,
-	#resulting-chart,
-	.zingchart-vs,
-	#resulting-chart,
-	#builder-image,
-	#cover-image {
-		width: 800px;
-	}
-	#resulting-chart {
-		width: 700px;
-	}
-	#laptop-screen {
-		width: 900px;
-	}
 	#laptop-cutout {
 		display: none;
 	}
@@ -922,15 +912,9 @@ select:focus {
 		position: absolute;
 		top: 0;
 		left: 0;
-	}
-	#designers_chart {
-		left: 340px;
-		top: 350px;
-		width: 500px;
-		height: 400px;
+		width: 800px;
 	}
 }
-*/
 
 @media (max-width: 899px) and (min-width: 700px) {
 	.builder-demo {
@@ -959,8 +943,8 @@ select:focus {
 	#designers_chart {
 		left: 250px;
 		top: 140px;
-		width: 300px;
-		height: 200px;
+		width: 170px;
+		height: 105px;
 	}
 }
 
@@ -994,8 +978,8 @@ select:focus {
 	#designers_chart {
 		left: 250px;
 		top: 140px;
-		width: 300px;
-		height: 200px;
+		width: 150px;
+		height: 100px;
 	}
 }
 
@@ -1029,11 +1013,6 @@ select:focus {
 		width: 150px;
 		height: 58px;
 	}
-	/*
-	#diverse-data {
-		top: 80px;
-	}
-	*/
 	.aside-nav {
 		top: 70px;
 	}
@@ -1042,7 +1021,7 @@ select:focus {
 		z-index: 1005;
 		height: initial;
 		padding-top: 10px;
-		top: -60px;
+		top: -56px;
 		width: 100%;
 	}
 	.content-panel {
@@ -1126,11 +1105,11 @@ select:focus {
 	}
 	#result-container {
 		width: 500px;
-		height: 400px;
+		height: 500px;
 	}
 	#resulting-chart {
 		width: 400px;
-		height: 300px;
+		height: 400px;
 	}
 	#speeds_container {
 		display: inline;
@@ -1139,7 +1118,7 @@ select:focus {
 	#vs_speeds {
 		font-size: 14px;
 		float: none;
-		width: 500px;
+		width: 100%;
 	}
 }
 
@@ -1188,7 +1167,7 @@ select:focus {
 }
 */
 
-@media screen, (max-width: 2559px) and (min-width: 1400px) {
+@media only screen and (max-width: 2559px) and (min-width: 1400px) {
 	#iphone_chart {
 		top: 248px;
 		left: 27px;
@@ -1358,6 +1337,9 @@ select:focus {
 	.chart-demo {
 		height: 400px;
 	}
+	#laptop-screen {
+		width: 1400px;
+	}
 	.mobile-demo {
 		display: none;
 	}
@@ -1384,21 +1366,19 @@ select:focus {
 		width: 450px;
 		height: 350px;
 		top: 300px;
-		left: 540px;
+		left: 480px;
 	}
 	#vs_speeds {
 		margin: 0px;
 	}
 	#result-container {
-		height: 450px;
+		height: 500px;
 		width: 1400px;
-		height: 700px;
 	}
 	#resulting-chart {
 		margin: 50px;
-		height: 350px;
+		height: 400px;
 		width: 1300px;
-		height: 600px;
 	}
 	.mtop-25 {
 		margin-top: 25px;
@@ -1493,22 +1473,20 @@ select:focus {
 		position: absolute;
 		width: 450px;
 		height: 350px;
-		top: 300px;
-		left: 540px;
+		top: 330px;
+		left: 430px;
 	}
 	#vs_speeds {
 		margin: 0px;
 	}
 	#result-container {
-		height: 450px;
+		height: 500px;
 		width: 1200px;
-		height: 600px;
 	}
 	#resulting-chart {
 		margin: 50px;
-		height: 350px;
+		height: 400px;
 		width: 1100px;
-		height: 500px;
 	}
 	/* TEST */
 	.hide-under-1374 {
@@ -1578,9 +1556,13 @@ select:focus {
 	.content-panel {
 		margin-top: 20px;
 	}
+	#complicated_chart {
+		width: 450px;
+	}
 	.editor,
 	.easy {
 		height: 400px;
+		width: 450px;
 	}
 	.chart-demo {
 		height: 400px;
@@ -1604,19 +1586,19 @@ select:focus {
 		position: absolute;
 		width: 450px;
 		height: 350px;
-		top: 300px;
-		left: 540px;
+		top: 180px;
+		left: 180px;
 	}
 	#vs_speeds {
 		margin: 0px;
 	}
 	#result-container {
 		width: 1000px;
-		height: 550px;
+		height: 500px;
 	}
 	#resulting-chart {
 		width: 900px;
-		height: 450px;
+		height: 400px;
 		margin: 50px;
 	}
 }
@@ -1700,19 +1682,22 @@ select:focus {
 		position: absolute;
 		width: 450px;
 		height: 350px;
-		top: 300px;
-		left: 540px;
+		top: 180px;
+		left: 180px;
+	}
+	.active-button {
+		background-color: #605E5E;
 	}
 	#vs_speeds {
 		margin: 0px;
 	}
 	#result-container {
 		width: 600px;
-		height: 550px;
+		height: 500px;
 	}
 	#resulting-chart {
 		width: 500px;
-		height: 450px;
+		height: 400px;
 		margin: 50px;
 	}
 	.show-for-mobile {
@@ -1782,9 +1767,11 @@ select:focus {
 		margin-top: -2px;
 	}
 	#pushing-demo,
-	#pulling-demo,
-	.zingchart-vs {
+	#pulling-demo {
 		width: 400px;
+		height: 300px;
+	}
+	.zingchart-vs {
 		height: 300px;
 	}
 	.vs-options-panel div,
@@ -1792,9 +1779,14 @@ select:focus {
 		margin-bottom: 10px;
 		z-index: 1000;
 	}
+	#resulting-container {
+		height: 500px;
+		width: 400px;
+	}
 	#resulting-chart {
-		margin: 50px;
-		height: 300px;
+		height: 450px;
+		width: 450px;
+		margin: 25px;
 	}
 	#laptop-screen {
 		position: absolute;
@@ -1826,13 +1818,9 @@ select:focus {
 	#pushing-demo,
 	#pulling-demo,
 	#laptop-screen,
-	.zingchart-vs,
 	#builder-image,
 	#cover-image {
 		width: 600px;
-	}
-	#resulting-chart {
-		width: 400px;
 	}
 	#interact-demo,
 	#evaluate-demo,
@@ -1848,4 +1836,16 @@ select:focus {
 		padding: 2px 4px;
 	}
 	*/
+}
+
+@media only screen (max-width: 500px) {
+	#resulting-container {
+		height: 200px;
+		width: 300px;
+	}
+	#resulting-chart {
+		height: 150px;
+		width: 250px;
+		margin: 25px;
+	}
 }

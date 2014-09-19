@@ -20,7 +20,11 @@ angular.module('MyApp')
 
 		$scope.current_theme = {name: "Standard"};	
 
-		$scope.new_screen = function(type) {
+		$scope.new_screen = function(type, $index) {
+			$scope.selectedIndex = $index;
+			/* MIXPANEL TRACKING GOES HERE
+			$analytics.eventTrack('eventName', );
+			*/
 			if (type == 'standard') {
 				$scope.screen_image = '../images/Standard.png';
 				zingchart.exec('designers_chart', 'setdata', $scope.standard_data);
@@ -42,4 +46,12 @@ angular.module('MyApp')
 				zingchart.exec('designers_chart', 'setdata', $scope.nike_data);
 			}
 		};
+
+		$scope.selectedIndex = 0; // Whatever the default selected index is, use -1 for no selection
+
+		$scope.itemClicked = function ($index) {
+			$scope.selectedIndex = $index;
+		};
+
+		$scope.new_screen('standard', 0);
 	}]);

@@ -6,14 +6,14 @@
 	<div class="title">
 		<h2 id="greeting-big">DIY Dataviz</h2>
 		<h2 id="greeting-small">DIY</h2>
-		<div class="hide-for-mobile">
+		<div class="hide-for-mobile" style="display:none;">
 			<div class="buttons">
 				<div dropdown-select="all_themes" dropdown-model="current_theme" dropdown-item-label="name" dropdown-onchange="new_screen(current_theme.theme)"></div>
 			</div>
 		</div>
-		<ul class="show-for-mobile">
-			<li class="mobile-button-list" ng-repeat="action in all_themes">
-				<button type="button" class="mobile-button" ng-click="new_screen(action.theme)">{{action.name}}</button>
+		<ul class="show-for-mobile" style="display:inline;float:left;margin-left:20px;">
+			<li class="mobile-button-list" ng-repeat="action in all_themes" style="display:inline;">
+				<button type="button" class="mobile-button" ng-class="{ 'active-button': $index == selectedIndex }" ng-click="new_screen(action.theme, $index)">{{action.name}}</button>
 			</li>
 		</ul>
 	</div>

@@ -1,5 +1,5 @@
 angular.module('MyApp')
-	.controller('DontKnowZcCtrl', ['$scope', function ($scope) {
+	.controller('DontKnowZcCtrl', ['$scope', '$analytics', function ($scope, $analytics) {
 
 		// PROVIDER DROPDOWN
 
@@ -7,8 +7,8 @@ angular.module('MyApp')
 		{name: "ZingChart"},
 		{name: "HighCharts"},
 		{name: "C3JS"},
-		{name: "AmCharts"},
-		{name: "FusionCharts"}
+		{name: "AmCharts"}
+		/* {name: "FusionCharts"} */
 		]
 
 		$scope.selected_provider = {name: "Choose a library"};
@@ -19,8 +19,8 @@ angular.module('MyApp')
 		
 		$scope.chart_options = [
 		{name: "Line Chart"},
-		{name: "Area Chart"},
-		{name: "Bar Chart"}
+		{name: "Area Chart"}
+		/* {name: "Bar Chart"} */
 		]
 
 		$scope.selected_chart = {name: "Choose a chart"};
@@ -80,6 +80,8 @@ angular.module('MyApp')
 		$scope.displayResults = function(result) {
 			$scope.vs_speed_results = result;
 		};
+
+		$scope.renderCommentary = "";
 
 		// Renderer is defined instead of being passed anonymously to avoid issues with private variables
 		$scope.fusion_render = function (chart_type, values) {
@@ -404,18 +406,33 @@ angular.module('MyApp')
 			$scope.reset_container();
 			if (provider == 'ZingChart') {
 				$scope.vs_speed_results = $scope.zingchart_render(type, size);
+				/* MIXPANEL TRACKING GOES HERE
+				$analytics.eventTrack('eventName', );
+				*/
 			}
 			else if (provider == "C3JS") {
 				$scope.vs_speed_results = $scope.c3js(type, size);
+				/* MIXPANEL TRACKING GOES HERE
+				$analytics.eventTrack('eventName', );
+				*/
 			}
 			else if (provider == "HighCharts") {
 				$scope.vs_speed_results = $scope.highcharts(type, size);
+				/* MIXPANEL TRACKING GOES HERE
+				$analytics.eventTrack('eventName', );
+				*/
 			}
 			else if (provider == "AmCharts") {
 				$scope.amcharts(type, size);
+				/* MIXPANEL TRACKING GOES HERE
+				$analytics.eventTrack('eventName', );
+				*/
 			}
 			else if (provider == "FusionCharts") {
 				$scope.fusion(type, size);
+				/* MIXPANEL TRACKING GOES HERE
+				$analytics.eventTrack('eventName', );
+				*/
 			}
 		};
 
