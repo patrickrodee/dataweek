@@ -57,7 +57,7 @@ angular.module('MyApp')
 		{id: "bar_chart", 			data: bar_data_chart},
 		{id: "area_chart", 			data: area_data_chart},
 		{id: "pie_chart", 			data: pie_data_chart},
-		{id: "scatter_chart", 		data: scatter_data_chart},
+		{id: "scatter_chart",		data: scatter_data_chart},
 		{id: "radar_chart", 		data: radar_data_chart},
 		{id: "stock_chart", 		data: stock_data_chart},
 		{id: "bubble_chart", 		data: bubble_data_chart},
@@ -104,16 +104,16 @@ angular.module('MyApp')
 
 		$scope.theme_action = {name: "Standard Theme"};
 		
-		$scope.renderWithTheme = function(theme) {
+		$scope.renderWithTheme = function(chartTheme) {
 			angular.forEach($scope.all_charts, function(value, key) {
 				//zingchart.exec(value.id, 'destroy');
 				//console.log(value.id + " destroyed");
-				var payload = $.extend( {id: value.id, defaultsurl: theme}, value.data);
+				var payload = $.extend( {id: value.id, defaultsurl: chartTheme.theme}, value.data);
 				zingchart.render(payload);
 				//console.log(value.id + " rendered");
 			});
 			/* MIXPANEL TRACKING*/
-			$analytics.eventTrack('Presentation Theme Changed', {'Theme': theme} );
+			$analytics.eventTrack('Presentation Theme Changed', {'Theme': chartTheme.name} );
 			
 		};
 
@@ -122,11 +122,11 @@ angular.module('MyApp')
 		//////////////////////////////////
 
 		$scope.modify = function(target, payload) {
-			zingchart.exec(target, 'modify', payload);
+			zingchart.exec(target, 'modify', payload.data);
 			/* MIXPANEL TRACKING GOES HERE */
 			$analytics.eventTrack('Presentation Chart Updated',{
 				'Chart Name': target,
-				'Option': payload
+				'Option': payload.name
 			});
 			
 		};
@@ -141,9 +141,6 @@ angular.module('MyApp')
 
 		$scope.setdata = function(target, data) {
 			zingchart.exec(target, 'setdata', data);
-			/* MIXPANEL TRACKING GOES HERE
-			$analytics.eventTrack('eventName', );
-			*/
 		}
 
 		$scope.set_values_and_modify = function(target, values, payload) {
