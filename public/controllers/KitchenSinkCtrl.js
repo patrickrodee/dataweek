@@ -113,7 +113,7 @@ angular.module('MyApp')
 				//console.log(value.id + " rendered");
 			});
 			/* MIXPANEL TRACKING*/
-			$analytics.eventTrack('DataWeek KS Theme Changed', {'Theme': theme} );
+			$analytics.eventTrack('Presentation Theme Changed', {'Theme': theme} );
 			
 		};
 
@@ -123,10 +123,12 @@ angular.module('MyApp')
 
 		$scope.modify = function(target, payload) {
 			zingchart.exec(target, 'modify', payload);
-			console.log(target);
-			/* MIXPANEL TRACKING GOES HERE
-			$analytics.eventTrack('eventName', );
-			*/
+			/* MIXPANEL TRACKING GOES HERE */
+			$analytics.eventTrack('Presentation Chart Updated',{
+				'Chart Name': target,
+				'Option': payload
+			});
+			
 		};
 
 		$scope.setseriesvalues = function(target, data) {
