@@ -44,10 +44,12 @@ angular.module('MyApp')
 			if ($scope.pushing_state == 'Start Pushing') {
 				$scope.pushing_state = 'Stop Pushing';
 				zingchart.exec('pushing-demo', 'startfeed');
+				$analytics.eventTrack('Push Demo Started');
 			}
 			else {
 				$scope.pushing_state = 'Start Pushing';
 				zingchart.exec('pushing-demo', 'stopfeed');
+				$analytics.eventTrack('Push Demo Stopped');
 			}
 		}
 
@@ -55,10 +57,12 @@ angular.module('MyApp')
 			if ($scope.pulling_state == 'Start Pulling') {
 				$scope.pulling_state = 'Stop Pulling';
 				zingchart.exec('pulling-demo', 'startfeed');
+				$analytics.eventTrack('Pull Demo Started');
 			}
 			else {
 				$scope.pulling_state = 'Start Pulling';
 				zingchart.exec('pulling-demo', 'stopfeed');
+				$analytics.eventTrack('Pull Demo Stopped');
 			}
 		}
 	}])

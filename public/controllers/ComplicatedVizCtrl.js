@@ -24,6 +24,9 @@ angular.module('MyApp')
 			try {
 				$scope.json_to_render = JSON.parse($scope.editable_json);
 				zingchart.exec('complicated_chart', 'setdata', $scope.json_to_render);
+				/* MIXPANEL TRACKING */
+				$analytics.eventTrack('Chart JSON Edited');
+				
 			}
 			catch(exp) {
 

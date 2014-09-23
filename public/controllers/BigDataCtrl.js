@@ -124,9 +124,9 @@ angular.module('MyApp')
 		$scope.get_annotate_chart = function() {
 			$scope.no_img = false;
 			$scope.annotate_chart_output = zingchart.exec("annotate-demo", "getimagedata", {filetype : 'png'});
-			/* MIXPANEL TRACKING GOES HERE
-			$analytics.eventTrack('eventName', );
-			*/
+			/* MIXPANEL TRACKING */
+			$analytics.eventTrack('Chart Image Generated');
+			
 		}
 
 	}])
