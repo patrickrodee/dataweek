@@ -1,5 +1,5 @@
 angular.module('MyApp')
-	.controller('DataIsChangingCtrl', ['$scope', function ($scope){
+	.controller('DataIsChangingCtrl', ['$scope', '$analytics', function ($scope, $analytics){
 
 		// Initial Charts
 

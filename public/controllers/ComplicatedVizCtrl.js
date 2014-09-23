@@ -1,5 +1,5 @@
 angular.module('MyApp')
-.controller('ComplicatedVizCtrl', ['$scope', function($scope) {
+.controller('ComplicatedVizCtrl', ['$scope','$analytics', function ($scope, $analytics) {
 
 		$scope.chart_json = complicated_chart_data;
 

@@ -1,5 +1,5 @@
 angular.module('MyApp')
-	.controller('KitchenSinkCtrl', ['$scope', function ($scope) {
+	.controller('KitchenSinkCtrl', ['$scope', '$analytics', function ($scope, $analytics) {
 
 		//////////////////////////////////
 		// Chart Objects /////////////////
